@@ -1,9 +1,11 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import './App.css'
+import './Template.css'
 
-function App() {
+function Template({
+  goToHomepage,
+}) {
   const [count, setCount] = useState(0)
 
   return (
@@ -22,14 +24,18 @@ function App() {
           count is {count}
         </button>
         <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+          Edit <code>src/App.jsx</code> and save to test HMR
         </p>
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
+      <hr />
+      <button onClick={goToHomepage}>
+        Go to home page test
+      </button>
     </>
   )
 }
 
-export default App
+export default Template;
