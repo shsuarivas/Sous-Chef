@@ -18,3 +18,14 @@ Please run the linter after making changes to the code. This makes sure our codi
 ```
 npm run lint
 ```
+
+## Helpful Links
+- HTML
+    - [MDN HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
+- CSS
+    - [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/CSS)
+    - [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Good for layouts
+    - [Sass Basics](https://sass-lang.com/guide/) - Vite supports .scss and it's very nice to use
+- JavaScript
+    - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
+    - [React Quick Start](https://react.dev/learn) - If you've never used React this is extremely important
