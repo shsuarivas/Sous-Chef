@@ -1,0 +1,28 @@
+.title_div {
+    width: 100%;
+    padding: 0rem 1rem;
+    background-color: gray;
+
+    height: 2rem;
+
+    display: flex;
+    column-gap: 0.5rem;
+}
+
+.logo {
+    margin: auto;
+}
+
+.search_bar {
+    flex-grow: 1;
+    margin: auto;
+
+    input[type="text"] {
+        width: 100%;
+    }
+}
+
+.login_buttons {
+    display: flex;
+    column-gap: 0.5rem;
+}
