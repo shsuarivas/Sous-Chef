@@ -5,7 +5,7 @@ function RecipeGroup({
   name,
   recipes
 }) {
-  let recipesElements = recipes.map(name => <RecipeEntry name={name}/>);
+  let recipesElements = recipes.map(name => <RecipeEntry key={name} name={name}/>);
 
   return (
     <>
