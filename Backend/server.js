@@ -1,30 +1,12 @@
-const express = require("express");
-const cors = require("cors");
-const crypto = require('crypto');
+import express from 'express'
 
-const app = express();
-app.use(cors());
-app.use(express.json());
+const PORT = 8080;
 
-// Test endpoint
-app.get("/", (req, res) => {
-    res.json({ message: "Backend is running!" });
-});
+let app = express();
+app.get('/', (req, res) => {
+    res.send('Test!');
+})
 
-app.listen(3001, () => {
-    console.log("Server running on http://localhost:5432");
-});
-
-const mysql = require("mysql2");
-
-const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "root",
-    database: "SousChef"
-});
-
-db.connect(err => {
-    if (err) throw err;
-    console.log("Connected to MySQL database!");
-});
+app.listen(8080, () => {
+    console.log(`Backend listening on port ${PORT}`);
+})
