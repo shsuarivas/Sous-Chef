@@ -4,9 +4,6 @@ function TitleBar() {
   return (
     <>
       <div className={style.title_div}>
-        <div className={style.logo}>
-          Logo
-        </div>
 
         <div className={style.search_bar}>
           <input type="text"></input>
