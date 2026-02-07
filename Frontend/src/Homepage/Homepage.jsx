@@ -11,7 +11,7 @@ function Homepage() {
     </div>
 
     <div className={style.sidebar_div}>
-      <Sidebar />
+        <Sidebar />
     </div>
 
       <div className={style.recipes_div}>
