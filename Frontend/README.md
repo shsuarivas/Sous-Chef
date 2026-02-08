@@ -24,7 +24,7 @@ npm run lint
     - [MDN HTML reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements)
 - CSS
     - [MDN CSS Guide](https://developer.mozilla.org/en-US/docs/Web/CSS)
-    - [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - Good for layouts
+    - [flexbox](https://flexbox.malven.co/) - Good for layouts
     - [Sass Basics](https://sass-lang.com/guide/) - Vite supports .scss and it's very nice to use
 - JavaScript
     - [MDN JavaScript Guide](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)
