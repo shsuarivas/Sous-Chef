@@ -1,0 +1,16 @@
+.main_div {
+    padding: 2rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.recipe_div {
+    width: 7rem;
+    height: 7rem;
+
+    background-color: yellow;
+}
