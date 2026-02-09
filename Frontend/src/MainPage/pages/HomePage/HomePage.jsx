@@ -13,7 +13,7 @@ function Recipe() {
 export default function HomePage() {
 
     let recipes = [];
-    for (let i=0; i<50; i++) recipes.push(<Recipe />);
+    for (let i=0; i<25; i++) recipes.push(<Recipe />);
 
     return (
         <>
