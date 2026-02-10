@@ -1,0 +1,41 @@
+.main_div {
+    padding: 2rem;
+
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
+
+    // display: grid;
+    // grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    // grid-auto-rows: 7rem;
+
+    // gap: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.recipe_div {
+    // width: 7rem;
+    // height: 7rem;
+    aspect-ratio: 4 / 3;
+
+    background-color: yellow;
+}
+
+.category_div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.category_title {
+    font-size: 24pt;
+}
+
+.category_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+    gap: 1rem;
+}
