@@ -32,36 +32,3 @@ When you’re ready to start the environment, run:
 
 in 'CMD'
 docker compose up --build
-# Docker Update Getting Started IMPORTANT
-- have docker desktop installed on your machine
-- clone the git repo
-- copy the '.env.example' to '.env' and fill in the required values
-
-# For Local Development 
-run the app locally with hot reload
-
-bash
- docker compose up --build
-
- this builds the enviroment.
- then Open 'http://localhost:5173' in a browser.
-# Stopping the app 
-bash 
- docker compose down
---- all command prompts should work the same with linux and windows machines
-
-
-## Server Deployment 
-These steps are for deploying to the shared server Teammates do not need to do this. its more of a reminder for me.
-git clone repo
-change directory to Sous-Chef
-edit .example.env
-docker compose -f compose.prod.yaml up -d --build
-
-# Accessing the app
-Open 'http://server IP'in your browser from any machine.
-
-# Updating the server manually
-bash 
-git pull main
-docker compose -f compose.prod.yaml up -d --build
