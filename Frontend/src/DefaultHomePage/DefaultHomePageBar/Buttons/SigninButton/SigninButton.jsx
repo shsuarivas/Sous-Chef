@@ -6,4 +6,4 @@ export default function SigninButton(){
             <button class="signin">Sign In</button>
         </>
     );
-}
+};
