@@ -5,4 +5,4 @@ export default function LoginButton(){
             <button class="loginbutton">Login</button>
         </>
     );
-}
+};
