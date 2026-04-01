@@ -1,4 +1,5 @@
 import MainPage from './MainPage/MainPage.jsx';
+import DefaultHomePage from './DefaultHomePage/DefaultHomePage.jsx';
 
 /*
 	This container will choose between the website view and the recipe cooking view
@@ -7,8 +8,9 @@ import MainPage from './MainPage/MainPage.jsx';
 function App() {
     return (
 		<>
-			<MainPage />
+			<DefaultHomePage/>
 		</>
+
 	)
 }
 

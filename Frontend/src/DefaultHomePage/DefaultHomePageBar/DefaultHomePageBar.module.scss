@@ -1,0 +1,15 @@
+
+
+.main_div {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+
+    padding: 0rem 0.5rem;
+}
+
+
+.gap {
+    flex-grow: 1;
+    // height: 100%;
+}
