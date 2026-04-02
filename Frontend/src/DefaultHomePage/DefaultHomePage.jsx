@@ -3,6 +3,7 @@ import { useState } from 'react';
 import styles from './DefaultHomePage.module.scss';
 import PageBar from './DefaultHomePageBar/DefaultHomePageBar/'
 import WelcomingHeader from './TextComponents/Welcome.jsx'
+import HomeImage from './Images/Image.jsx'
 
 export default function HomePage(){
 
@@ -22,7 +23,10 @@ export default function HomePage(){
                     <div className={styles.titlebar_div}>
                         <PageBar />
                     </div>
-                    <WelcomingHeader />
+                    <nav>
+                        <WelcomingHeader />
+                    </nav>
+                    <HomeImage />
                 </div>
                 </div>
             </>
