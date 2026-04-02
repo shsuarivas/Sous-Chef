@@ -1,8 +1,8 @@
 import styles from './DefaultHomePageBar.module.scss';
-//import Logo from './Buttons/Logo/logo.jsx';
+import Logo from './Buttons/Logo/logo.jsx';
 import AboutButton from './Buttons/AboutButton/AboutButton.jsx';
 import LoginButton from './Buttons/LoginButton/LoginButton.jsx';
-import SigninButton from './Buttons/SigninButton/SigninButton.jsx';
+import SignupButton from './Buttons/SignupButton/SignupButton.jsx';
 
 
 
@@ -11,12 +11,12 @@ import SigninButton from './Buttons/SigninButton/SigninButton.jsx';
 export default function TitleBar() {
     return (
         <>
+        
             <div className={styles.main_div}>
-                <p>Logo</p>
-            <div className={styles.gap}></div>
-                <AboutButton />
+                <Logo />
+                <div className={styles.gap}><AboutButton />
                 <LoginButton />
-                <SigninButton />
+                <SignupButton /></div>
             </div>
         </>
     );
