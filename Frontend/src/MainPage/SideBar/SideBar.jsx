@@ -1,4 +1,3 @@
-import logo from '../../assets/souschef_logo.png'
 import styles from './SideBar.module.scss';
 
 function Entry({
@@ -26,9 +25,9 @@ export default function SideBar({
     return (
         <>
             <div className={styles.main_div}>
-                 <div className={styles.logo_div}>                                                                                       
-                    <img src={logo} alt="Sous-Chef Logo" className={styles.logo} />
-                </div>  
+                <Entry onClick={() => setCurrentPage('home')} isActive={false}>
+                    Logo
+                </Entry>
 
                 <Entry
                     onClick={() => setCurrentPage('home')}
