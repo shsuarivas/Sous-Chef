@@ -1,7 +1,8 @@
 FROM node:20
 WORKDIR /app
-copy package*.json ./
+COPY package*.json ./
 RUN npm install
 COPY . .
 EXPOSE 8080
-CMD ["node", "server.js"]
+# change back to "node", "server.js" for production and "npm", "run", "dev" for development with hot-reloading
+CMD ["npm", "run", "dev"] 
