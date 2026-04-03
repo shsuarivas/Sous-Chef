@@ -44,7 +44,7 @@ bash
  docker compose up --build
 
  this builds the enviroment.
- then Open 'http://localhost:5713' in a browser.
+ then Open 'http://localhost:5173' in a browser.
 # Stopping the app 
 bash 
  docker compose down
