@@ -15,6 +15,13 @@ services:
       - backend
     networks:
       - app-network
+    develop: # This is for development purposes it allows for hot-reloading and syncing changes without rebuilding the image.
+      watch:
+      - action: sync
+        path: ./Frontend
+        target: /app
+      - action: rebuild
+        path: ./Frontend/package.json
 
 
   backend:
@@ -29,12 +36,20 @@ services:
     environment:
       - NODE_ENV=${NODE_ENV}
       - PORT=${PORT}
-      - DATABASE_URL=postgres://postgres:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
+      - DATABASE_URL=postgresql://SousChef:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
     depends_on:
       postgres:
         condition: service_healthy
     networks:
       - app-network
+    develop: # Same for this one it allows for hot-reloading and syncing changes without rebuilding the image.
+      watch:
+        - action: sync
+          path: ./Backend
+          target: /app
+        - action: rebuild
+          path: ./Backend/package.json
+
 
 
   postgres:
@@ -49,7 +64,7 @@ services:
       - postgres_data:/var/lib/postgresql/data
       - ./Backend/db/init.sql:/docker-entrypoint-initdb.d/init.sql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      test: ["CMD-SHELL", "pg_isready -U SousChef -d appdb"]
       interval: 5s
       timeout: 5s
       retries: 5
