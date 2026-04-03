@@ -1,0 +1,33 @@
+@use '../../constants.module.scss' as constants;
+
+.main_div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    padding: 0rem 0.5rem;
+}
+
+.gap {
+    flex-grow: 1;
+    // height: 100%;
+}
+
+.entry_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6rem;
+
+    height: constants.$titlebar-thickness;
+}
+
+
+
+.entry_inner {
+    cursor: pointer;
+}
+
+.entry_inner_selected {
+    border: 1px solid black;
+}
