@@ -31,3 +31,14 @@
 .entry_inner_selected {
     border: 1px solid black;
 }
+
+logo_div {                                                                                                             
+      display: flex;                                                                                                      
+      justify-content: center;                                                                                            
+      align-items: center;                                                                                                
+      padding: 0.5rem 0;                                                                                                  
+  }                                                                                                                       
+                                                                                                                          
+  .logo {                                                                                                                 
+      height: 5rem;                                                                                                       
+  }               
