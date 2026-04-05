@@ -11,7 +11,7 @@ function SearchBar() {
 
 function AccountButton() {
     return (
-        <Button label="Account" href="/settings" />
+        <Button label="Account" href="/main/settings" />
     );
 }
 

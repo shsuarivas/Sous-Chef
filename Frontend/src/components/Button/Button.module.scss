@@ -1,20 +1,20 @@
 .button {
     background: linear-gradient(135deg, #3B82F6 0%, #8B5CF6 100%);
     color: white;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding: 10px 26px;
+    padding: 8px 18px;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     cursor: pointer;
-    box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
     white-space: nowrap;
 }
 
 .button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
     background: linear-gradient(135deg, #4f91ff 0%, #9a6dff 100%);
 }
 
