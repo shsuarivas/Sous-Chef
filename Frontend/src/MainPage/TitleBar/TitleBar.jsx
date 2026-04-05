@@ -1,3 +1,4 @@
+import Button from '../../components/Button/Button.jsx';
 import styles from './TitleBar.module.scss';
 
 function SearchBar() {
@@ -10,9 +11,7 @@ function SearchBar() {
 
 function AccountButton() {
     return (
-        <div className={styles.accountButton}>
-            Account
-        </div>
+        <Button label="Account" href="/settings" />
     );
 }
 
