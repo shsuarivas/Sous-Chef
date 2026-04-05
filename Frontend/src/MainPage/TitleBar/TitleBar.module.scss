@@ -8,9 +8,8 @@
     background-color: rgba(15, 23, 42, 0.90);
     backdrop-filter: blur(20px);
     
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%) 1;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
 }
 
 .left_section, .right_section {

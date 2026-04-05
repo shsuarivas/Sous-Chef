@@ -7,6 +7,26 @@
     flex-direction: column;
     overflow-x: hidden;
     background-color: #0b1120;
+    background-image: url('../assets/HomePageImage.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(11, 17, 32, 0.4) 0%,
+            rgba(11, 17, 32, 0.7) 50%,
+            rgba(11, 17, 32, 0.9) 100%
+        );
+        z-index: 1;
+    }
 }
 
 .title_and_content_div {
@@ -15,36 +35,16 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: transparent;
-    overflow: hidden;
+    z-index: 10;
+}
 
-    &::before {
-        content: '';
-        position: absolute;
-        top: -10%;
-        left: -10%;
-        width: 40%;
-        height: 60%;
-        background: radial-gradient(circle, rgba(59, 130, 246, 0.1) 0%, transparent 70%);
-        border-radius: 50%;
-        pointer-events: none;
-        filter: blur(80px);
-        z-index: 1;
-    }
-
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -10%;
-        right: -10%;
-        width: 40%;
-        height: 60%;
-        background: radial-gradient(circle, rgba(139, 92, 246, 0.1) 0%, transparent 70%);
-        border-radius: 50%;
-        pointer-events: none;
-        filter: blur(80px);
-        z-index: 1;
-    }
+.hero_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10vh;
 }
 
 .titlebar_div {
@@ -52,11 +52,10 @@
     position: sticky;
     top: 0rem;
     z-index: 100;
-    background-color: rgba(15, 23, 42, 0.90);
-    backdrop-filter: blur(20px);
-    border-bottom: 2px solid transparent;
-    border-image: linear-gradient(90deg, #3B82F6 0%, #8B5CF6 100%) 1;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: rgba(11, 17, 32, 0.85);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     display: flex;
 }
 

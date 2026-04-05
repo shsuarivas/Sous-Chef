@@ -1,7 +1,6 @@
 import styles from './DefaultHomePage.module.scss';
 import PageBar from './DefaultHomePageBar/DefaultHomePageBar/'
 import WelcomingHeader from './TextComponents/Welcome.jsx'
-import HomeImage from './Images/Image.jsx'
 
 export default function HomePage(){
     return (
@@ -10,12 +9,9 @@ export default function HomePage(){
                 <div className={styles.titlebar_div}>
                     <PageBar />
                 </div>
-                <nav>
+                <nav className={styles.hero_content}>
                     <WelcomingHeader />
                 </nav>
-                <div style={{ position: 'relative', zIndex: 10 }}>
-                    <HomeImage />
-                </div>
             </div>
         </div>
     );
