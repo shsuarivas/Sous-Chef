@@ -39,6 +39,15 @@ export default function Login() {
                         <Button label="Sign In" onClick={() => navigate('/main')} />
                     </div>
 
+                    <div className={styles.divider}>
+                        <span>or</span>
+                    </div>
+
+                    <button className={styles.googleButton} onClick={() => navigate('/main')}>
+                        <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" />
+                        Sign in with Google
+                    </button>
+
                     <p className={styles.footerText}>
                         Don't have an account? <Link to="/signup">Create one</Link>
                     </p>

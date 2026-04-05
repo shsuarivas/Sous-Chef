@@ -5,7 +5,7 @@ This document contains a detailed explanation of the frontend architectural chan
 ---
 
 ## 1. Component Refactoring & The D.R.Y. Principle
-**What Changed:** We deleted the redundant button components (`AboutButton.jsx`, `LoginButton.jsx`, etc.) and created a single, centralized `<Button />` component (`src/components/Button/Button.jsx`).
+**What Changed:** I deleted the redundant button components (`AboutButton.jsx`, `LoginButton.jsx`, etc.) and created a single, centralized `<Button />` component (`src/components/Button/Button.jsx`).
 **How it Works:** 
 - Instead of hardcoding the text and behavior in three different files, the `<Button />` accepts React **props** (`label`, `href`, `onClick`). 
 - When we need a button, we write `<Button label="Login" href="/login" />`. React automatically passes those properties into the component.

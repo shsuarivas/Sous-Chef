@@ -43,6 +43,15 @@ export default function Signup() {
                         <Button label="Create Account" onClick={() => navigate('/main')} />
                     </div>
 
+                    <div className={styles.divider}>
+                        <span>or</span>
+                    </div>
+
+                    <button className={styles.googleButton} onClick={() => navigate('/main')}>
+                        <img src="https://www.gstatic.com/images/branding/product/1x/gsa_512dp.png" alt="Google" />
+                        Sign up with Google
+                    </button>
+
                     <p className={styles.footerText}>
                         Already have an account? <Link to="/login">Sign in</Link>
                     </p>
