@@ -1,11 +1,14 @@
 .main_div {
     display: flex;
     align-items: center;
-    gap: 1150px;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 50px;
+    height: 100%;
 }
 
-
 .gap {
-    margin-right: auto;
-    flex-grow: 10 px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }

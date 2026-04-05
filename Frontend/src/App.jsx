@@ -1,17 +1,20 @@
+import { Routes, Route } from 'react-router-dom';
 import MainPage from './MainPage/MainPage.jsx';
 import DefaultHomePage from './DefaultHomePage/DefaultHomePage.jsx';
-
-/*
-	This container will choose between the website view and the recipe cooking view
-*/
+import Login from './pages/Login/Login.jsx';
+import Signup from './pages/Signup/Signup.jsx';
+import About from './pages/About/About.jsx';
 
 function App() {
     return (
-		<>
-			<DefaultHomePage/>
-		</>
-
-	)
+        <Routes>
+            <Route path="/" element={<DefaultHomePage />} />
+            <Route path="/main" element={<MainPage />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/about" element={<About />} />
+        </Routes>
+    );
 }
 
 export default App;
