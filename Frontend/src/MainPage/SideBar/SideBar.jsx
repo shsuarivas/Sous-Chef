@@ -1,4 +1,4 @@
-import logo from '../../assets/souschef_logo.png'
+import logo from '../../assets/Sous_Chef_Logo.png'
 import styles from './SideBar.module.scss';
 
 function Entry({
