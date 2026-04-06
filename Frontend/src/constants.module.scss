@@ -1,5 +1,14 @@
-// This is for sass variables which will be used anywhere on the web page
-
+// Layout Dimensions
 $titlebar-thickness: 4.5rem;
 $sidebar-width: 230px;
 $sidebar-collapsed: 80px;
+
+// Byte-Blue & White Light Theme Palette
+$primary-blue: #2563eb;      // Solid Royal Blue (Header/Buttons)
+$accent-blue: #1e40af;       // Deep Blue (Hover)
+$bg-main: #ffffff;           // Pure White (Body)
+$bg-sidebar: #2563eb;        // Solid Blue Sidebar
+$text-main: #0f172a;         // Executive Slate (Text)
+$text-light: #f8fafc;        // White Text (On Blue)
+$shadow-soft: 0 4px 20px rgba(0, 0, 0, 0.05); // Modern Depth
+$glass-light: rgba(255, 255, 255, 0.95); // High-Contrast Glass

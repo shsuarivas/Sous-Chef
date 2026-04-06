@@ -52,9 +52,9 @@
     position: sticky;
     top: 0rem;
     z-index: 100;
-    background-color: rgba(11, 17, 32, 0.85);
+    background-color: constants.$primary-blue; /* Solid Royal Blue Header */
     backdrop-filter: blur(16px);
-    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
     display: flex;
 }

@@ -10,17 +10,14 @@
 .title_and_content_div {
     width: 100%;
     overflow-y: scroll;
-    background-color: #0f172a;
+    background-color: #ffffff; /* Clean White Content Area */
     position: relative;
     z-index: 1;
 }
 
 .sidebar_div {
     height: 100%;
-    width: 250px;
     flex-shrink: 0;
-    background-color: #0b1120;
-    border-right: 1px solid rgba(255, 255, 255, 0.05);
     z-index: 10;
     transition: width 0.3s ease;
 
@@ -44,7 +41,7 @@
     width: 100%;
     padding: 40px;
     box-sizing: border-box;
-    color: white;
+    color: #0f172a; /* Executive Slate Text */
     font-family: inherit;
 
     @media (max-width: 768px) {
@@ -56,21 +53,20 @@
     text-align: center;
     margin-top: 40px;
     padding: 25px 30px;
-    background: rgba(30, 41, 59, 0.6);
-    backdrop-filter: blur(16px);
-    border: 1px solid rgba(139, 92, 246, 0.2);
-    border-top: 2px solid #8B5CF6;
+    background: #ffffff;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+    border-top: 2px solid #2563eb;
     border-radius: 16px;
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
 }
 
 .geminiLiveTextTitle {
     font-size: 1.25rem;
     font-weight: 700;
-    color: white;
+    color: #0f172a;
     margin: 0 0 15px 0;
     display: flex;
     align-items: center;
@@ -84,7 +80,7 @@
 
 .geminiLiveTextStep {
     font-size: 1.05rem;
-    color: #cbd5e1;
+    color: #475569;
     margin: 0;
     line-height: 1.6;
 }

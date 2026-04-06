@@ -22,11 +22,11 @@ export default function Login() {
 
                     <h1 className={styles.title}>Welcome Back</h1>
                     <p className={styles.subtitle}>Sign in to save and organize your recipes.</p>
-                    
+
                     <div className={styles.inputGroup}>
                         <div className={styles.inputWrapper}>
                             <label>Email Address</label>
-                            <input className={styles.input} type="email" placeholder="chef@example.com" />
+                            <input className={styles.input} type="email" placeholder="bigyahu@mossad.israel" />
                         </div>
                         <div className={styles.inputWrapper}>
                             <label>Password</label>
@@ -35,8 +35,8 @@ export default function Login() {
                     </div>
 
                     <div className={styles.buttonRow} style={{ flexDirection: 'row' }}>
-                        <Button label="Go Back" onClick={() => navigate('/')} />
-                        <Button label="Sign In" onClick={() => navigate('/main')} />
+                        <Button variant="secondary" label="Go Back" onClick={() => navigate('/')} />
+                        <Button variant="primary" label="Sign In" onClick={() => navigate('/main')} />
                     </div>
 
                     <div className={styles.divider}>

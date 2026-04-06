@@ -2,7 +2,7 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #0f172a; /* Premium Slate 900 base */
+    background-color: #f8fafc; /* Crisp White Base */
     overflow: hidden;
 }
 
@@ -28,9 +28,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    /* Vibrant colorful overlay to match the primary buttons */
-    background: linear-gradient(135deg, rgba(59, 130, 246, 0.4) 0%, rgba(139, 92, 246, 0.7) 100%);
-    backdrop-filter: brightness(0.8);
+    /* Soft Azure overlay for the Light Theme */
+    background: linear-gradient(135deg, rgba(37, 99, 235, 0.4) 0%, rgba(37, 99, 235, 0.1) 100%);
+    backdrop-filter: brightness(1.1);
 }
 
 .formHalf {
@@ -42,15 +42,15 @@
     position: relative;
     z-index: 2;
     
-    /* Subtle ambient glow behind the form */
+    /* Subtle blue ambient glow behind the form */
     &::before {
         content: '';
         position: absolute;
         width: 300px;
         height: 300px;
-        background: #8B5CF6;
+        background: #3b82f6;
         filter: blur(150px);
-        opacity: 0.25;
+        opacity: 0.2;
         top: 20%;
         left: 20%;
         z-index: -1;
@@ -60,12 +60,11 @@
 .authCard {
     width: 100%;
     max-width: 420px;
-    background: rgba(30, 41, 59, 0.5); /* Refined glass */
-    backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #ffffff; /* Solid White Card */
+    border: 1px solid rgba(0, 0, 0, 0.05);
     border-radius: 16px;
     padding: 35px 40px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
     text-align: left;
 }
 
@@ -88,7 +87,7 @@
 .title {
     font-size: 1.75rem;
     font-weight: 700;
-    color: white;
+    color: #0f172a; /* Executive Charcoal */
     margin: 0 0 8px 0;
 }
 
@@ -123,22 +122,22 @@
 .input {
     width: 100%;
     padding: 10px 16px;
-    background: rgba(15, 23, 42, 0.4);
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
     border-radius: 10px;
-    color: white;
+    color: #0f172a;
     font-size: 0.95rem;
     transition: all 0.2s ease;
     
     &::placeholder {
-        color: #475569;
+        color: #94a3b8;
     }
     
     &:focus {
         outline: none;
-        border-color: rgba(139, 92, 246, 0.6);
-        background: rgba(15, 23, 42, 0.6);
-        box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
+        border-color: #2563eb;
+        background: #ffffff;
+        box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
     }
 }
 
@@ -218,12 +217,12 @@
     font-size: 0.95rem;
     
     a {
-        color: #8B5CF6;
+        color: #3b82f6;
         text-decoration: none;
         font-weight: 600;
         
         &:hover {
-            color: #a78bfa;
+            color: #60a5fa;
             text-decoration: underline;
         }
     }

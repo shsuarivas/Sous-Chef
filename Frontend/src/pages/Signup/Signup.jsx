@@ -39,8 +39,8 @@ export default function Signup() {
                     </div>
 
                     <div className={styles.buttonRow} style={{ flexDirection: 'row' }}>
-                        <Button label="Go Back" onClick={() => navigate('/')} />
-                        <Button label="Create Account" onClick={() => navigate('/main')} />
+                        <Button variant="secondary" label="Go Back" onClick={() => navigate('/')} />
+                        <Button variant="primary" label="Create Account" onClick={() => navigate('/main')} />
                     </div>
 
                     <div className={styles.divider}>

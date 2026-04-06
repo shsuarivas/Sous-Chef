@@ -8,11 +8,11 @@
     align-items: center;
     gap: 2rem;
     
-    background-color: rgba(15, 23, 42, 0.90);
+    background-color: constants.$primary-blue; /* Solid Blue Header */
     backdrop-filter: blur(20px);
     
-    border-bottom: 1px solid rgba(139, 92, 246, 0.3);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 
     @media (max-width: 1200px) {
         padding: 0 1.5rem;
@@ -59,8 +59,8 @@
     input {
         width: 100%;
         padding: 10px 20px;
-        background: rgba(30, 41, 59, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.15); /* White Glass Search */
+        border: 1px solid rgba(255, 255, 255, 0.2);
         border-radius: 10px;
         color: white;
         font-size: 0.9rem;
@@ -68,13 +68,13 @@
         transition: all 0.2s;
         
         &::placeholder {
-            color: #475569;
+            color: rgba(255, 255, 255, 0.7);
         }
 
         &:focus {
-            border-color: rgba(139, 92, 246, 0.6);
-            background: rgba(30, 41, 59, 0.7);
-            box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.05);
+            border-color: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.1);
         }
     }
 }

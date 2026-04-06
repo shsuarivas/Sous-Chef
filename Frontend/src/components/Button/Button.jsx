@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom';
 import styles from './Button.module.scss';
 
-export default function Button({ label, href, onClick }) {
+export default function Button({ label, href, onClick, variant = 'primary' }) {
     const btnElement = (
-        <button className={styles.button} onClick={onClick}>
+        <button 
+            className={`${styles.button} ${styles[variant]}`} 
+            onClick={onClick}
+        >
             {label}
         </button>
     );
