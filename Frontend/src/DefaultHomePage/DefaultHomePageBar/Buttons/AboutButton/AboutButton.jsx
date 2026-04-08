@@ -2,8 +2,14 @@ export default function AboutButton(){
     return (
         <>
         <a href = "/about" target="_blank">
-             <button class="aboutbutton">About</button>
+             <button className="aboutbutton">About</button>
         </a>
         </>
     );
 };
+
+//use react <link> or useNavigate instead of href 
+    //(https://reactrouter.com/api/components/Link)
+    //(https://reactrouter.com/api/hooks/useNavigate)
+
+//changed class to "className" - this is React, not base JavaScript (https://react.dev/learn/writing-markup-with-jsx#3-camelcase-salls-most-of-the-things)
