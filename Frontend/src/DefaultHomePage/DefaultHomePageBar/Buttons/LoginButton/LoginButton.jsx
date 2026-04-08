@@ -2,7 +2,7 @@
 export default function LoginButton(){
     return (
         <>
-            <button class="loginbutton">Login</button>
+            <button className="loginbutton">Login</button>
         </>
     );
 };
