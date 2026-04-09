@@ -1,9 +1,11 @@
 
 
+import styles from './SigninButton.module.scss';
+
 export default function SignupButton(){
     return (
         <>
-            <button class="signup">Sign Up</button>
+            <button className={styles.signupbutton}>Sign Up</button>
         </>
     );
 };
