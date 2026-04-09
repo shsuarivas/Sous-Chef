@@ -67,24 +67,8 @@ export default function MainPage() {
                     <div className={styles.titlebar_div}>
                         <TitleBar />
                     </div>
-                    <div className={styles.page_div}> 
+                        <div className={styles.page_div}> 
                         {currentPageContent} 
-                        <div className={styles.dish_div}>
-                         <button className = {styles.dish_module} onClick={() => window.location.href = 'https://www.pinterest.com/'}>
-                        Kosher</button>
-                        <button className = {styles.dish_module} onClick={() => window.location.href = 'https://www.pinterest.com/'}>
-                        Japanses</button>
-                        <button className = {styles.dish_module} onClick={() => window.location.href = 'https://www.pinterest.com/'}>
-                        Brunch</button>
-                        </div>
-                        <div className = {styles.dish_div}>
-                        <button className = {styles.dish_module} onClick={() => window.location.href = 'https://www.pinterest.com/'}>
-                        Dinner</button>
-                        <button className = {styles.dish_module} onClick={() => window.location.href = 'https://www.pinterest.com/'}>
-                        Vegan</button>
-                        <button className = {styles.dish_module} onClick={() => window.location.href = 'https://www.pinterest.com/'}>
-                        Place Holder</button>
-                        </div>
                     </div>
                 </div>
             </div>
