@@ -1,0 +1,7 @@
+@use '../../../../constants.module.scss' as constants;
+
+.logo {
+  height: constants.$titlebar-thickness - 0.8rem;
+  width: auto;
+  display: block;
+}
