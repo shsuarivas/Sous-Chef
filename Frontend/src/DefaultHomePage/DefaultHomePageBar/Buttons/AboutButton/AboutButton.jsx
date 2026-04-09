@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 import styles from './AboutButton.module.scss';
 
 export default function AboutButton(){
     return (
         <>
-        <a href = "/about" target="_blank">
+        <Link to="/about">
              <button className={styles.aboutbutton}>About</button>
-        </a>
+        </Link>
         </>
     );
 };
