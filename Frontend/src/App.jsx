@@ -8,7 +8,7 @@ import DefaultHomePage from './DefaultHomePage/DefaultHomePage.jsx';
 function App() {
     return (
 		<>
-			<MainPage/>
+			<DefaultHomePage/>
 		</>
 
 	)
