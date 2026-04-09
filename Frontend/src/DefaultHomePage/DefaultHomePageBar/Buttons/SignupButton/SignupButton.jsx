@@ -1,9 +1,14 @@
 
 
+import { Link } from 'react-router-dom';
+import styles from './SigninButton.module.scss';
+
 export default function SignupButton(){
     return (
         <>
-            <button class="signup">Sign Up</button>
+            <Link to="/signup">
+                <button className={styles.signupbutton}>Sign Up</button>
+            </Link>
         </>
     );
 };

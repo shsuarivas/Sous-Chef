@@ -23,10 +23,12 @@ export default function HomePage(){
                     <div className={styles.titlebar_div}>
                         <PageBar />
                     </div>
-                    <nav>
-                        <WelcomingHeader />
-                    </nav>
-                    <HomeImage />
+                    <div className={styles.image_container}>
+                        <HomeImage />
+                        <div className={styles.welcome_overlay}>
+                            <WelcomingHeader />
+                        </div>
+                    </div>
                 </div>
                 </div>
             </>
