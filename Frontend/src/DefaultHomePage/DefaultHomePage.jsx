@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import styles from './DefaultHomePage.module.scss';
-import PageBar from './DefaultHomePageBar/DefaultHomePageBar/'
+import PageBar from './DefaultHomePageBar/DefaultHomePageBar.jsx'
 import WelcomingHeader from './TextComponents/Welcome.jsx'
 import HomeImage from './Images/Image.jsx'
 
