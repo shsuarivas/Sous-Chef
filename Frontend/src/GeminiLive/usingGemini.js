@@ -39,19 +39,19 @@ export function useGeminiLive() {
   const startMic = useCallback(async () => {
   try {
     const ctx = audioContextRef.current;
-    console.log("1️⃣ AudioContext:", ctx);
+    console.log("AudioContext:", ctx);
     
     streamRef.current = await navigator.mediaDevices.getUserMedia({ audio: true });
-    console.log("2️⃣ Got mic stream");
+    console.log("Got mic stream");
     
     const source = ctx.createMediaStreamSource(streamRef.current);
-    console.log("3️⃣ Created source");
+    console.log("Created source");
     
     await ctx.audioWorklet.addModule("/audio-processor.js");
-    console.log("4️⃣ Loaded worklet");
+    console.log("Loaded worklet");
     
     const processor = new AudioWorkletNode(ctx, "pcm-processor");
-    console.log("5️⃣ Created processor node");
+    console.log("Created processor node");
     
     processorRef.current = processor;
     processor.port.onmessage = (e) => {
@@ -67,28 +67,24 @@ export function useGeminiLive() {
 
     //source.connect(processor);
     processor.connect(ctx.destination);
-    console.log("6️⃣ Mic fully connected");
+    console.log("Mic fully connected");
     
   } catch (e) {
-    console.error("❌ startMic failed at:", e.message, e);
+    console.error("startMic failed at:", e.message, e);
   }
 }, []);
   // ── Connect ────────────────────────────────────────────────────────────────
   const connect = useCallback(async () => {
     setStatus("connecting");
 
-    // 1. Fetch ephemeral token from your backend
-    //const { token } = await fetch("/api/token").then((r) => r.json());
-    // If running in Docker/production
     const { token } = await fetch('http://localhost:8080/api/token').then(r => r.json());
 
-    // 2. Open WebSocket (token used as access_token query param)
+
     const ws = new WebSocket(`${WS_BASE}?access_token=${token}`);
     wsRef.current = ws;
     audioContextRef.current = new AudioContext({ sampleRate: 16000 });
 
     ws.onopen = () => {
-      // 3. Send session setup as first message
       ws.send(JSON.stringify({
         setup: {
         model: "gemini-3.1-flash-live-preview",
@@ -98,27 +94,6 @@ export function useGeminiLive() {
     };
 
 ws.onmessage = async (event) => {
-  let msg;
-  
-  // Handle both binary blobs and text
-  if (event.data instanceof Blob) {
-    const text = await event.data.text();
-    try {
-      msg = JSON.parse(text);
-      console.log("📨 Blob parsed as JSON:", JSON.stringify(msg));
-    } catch (e) {
-      console.log("📦 Binary blob (not JSON):", text);
-      return;
-    }
-  } else {
-    try {
-      msg = JSON.parse(event.data);
-      console.log("📨 Message:", JSON.stringify(msg));
-    } catch (e) {
-      console.log("Non-JSON message:", event.data);
-      return;
-    }
-  }
 
   if (msg.setupComplete) {
     setStatus("active");
@@ -142,7 +117,7 @@ ws.onmessage = async (event) => {
 
     ws.onerror = () => setStatus("error");
     ws.onclose = (e) => {
-      console.log("🔴 WS Closed:", e.code, e.reason);
+      console.log("WS Closed:", e.code, e.reason);
       setStatus("idle");
     };
   }, [startMic, playAudioChunk]);
