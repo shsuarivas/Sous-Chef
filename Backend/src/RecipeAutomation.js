@@ -1,5 +1,5 @@
-const pool = require('./db');
-const recipes = require('./recipes.json');
+import pool from '../db.js';
+import recipes from '../recipes.json' with {type: 'json'};
 
 async function insertRecipe(client, recipe) 
 {
