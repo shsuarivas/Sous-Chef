@@ -16,30 +16,30 @@ export default function SettingsPage() {
                         <div className={styles.fields_entry}>
                             <div className={styles.field_left}>
                                 <div className={styles.field_title}>Username</div>
-                                <div className={styles.field_value}>test</div>
+                                <div className={styles.field_value}>JaneDoe</div>
                             </div>
                             <div className={styles.field_right}>
-                                Edit
+                                <button >Edit</button>
                             </div>
                         </div>
 
                         <div className={styles.fields_entry}>
                             <div className={styles.field_left}>
                                 <div className={styles.field_title}>Email</div>
-                                <div className={styles.field_value}>test@test.test</div>
+                                <div className={styles.field_value}>email@domain.com</div>
                             </div>
                             <div className={styles.field_right}>
-                                Edit
+                                <button>Edit</button>
                             </div>
                         </div>
 
                         <div className={styles.fields_entry}>
                             <div className={styles.field_left}>
                                 <div className={styles.field_title}>Phone #</div>
-                                <div className={styles.field_value}>555-555-5555</div>
+                                <div className={styles.field_value}>936-555-5555</div>
                             </div>
                             <div className={styles.field_right}>
-                                Edit
+                                <button>Edit</button>
                             </div>
                         </div>
                     </div>
