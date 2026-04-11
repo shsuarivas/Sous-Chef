@@ -3,6 +3,7 @@ import recipes from '../recipes.json' with {type: 'json'};
 
 async function insertRecipe(client, recipe) 
 {
+  //console.log(`Inserting recipe: ${recipe.name}`);
   // Insert recipe
   await client.query(
     'INSERT INTO recipes (recipe_name, recipe_description, servings, time_to_cook, created_by) VALUES ($1, $2, $3, $4, $5)',
@@ -14,15 +15,16 @@ async function insertRecipe(client, recipe)
 
   // insert steps
   for (const step of recipe.steps) {
-    await client.query('INSERT INTO steps (recipe_id, step_number, instruction) VALUES ($1, $2, $3)', [recipeId, step.number, step.instruction]);
+    //console.log(`Inserting step: ${step.step_number}`);
+    await client.query('INSERT INTO steps (recipe_id, step_number, instruction) VALUES ($1, $2, $3)', [recipeId, step.step_number, step.instruction]);
   }
 
   // insert ingredients
   for (const ingredient of recipe.ingredients) {
-    await client.query('INSERT INTO ingredients (ingredient_name) VALUES ($1)', [ingredient.name]);
+    await client.query('INSERT INTO ingredients (ingredient_name) VALUES ($1)', [ingredient.ingredient_name]);
 
     // Get the ingredient ID
-    const ingredientId = (await client.query('SELECT id FROM ingredients WHERE ingredient_name = $1', [ingredient.name])).rows[0].id;
+    const ingredientId = (await client.query('SELECT id FROM ingredients WHERE ingredient_name = $1', [ingredient.ingredient_name])).rows[0].id;
 
     // recipe and ingredient relationship
     await client.query(
@@ -32,9 +34,11 @@ async function insertRecipe(client, recipe)
   }
 
   // insert tags
-  for (const tagId of recipe.tagIds) {
+  /*
+  for (const tagId of recipe.tags) {
     await client.query('INSERT INTO recipe_tags (recipe_id, tag_id) VALUES ($1, $2)',[recipeId, tagId]);
   }
+  */
 
   // insert image
   if (recipe.imageUrl) {
@@ -51,6 +55,7 @@ async function LoopThroughRecipes()
     await client.query('BEGIN');
     for (const recipe of recipes) 
     {
+      console.log(`Processing recipe: ${recipe.name}`);
       await insertRecipe(client, recipe);
     }
     await client.query('COMMIT');
@@ -59,6 +64,7 @@ async function LoopThroughRecipes()
   catch (err) 
   {
     await client.query('ROLLBACK');
+    console.error('Error:', err.message);
   } 
   
   finally
@@ -68,4 +74,10 @@ async function LoopThroughRecipes()
   }
 }
 
-LoopThroughRecipes();
+const client = await pool.connect();
+await client.query('BEGIN');
+await insertRecipe(client, recipes[0]);
+await client.query('COMMIT');
+client.release();
+pool.end();
+//LoopThroughRecipes();
