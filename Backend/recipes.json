@@ -317,7 +317,7 @@
     "ingredients": [
       {
         "ingredient_name": "olive oil",
-        "quantity": 0.25,
+        "quantity": 1.25,
         "unit": "cup"
       },
       {
@@ -357,7 +357,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.5,
+        "quantity": 1.5,
         "unit": "tsp"
       },
       {
@@ -383,16 +383,6 @@
       {
         "ingredient_name": "sugar",
         "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "olive oil",
-        "quantity": 1,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 1,
         "unit": "tsp"
       },
       {
@@ -2206,7 +2196,7 @@
     "ingredients": [
       {
         "ingredient_name": "salted butter, divided",
-        "quantity": 4,
+        "quantity": 7,
         "unit": "tbsp"
       },
       {
@@ -2226,12 +2216,12 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.75,
         "unit": "tsp"
       },
       {
         "ingredient_name": "black pepper",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -2261,7 +2251,7 @@
       },
       {
         "ingredient_name": "all-purpose flour",
-        "quantity": 2,
+        "quantity": 2.6667,
         "unit": "tbsp"
       },
       {
@@ -2270,18 +2260,8 @@
         "unit": "cup"
       },
       {
-        "ingredient_name": "salted butter, divided",
-        "quantity": 3,
-        "unit": "tbsp"
-      },
-      {
         "ingredient_name": "buttermilk",
         "quantity": 0.5,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "all-purpose flour",
-        "quantity": 0.6666666666666666,
         "unit": "cup"
       },
       {
@@ -2290,18 +2270,8 @@
         "unit": "tsp"
       },
       {
-        "ingredient_name": "salt",
-        "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "granulated sugar",
         "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "black pepper",
-        "quantity": 0.25,
         "unit": "tsp"
       },
       {
@@ -2715,20 +2685,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/zesty-tomato-artichoke-pasta/",
     "scrapedAt": "2026-04-05T21:25:53.787Z"
-  },
-  {
-    "name": "Ground Turkey Recipes",
-    "description": "Over 15+ Easy Ground Turkey recipes including ground turkey meatballs, ground turkey burgers, turkey chili, and more!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/10/Ground-Turkey-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/ground-turkey-recipes/",
-    "scrapedAt": "2026-04-05T21:25:55.148Z"
   },
   {
     "name": "Chicken Cacciatore",
@@ -3349,7 +3305,7 @@
       },
       {
         "ingredient_name": "sugar",
-        "quantity": 1,
+        "quantity": 1.5,
         "unit": "tbsp"
       },
       {
@@ -3381,11 +3337,6 @@
         "ingredient_name": "ricotta",
         "quantity": 0.5,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "sugar",
-        "quantity": 0.5,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "jam",
@@ -5863,20 +5814,6 @@
     "scrapedAt": "2026-04-05T21:26:37.194Z"
   },
   {
-    "name": "Pineapple BBQ Chicken Meal Prep",
-    "description": "This Pineapple BBQ Chicken Meal Prep includes sweet and tangy chicken, rich and savory coconut rice, and tender broccoli florets.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2017/10/Pineapple-BBQ-Chicken-Meal-Prep-H1.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/pineapple-bbq-chicken-meal-prep/",
-    "scrapedAt": "2026-04-05T21:26:38.524Z"
-  },
-  {
     "name": "Lemon Garlic Roasted Asparagus",
     "description": "Lemon Garlic Roasted Asparagus is an easy side dish with vibrant flavors that pair well with grilled or roasted meat.",
     "servings": 4,
@@ -6039,20 +5976,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/slow-cooker-hot-buttered-apples/",
     "scrapedAt": "2026-04-05T21:26:41.284Z"
-  },
-  {
-    "name": "Meal Prep 101: A Beginners Guide to Meal Prepping - Budget Bytes",
-    "description": "Demystify the who, what, and how of meal prepping with this meal prep 101 beginners guide. Make your meals easier, convenient, and more efficient with this simple method.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2018/06/Meal-Prep-101-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/meal-prep-101-a-beginners-guide/",
-    "scrapedAt": "2026-04-05T21:26:42.620Z"
   },
   {
     "name": "Shredded Taco Beef",
@@ -7442,18 +7365,13 @@
       },
       {
         "ingredient_name": "olive oil",
-        "quantity": 2,
+        "quantity": 2.3333,
         "unit": "tbsp"
       },
       {
         "ingredient_name": "Salt and Pepper",
         "quantity": null,
         "unit": "pinch"
-      },
-      {
-        "ingredient_name": "olive oil",
-        "quantity": 0.3333333333333333,
-        "unit": "cup"
       },
       {
         "ingredient_name": "balsamic vinegar",
@@ -7737,7 +7655,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.5,
+        "quantity": 0.625,
         "unit": "tsp"
       },
       {
@@ -7758,11 +7676,6 @@
       {
         "ingredient_name": "garlic powder",
         "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.125,
         "unit": "tsp"
       },
       {
@@ -8265,20 +8178,6 @@
     "scrapedAt": "2026-04-05T21:27:09.495Z"
   },
   {
-    "name": "New Year's Eve Appetizers",
-    "description": "20+ Easy and Budget-friendly New Year’s Eve Appetizers perfect for feeding a crowd or a low-key night in your cozy pajamas.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/12/New-Years-Eve-Appetizers-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/new-years-eve-appetizers/",
-    "scrapedAt": "2026-04-05T21:27:10.676Z"
-  },
-  {
     "name": "Vegan Peanut Stew",
     "description": "With a rich peanut and tomato sauce, sweet potatoes, collard greens, and crunchy peanuts, this Vegan Peanut Stew is comfort in a bowl!",
     "servings": 6,
@@ -8751,20 +8650,6 @@
     "scrapedAt": "2026-04-05T21:27:16.816Z"
   },
   {
-    "name": "How to Freeze Bananas - Step by Step Guide - Budget Bytes",
-    "description": "A simple, step by step tutorial on how to freeze bananas for user later in banana bread, smoothies, muffins, and more. Recipe ideas included!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2020/09/Bagged-Frozen-Bananas.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/how-to-freeze-bananas/",
-    "scrapedAt": "2026-04-05T21:27:18.046Z"
-  },
-  {
     "name": "One Pot Spinach and Artichoke Pasta",
     "description": "This delicious and simple One Pot Spinach and Artichoke Pasta that takes less than 30 minutes to make and is packed with vegetables.",
     "servings": 6,
@@ -9073,7 +8958,7 @@
     "ingredients": [
       {
         "ingredient_name": "all-purpose flour",
-        "quantity": 0.333,
+        "quantity": 2.083,
         "unit": "cup"
       },
       {
@@ -9095,11 +8980,6 @@
         "ingredient_name": "small apples",
         "quantity": 2,
         "unit": null
-      },
-      {
-        "ingredient_name": "all-purpose flour",
-        "quantity": 1.75,
-        "unit": "cup"
       },
       {
         "ingredient_name": "baking powder",
@@ -9293,20 +9173,6 @@
     "scrapedAt": "2026-04-05T21:27:24.072Z"
   },
   {
-    "name": "Easy Potato Recipes",
-    "description": "We’ve put together all of our delicious and easy potato recipes from the best potato salads, creamy potato soups and crispy, roasted potato recipes!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/06/Easy-Potato-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/easy-potato-recipes/",
-    "scrapedAt": "2026-04-05T21:27:25.330Z"
-  },
-  {
     "name": "Pico de Gallo",
     "description": "This fresh and easy pico de gallo only takes a few minutes to make and adds vibrant flavor to your tacos, enchiladas, nachos, and more.",
     "servings": 12,
@@ -9484,20 +9350,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/stir-fry-beef-noodles/",
     "scrapedAt": "2026-04-05T21:27:27.758Z"
-  },
-  {
-    "name": "Best 4th Of July Recipes",
-    "description": "We've rounded the best 4th of July recipes to make your Independence Day delicious, including easy recipes, side dishes, main dishes, and desserts.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/06/Best-4th-of-July-Recipes-PIN1.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/best-4th-of-july-recipes/",
-    "scrapedAt": "2026-04-05T21:27:28.972Z"
   },
   {
     "name": "Kale Pesto",
@@ -9820,7 +9672,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.375,
         "unit": "tsp"
       },
       {
@@ -9851,11 +9703,6 @@
       {
         "ingredient_name": "ginger powder",
         "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.125,
         "unit": "tsp"
       },
       {
@@ -10083,20 +9930,6 @@
     "scrapedAt": "2026-04-05T21:27:37.607Z"
   },
   {
-    "name": "Easy Chili Recipes",
-    "description": "We’ve rounded up the best chili recipes to enjoy this season including classic homemade chili, white chicken chili recipes, and slow cooker chili recipes!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/09/Easy-Chili-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/chili-recipes/",
-    "scrapedAt": "2026-04-05T21:27:38.791Z"
-  },
-  {
     "name": "Italian Sausage and White Bean Skillet",
     "description": "It doesn't get easier than this high protein, high fiber, high FLAVOR Italian Sausage and White Bean Skillet!&nbsp;",
     "servings": 4,
@@ -10201,7 +10034,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.375,
         "unit": "tsp"
       },
       {
@@ -10223,11 +10056,6 @@
         "ingredient_name": "garlic, minced",
         "quantity": 1,
         "unit": "clove"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.125,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "15oz. can cannellini beans",
@@ -10747,7 +10575,7 @@
       },
       {
         "ingredient_name": "granulated sugar",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "cup"
       },
       {
@@ -10767,7 +10595,7 @@
       },
       {
         "ingredient_name": "cocoa powder",
-        "quantity": 0.25,
+        "quantity": 2.25,
         "unit": "cup"
       },
       {
@@ -10789,16 +10617,6 @@
         "ingredient_name": "brown sugar",
         "quantity": 0.5,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "granulated sugar",
-        "quantity": 0.25,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "cocoa powder",
-        "quantity": 2,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "salt",
@@ -11460,34 +11278,6 @@
     "scrapedAt": "2026-04-05T21:27:55.788Z"
   },
   {
-    "name": "Avocado Recipes",
-    "description": "Easy, budget-friendly, Avocado recipes including avocado salads, avocado dressings, avocado breakfast recipes, and more!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2024/02/Avocado-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/avocado-recipes/",
-    "scrapedAt": "2026-04-05T21:27:56.952Z"
-  },
-  {
-    "name": "How to Cut and Freeze Pineapple",
-    "description": "How to cut and freeze pineapple when it's on sale, so you can have this fresh, juicy, and tangy tropical fruit all year long.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2019/05/How-to-Cut-and-Freeze-Pineapple-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/how-to-cut-and-freeze-pineapple/",
-    "scrapedAt": "2026-04-05T21:27:58.163Z"
-  },
-  {
     "name": "Slow Cooker 5 Spice Chicken",
     "description": "This Slow Cooker Chinese 5 Spice Chicken is tender, juicy, and infused with intoxicating flavor.&nbsp;",
     "servings": 10,
@@ -11910,7 +11700,7 @@
       },
       {
         "ingredient_name": "brown sugar",
-        "quantity": 2,
+        "quantity": 2.25,
         "unit": "tbsp"
       },
       {
@@ -11920,7 +11710,7 @@
       },
       {
         "ingredient_name": "cinnamon",
-        "quantity": 0.5,
+        "quantity": 1.5,
         "unit": "tsp"
       },
       {
@@ -11931,11 +11721,6 @@
       {
         "ingredient_name": "unsweetened applesauce",
         "quantity": 1.5,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "brown sugar",
-        "quantity": 0.25,
         "unit": "cup"
       },
       {
@@ -11955,11 +11740,6 @@
       },
       {
         "ingredient_name": "baking powder",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "cinnamon",
         "quantity": 1,
         "unit": "tsp"
       },
@@ -12892,20 +12672,6 @@
     "scrapedAt": "2026-04-05T21:28:16.397Z"
   },
   {
-    "name": "Cheap And Easy Family Dinners",
-    "description": "This list of Cheap & Easy Family Dinners has many fun, fresh family meals that serve at least four people and without a lot of work!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/03/Cheap-Easy-Family-Dinner-Recipes-H1.png",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/cheap-and-easy-family-dinners/",
-    "scrapedAt": "2026-04-05T21:28:17.695Z"
-  },
-  {
     "name": "Wild Rice Stuffed Acorn Squash",
     "description": "Wild Rice Stuffed Acorn Squash makes a great vegetarian (or vegan) Thanksgiving main dish, or a delicious dinner for any chilly fall evening!",
     "servings": 4,
@@ -12919,12 +12685,12 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.125,
+        "quantity": 0.375,
         "unit": "tsp"
       },
       {
         "ingredient_name": "pepper",
-        "quantity": 0.125,
+        "quantity": 0.375,
         "unit": "tsp"
       },
       {
@@ -12965,16 +12731,6 @@
       {
         "ingredient_name": "dried thyme",
         "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "pepper",
-        "quantity": 0.25,
         "unit": "tsp"
       },
       {
@@ -14156,7 +13912,7 @@
     "ingredients": [
       {
         "ingredient_name": "olive oil",
-        "quantity": 1,
+        "quantity": 4,
         "unit": "tbsp"
       },
       {
@@ -14197,11 +13953,6 @@
       {
         "ingredient_name": "lemon juice",
         "quantity": 1.5,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "olive oil",
-        "quantity": 3,
         "unit": "tbsp"
       },
       {
@@ -14427,7 +14178,7 @@
       },
       {
         "ingredient_name": "cooking oil",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tbsp"
       },
       {
@@ -14437,12 +14188,12 @@
       },
       {
         "ingredient_name": "cayenne pepper",
-        "quantity": null,
+        "quantity": 0.125,
         "unit": "pinch"
       },
       {
         "ingredient_name": "salt",
-        "quantity": null,
+        "quantity": 0.25,
         "unit": "pinch"
       },
       {
@@ -14461,16 +14212,6 @@
         "unit": "tsp"
       },
       {
-        "ingredient_name": "cayenne pepper",
-        "quantity": 0.125,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "freshly ground pepper",
         "quantity": null,
         "unit": null
@@ -14479,11 +14220,6 @@
         "ingredient_name": "boneless, skinless chicken breasts",
         "quantity": 2,
         "unit": null
-      },
-      {
-        "ingredient_name": "cooking oil",
-        "quantity": 1,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "green beans",
@@ -15309,28 +15045,18 @@
       },
       {
         "ingredient_name": "milk",
-        "quantity": 0.25,
+        "quantity": 1.25,
         "unit": "cup"
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 0.5,
+        "quantity": 0.75,
         "unit": "tsp"
       },
       {
         "ingredient_name": "powdered sugar",
         "quantity": 0.5,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "milk",
-        "quantity": 1,
-        "unit": "tbsp"
       }
     ],
     "steps": [
@@ -15588,12 +15314,12 @@
       },
       {
         "ingredient_name": "sugar",
-        "quantity": 0.6666666666666666,
+        "quantity": 1.6667,
         "unit": "cup"
       },
       {
         "ingredient_name": "cinnamon",
-        "quantity": 2,
+        "quantity": 2.5,
         "unit": "tsp"
       },
       {
@@ -15610,16 +15336,6 @@
         "ingredient_name": "chocolate chips",
         "quantity": 0.25,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "sugar",
-        "quantity": 1,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "cinnamon",
-        "quantity": 0.5,
-        "unit": "tsp"
       }
     ],
     "steps": [
@@ -15702,18 +15418,13 @@
       },
       {
         "ingredient_name": "olive oil",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tbsp"
       },
       {
         "ingredient_name": "to 1 cup water",
         "quantity": 0.75,
         "unit": null
-      },
-      {
-        "ingredient_name": "olive oil",
-        "quantity": 1,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "sauce",
@@ -16344,20 +16055,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/slow-cooker-steel-cut-oatmeal/",
     "scrapedAt": "2026-04-05T21:29:06.052Z"
-  },
-  {
-    "name": "BBQ Side Dishes",
-    "description": "20 Easy BBQ Side Dishes that are perfect for your next BBQ cookout including classic bbq sides, pasta salads, and easy bbq side dishes!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/08/BBQ-Side-Dishes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/bbq-side-dishes/",
-    "scrapedAt": "2026-04-05T21:29:07.489Z"
   },
   {
     "name": "Yogurt Marinated Chicken",
@@ -17606,7 +17303,7 @@
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
@@ -17652,11 +17349,6 @@
       {
         "ingredient_name": "Worcestershire sauce",
         "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.5,
         "unit": "tsp"
       }
     ],
@@ -18066,7 +17758,7 @@
     "ingredients": [
       {
         "ingredient_name": "all-purpose flour",
-        "quantity": 1.5,
+        "quantity": 3.5,
         "unit": "cup"
       },
       {
@@ -18081,7 +17773,7 @@
       },
       {
         "ingredient_name": "cinnamon",
-        "quantity": 0.25,
+        "quantity": 0.375,
         "unit": "tsp"
       },
       {
@@ -18096,12 +17788,12 @@
       },
       {
         "ingredient_name": "granulated sugar",
-        "quantity": 0.5,
+        "quantity": 2.5,
         "unit": "cup"
       },
       {
         "ingredient_name": "melted butter",
-        "quantity": 4,
+        "quantity": 5,
         "unit": "tbsp"
       },
       {
@@ -18123,26 +17815,6 @@
         "ingredient_name": "blueberries",
         "quantity": 1,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "melted butter",
-        "quantity": 1,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "granulated sugar",
-        "quantity": 2,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "cinnamon",
-        "quantity": 0.125,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "all-purpose flour",
-        "quantity": 2,
-        "unit": "tbsp"
       }
     ],
     "steps": [
@@ -20455,7 +20127,7 @@
       },
       {
         "ingredient_name": "cornstarch",
-        "quantity": 1,
+        "quantity": 3,
         "unit": "tbsp"
       },
       {
@@ -20467,11 +20139,6 @@
         "ingredient_name": "of salt",
         "quantity": null,
         "unit": "pinch"
-      },
-      {
-        "ingredient_name": "cornstarch",
-        "quantity": 2,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "neutral oil",
@@ -20554,7 +20221,7 @@
       },
       {
         "ingredient_name": "olive oil",
-        "quantity": 2,
+        "quantity": 3,
         "unit": "tbsp"
       },
       {
@@ -20594,7 +20261,7 @@
       },
       {
         "ingredient_name": "cayenne",
-        "quantity": 0.25,
+        "quantity": 0.375,
         "unit": "tsp"
       },
       {
@@ -20608,11 +20275,6 @@
         "unit": null
       },
       {
-        "ingredient_name": "olive oil",
-        "quantity": 1,
-        "unit": "tbsp"
-      },
-      {
         "ingredient_name": "smoked paprika",
         "quantity": 0.5,
         "unit": "tsp"
@@ -20621,16 +20283,6 @@
         "ingredient_name": "garlic powder",
         "quantity": 0.25,
         "unit": "tsp"
-      },
-      {
-        "ingredient_name": "cayenne",
-        "quantity": 0.125,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "Salt and Pepper to taste",
-        "quantity": null,
-        "unit": null
       }
     ],
     "steps": [
@@ -20706,7 +20358,7 @@
       },
       {
         "ingredient_name": "soy sauce",
-        "quantity": 0.5,
+        "quantity": 2.5,
         "unit": "tsp"
       },
       {
@@ -20718,11 +20370,6 @@
         "ingredient_name": "black pepper",
         "quantity": null,
         "unit": null
-      },
-      {
-        "ingredient_name": "soy sauce",
-        "quantity": 2,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "rice vinegar",
@@ -22275,7 +21922,7 @@
       },
       {
         "ingredient_name": "soy sauce",
-        "quantity": 2,
+        "quantity": 3,
         "unit": "tbsp"
       },
       {
@@ -22285,7 +21932,7 @@
       },
       {
         "ingredient_name": "brown sugar",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tbsp"
       },
       {
@@ -22319,17 +21966,7 @@
         "unit": "tbsp"
       },
       {
-        "ingredient_name": "soy sauce",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "grated fresh ginger",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "brown sugar",
         "quantity": 1,
         "unit": "tsp"
       },
@@ -22414,20 +22051,6 @@
     "scrapedAt": "2026-04-05T21:30:42.441Z"
   },
   {
-    "name": "Spoil mom with our favorite Mother's Day recipes!",
-    "description": "A roundup of fun and delicious recipes for Mother's Day that are simple, easy, and totally delicious. Includes breakfast, lunch, dinner, and dessert!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2015/05/Best-Mothers-Day-Recipes-Roundup-Featured.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/mothers-day-recipe-roundup/",
-    "scrapedAt": "2026-04-05T21:30:45.496Z"
-  },
-  {
     "name": "Herby Potato Salad",
     "description": "This Herby Potato Salad has tender baby potatoes, a bright and zesty lemon-Dijon vinaigrette, and a healthy dose of fresh herbs.",
     "servings": 4,
@@ -22461,7 +22084,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 1.25,
         "unit": "tsp"
       },
       {
@@ -22473,11 +22096,6 @@
         "ingredient_name": "baby potatoes",
         "quantity": 1.5,
         "unit": "lb"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 1,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "fresh parsley",
@@ -23028,7 +22646,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 1.25,
         "unit": "tsp"
       },
       {
@@ -23123,11 +22741,6 @@
       },
       {
         "ingredient_name": "onion powder",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
         "quantity": 1,
         "unit": "tsp"
       },
@@ -23308,20 +22921,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/sourdough-chocolate-chip-scones/",
     "scrapedAt": "2026-04-05T21:30:58.101Z"
-  },
-  {
-    "name": "Broccoli Recipes",
-    "description": "Here are 18 of our favorite Broccoli Recipes including roasted broccoli recipes, broccoli salad recipes, broccoli cheddar soup, and more!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/08/Broccoli-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/broccoli-recipes/",
-    "scrapedAt": "2026-04-05T21:30:59.528Z"
   },
   {
     "name": "No Knead English Muffin Bread",
@@ -23622,7 +23221,7 @@
       },
       {
         "ingredient_name": "cooking oil",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tbsp"
       },
       {
@@ -23634,11 +23233,6 @@
         "ingredient_name": "water",
         "quantity": 1,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "cooking oil",
-        "quantity": 1,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "tomato paste",
@@ -23837,7 +23431,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -23863,11 +23457,6 @@
       {
         "ingredient_name": "dried parsley",
         "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
         "unit": "tsp"
       },
       {
@@ -25264,7 +24853,7 @@
       },
       {
         "ingredient_name": "lemon juice",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tsp"
       },
       {
@@ -25294,7 +24883,7 @@
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 2,
+        "quantity": 3,
         "unit": "tsp"
       },
       {
@@ -25316,16 +24905,6 @@
         "ingredient_name": "powdered sugar",
         "quantity": 3,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "lemon juice",
-        "quantity": 1,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "crushed walnuts",
@@ -26116,7 +25695,7 @@
       },
       {
         "ingredient_name": "water",
-        "quantity": 0.5,
+        "quantity": 3.5,
         "unit": "cup"
       },
       {
@@ -26136,7 +25715,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
@@ -26153,16 +25732,6 @@
         "ingredient_name": "cornmeal",
         "quantity": 1,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "water",
-        "quantity": 3,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.5,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "butter",
@@ -27608,20 +27177,6 @@
     "scrapedAt": "2026-04-05T21:32:10.835Z"
   },
   {
-    "name": "Best Spinach Recipes",
-    "description": "21 of our Best Spinach Recipes including spinach breakfast recipes, spinach salad recipes, chicken and spinach recipes, and more!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/08/Best-Spinach-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/spinach-recipes/",
-    "scrapedAt": "2026-04-05T21:32:12.257Z"
-  },
-  {
     "name": "Green Chile Turkey Burgers",
     "description": "These Green Chile Turkey Burgers can't be beat for a fast, flavorful weeknight dinner. Healthy, ready in about 30 minutes, and full of southwest flavor.&nbsp;",
     "servings": 5,
@@ -28481,7 +28036,7 @@
       },
       {
         "ingredient_name": "dried oregano",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
@@ -28508,11 +28063,6 @@
         "ingredient_name": "parsley, chopped",
         "quantity": 2,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "dried oregano",
-        "quantity": 0.5,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "cumin",
@@ -29492,18 +29042,13 @@
       },
       {
         "ingredient_name": "garlic",
-        "quantity": 1,
+        "quantity": 3,
         "unit": "clove"
       },
       {
         "ingredient_name": "olive oil",
         "quantity": 1,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "garlic",
-        "quantity": 2,
-        "unit": "clove"
       },
       {
         "ingredient_name": "sweet potato",
@@ -29875,7 +29420,7 @@
     "ingredients": [
       {
         "ingredient_name": "olive oil",
-        "quantity": 0.25,
+        "quantity": 1.25,
         "unit": "cup"
       },
       {
@@ -29902,11 +29447,6 @@
         "ingredient_name": "Freshly Cracked Pepper",
         "quantity": null,
         "unit": null
-      },
-      {
-        "ingredient_name": "olive oil",
-        "quantity": 1,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "kielbasa",
@@ -30468,20 +30008,6 @@
     "scrapedAt": "2026-04-05T21:32:58.543Z"
   },
   {
-    "name": "How To Make Slow Cooker Chicken Broth",
-    "description": "Make an effortless and fully flavored chicken broth in your slow cooker using a leftover chicken carcass, vegetable scraps, and a couple herbs and spices.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2014/10/Broth-Ingredients-in-Cooker.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/slow-cooker-chicken-broth/",
-    "scrapedAt": "2026-04-05T21:32:59.893Z"
-  },
-  {
     "name": "Wilted Spinach Salad",
     "description": "Wilted spinach salad with bacon, white beans, and a tangy Dijon vinaigrette is a quick, easy, and light summer meal.",
     "servings": 4,
@@ -30686,7 +30212,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -30721,11 +30247,6 @@
       },
       {
         "ingredient_name": "dried oregano",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
         "quantity": 0.25,
         "unit": "tsp"
       },
@@ -31920,7 +31441,7 @@
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -31942,11 +31463,6 @@
         "ingredient_name": "butter",
         "quantity": 1,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 0.25,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "powdered sugar",
@@ -32107,7 +31623,7 @@
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 0.5,
+        "quantity": 0.625,
         "unit": "tsp"
       },
       {
@@ -32117,7 +31633,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
@@ -32134,16 +31650,6 @@
         "ingredient_name": "lime",
         "quantity": 0.5,
         "unit": null
-      },
-      {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.125,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.5,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "sour cream",
@@ -32496,7 +32002,7 @@
     "ingredients": [
       {
         "ingredient_name": "cooking oil",
-        "quantity": 1,
+        "quantity": 1.25,
         "unit": "tbsp"
       },
       {
@@ -32546,7 +32052,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 1,
+        "quantity": 1.5,
         "unit": "tsp"
       },
       {
@@ -32580,11 +32086,6 @@
         "unit": "tsp"
       },
       {
-        "ingredient_name": "salt",
-        "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "milk",
         "quantity": 1,
         "unit": "cup"
@@ -32593,11 +32094,6 @@
         "ingredient_name": "large egg",
         "quantity": 1,
         "unit": null
-      },
-      {
-        "ingredient_name": "cooking oil",
-        "quantity": 0.25,
-        "unit": "cup"
       }
     ],
     "steps": [
@@ -32636,34 +32132,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/chili-cornbread-skillet/",
     "scrapedAt": "2026-04-05T21:33:30.256Z"
-  },
-  {
-    "name": "10 Tips for Recipe Success",
-    "description": "These 10 Tips for Recipe Success will help new cooks decode recipes, build intuition, and make new recipes their own.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2018/01/10-Tips-For-Recipe-Success-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/10-tips-for-recipe-success/",
-    "scrapedAt": "2026-04-05T21:33:31.613Z"
-  },
-  {
-    "name": "Easy Kale Recipes",
-    "description": "We’ve gathered 14 of our best easy kale recipes, including delicious kale salad recipes, hearty kale soup recipes, and simple kale pasta recipes!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/07/Easy-Kale-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/easy-kale-recipes/",
-    "scrapedAt": "2026-04-05T21:33:33.022Z"
   },
   {
     "name": "Spicy Shrimp Tomato Pasta",
@@ -32784,22 +32252,22 @@
       },
       {
         "ingredient_name": "Italian seasoning",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
         "ingredient_name": "black pepper",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -32811,26 +32279,6 @@
         "ingredient_name": "Panko breadcrumbs",
         "quantity": 0.25,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "Italian seasoning",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "black pepper",
-        "quantity": 0.25,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "chopped Romaine lettuce",
@@ -33101,20 +32549,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/creamy-spinach-sausage-pasta/",
     "scrapedAt": "2026-04-05T21:33:38.588Z"
-  },
-  {
-    "name": "Christmas Cookies",
-    "description": "13 of our favorite easy Christmas Cookie Recipes including gingerbread cookies, chocolate crinkle cookies, and thumbprint cookies!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/12/Christmas-Cookies-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/christmas-cookies/",
-    "scrapedAt": "2026-04-05T21:33:39.928Z"
   },
   {
     "name": "Cinnamon Pecan Cauli Oats",
@@ -34178,7 +33612,7 @@
       },
       {
         "ingredient_name": "natural peanut butter",
-        "quantity": 0.25,
+        "quantity": 2.25,
         "unit": "cup"
       },
       {
@@ -34220,11 +33654,6 @@
         "ingredient_name": "old-fashioned rolled oats",
         "quantity": 3,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "natural peanut butter",
-        "quantity": 2,
-        "unit": "tbsp"
       }
     ],
     "steps": [
@@ -34300,7 +33729,7 @@
       },
       {
         "ingredient_name": "fish sauce",
-        "quantity": 1,
+        "quantity": 4,
         "unit": "tbsp"
       },
       {
@@ -34327,11 +33756,6 @@
         "ingredient_name": "water",
         "quantity": 0.75,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "fish sauce",
-        "quantity": 3,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "Thai red chili pepper",
@@ -34982,20 +34406,6 @@
     "scrapedAt": "2026-04-05T21:34:07.028Z"
   },
   {
-    "name": "How to Make Brown Butter",
-    "description": "Brown Butter is the liquid gold that makes a recipe pop. Here is a simple step by step tutorial on how to make brown butter.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2016/11/How-to-Make-Brown-Butter.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/make-brown-butter/",
-    "scrapedAt": "2026-04-05T21:34:08.385Z"
-  },
-  {
     "name": "Turkey Pot Pie Recipe",
     "description": "Use leftover Thanksgiving turkey to make this easy Turkey Pot Pie recipe! Filled with veggies, a creamy sauce and topped with a flaky crust.",
     "servings": 8,
@@ -35393,12 +34803,12 @@
       },
       {
         "ingredient_name": "powdered sugar",
-        "quantity": 0.3333333333333333,
+        "quantity": 0.8333,
         "unit": "cup"
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 1,
+        "quantity": 1.25,
         "unit": "tsp"
       },
       {
@@ -35415,16 +34825,6 @@
         "ingredient_name": "egg",
         "quantity": 1,
         "unit": null
-      },
-      {
-        "ingredient_name": "powdered sugar",
-        "quantity": 0.5,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 0.25,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "milk",
@@ -35924,20 +35324,6 @@
     "scrapedAt": "2026-04-05T21:34:20.484Z"
   },
   {
-    "name": "How to Freeze Whole Citrus",
-    "description": "Learn how to freeze whole citrus fruit to save money, reduce waste, and always have flavorful citrus zest and juice on hand.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2018/10/How-to-Freeze-Whole-Citrus-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/how-to-freeze-whole-citrus/",
-    "scrapedAt": "2026-04-05T21:34:21.818Z"
-  },
-  {
     "name": "Blueberry Rhubarb Muffins",
     "description": "These homemade Blueberry Rhubarb Muffins are soft, fluffy, and tender, topped with a buttery streusel topping. Easy and oh-so delicious!",
     "servings": 12,
@@ -35971,7 +35357,7 @@
       },
       {
         "ingredient_name": "all-purpose flour",
-        "quantity": 2,
+        "quantity": 2.25,
         "unit": "cup"
       },
       {
@@ -36016,11 +35402,6 @@
       },
       {
         "ingredient_name": "brown sugar",
-        "quantity": 0.25,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "all-purpose flour",
         "quantity": 0.25,
         "unit": "cup"
       }
@@ -36105,7 +35486,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -36152,11 +35533,6 @@
         "ingredient_name": "fresh chopped parsley",
         "quantity": 0.25,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
       }
     ],
     "steps": [
@@ -36901,7 +36277,7 @@
       },
       {
         "ingredient_name": "granulated sugar",
-        "quantity": 2,
+        "quantity": 3.5,
         "unit": "tbsp"
       },
       {
@@ -36930,11 +36306,6 @@
         "unit": "tsp"
       },
       {
-        "ingredient_name": "granulated sugar",
-        "quantity": 1.5,
-        "unit": "cup"
-      },
-      {
         "ingredient_name": "vegetable oil",
         "quantity": 0.75,
         "unit": "cup"
@@ -36946,7 +36317,7 @@
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 2,
+        "quantity": 3,
         "unit": "tsp"
       },
       {
@@ -36956,7 +36327,7 @@
       },
       {
         "ingredient_name": "strawberry puree",
-        "quantity": 0.75,
+        "quantity": 1.0,
         "unit": "cup"
       },
       {
@@ -36977,16 +36348,6 @@
       {
         "ingredient_name": "powdered sugar",
         "quantity": 3,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "strawberry puree",
-        "quantity": 0.25,
         "unit": "cup"
       }
     ],
@@ -37249,12 +36610,12 @@
       },
       {
         "ingredient_name": "rolled oats",
-        "quantity": 1,
+        "quantity": 1.5,
         "unit": "cup"
       },
       {
         "ingredient_name": "brown sugar",
-        "quantity": 0.25,
+        "quantity": 2.25,
         "unit": "cup"
       },
       {
@@ -37274,7 +36635,7 @@
       },
       {
         "ingredient_name": "cinnamon",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -37298,24 +36659,9 @@
         "unit": "cup"
       },
       {
-        "ingredient_name": "rolled oats",
-        "quantity": 0.5,
-        "unit": "cup"
-      },
-      {
         "ingredient_name": "butter, cold",
         "quantity": 2,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "brown sugar",
-        "quantity": 2,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "cinnamon",
-        "quantity": 0.25,
-        "unit": "tsp"
       }
     ],
     "steps": [
@@ -37523,20 +36869,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/sauteed-corn-tomatoes/",
     "scrapedAt": "2026-04-05T21:34:43.874Z"
-  },
-  {
-    "name": "5 Kitchen Tools I Can't Live Without",
-    "description": "The five most versatile, most used kitchen tools that I can't live without, plus tips for using and buying.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2020/10/Kitchen-Tools-I-Cant-Live-Without-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/most-used-kitchen-tools/",
-    "scrapedAt": "2026-04-05T21:34:45.195Z"
   },
   {
     "name": "Air Fryer Bacon",
@@ -37851,22 +37183,22 @@
       },
       {
         "ingredient_name": "Italian seasoning",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
         "ingredient_name": "red pepper flakes",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
         "ingredient_name": "black pepper",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "tsp"
       },
       {
@@ -37876,7 +37208,7 @@
       },
       {
         "ingredient_name": "butter",
-        "quantity": 2,
+        "quantity": 6,
         "unit": "tbsp"
       },
       {
@@ -37885,34 +37217,9 @@
         "unit": "cup"
       },
       {
-        "ingredient_name": "Italian seasoning",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "garlic powder",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
-      },
-      {
-        "ingredient_name": "red pepper flakes",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "black pepper",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "butter",
-        "quantity": 4,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "garlic, minced",
@@ -37928,31 +37235,6 @@
         "ingredient_name": "Italian shredded cheese blend, divided",
         "quantity": 2,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "Italian seasoning",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "red pepper flakes",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "black pepper",
-        "quantity": 0.25,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "rotini, uncooked",
@@ -38389,20 +37671,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/funfetti-mug-cake/",
     "scrapedAt": "2026-04-05T21:34:58.876Z"
-  },
-  {
-    "name": "How To: Slow Cook Potatoes",
-    "description": "A step by step photo tutorial on how to: slow cook potatoes.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2013/05/6-eat.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/how-to-slow-cook-potatoes/",
-    "scrapedAt": "2026-04-05T21:35:00.173Z"
   },
   {
     "name": "Kale Salad with Toasted Pita and Parmesan",
@@ -39718,17 +38986,17 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
         "ingredient_name": "dried oregano",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -39747,28 +39015,13 @@
         "unit": "tbsp"
       },
       {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "smoked paprika",
         "quantity": 0.5,
         "unit": "tsp"
       },
       {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "onion powder",
         "quantity": 0.125,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "dried oregano",
-        "quantity": 0.25,
         "unit": "tsp"
       },
       {
@@ -39780,11 +39033,6 @@
         "ingredient_name": "dried thyme",
         "quantity": 0.125,
         "unit": "tsp"
-      },
-      {
-        "ingredient_name": "Freshly cracked black pepper",
-        "quantity": null,
-        "unit": null
       },
       {
         "ingredient_name": "lacinato kale",
@@ -39843,7 +39091,7 @@
     "ingredients": [
       {
         "ingredient_name": "all-purpose flour",
-        "quantity": 0.667,
+        "quantity": 2.167,
         "unit": "cup"
       },
       {
@@ -39853,18 +39101,13 @@
       },
       {
         "ingredient_name": "ground cinnamon",
-        "quantity": 2,
+        "quantity": 3.5,
         "unit": "tsp"
       },
       {
         "ingredient_name": "salted butter, cold",
         "quantity": 7,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "all-purpose flour",
-        "quantity": 1.5,
-        "unit": "cup"
       },
       {
         "ingredient_name": "baking powder",
@@ -39888,7 +39131,7 @@
       },
       {
         "ingredient_name": "granulated sugar",
-        "quantity": 0.75,
+        "quantity": 1.0,
         "unit": "cup"
       },
       {
@@ -39905,16 +39148,6 @@
         "ingredient_name": "sour cream, room temperature",
         "quantity": 8,
         "unit": "oz"
-      },
-      {
-        "ingredient_name": "granulated sugar",
-        "quantity": 0.25,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "ground cinnamon",
-        "quantity": 1.5,
-        "unit": "tsp"
       }
     ],
     "steps": [
@@ -40099,7 +39332,7 @@
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 0.125,
+        "quantity": 0.375,
         "unit": "tsp"
       },
       {
@@ -40109,7 +39342,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.125,
+        "quantity": 1.125,
         "unit": "tsp"
       },
       {
@@ -40136,16 +39369,6 @@
         "ingredient_name": "green onions",
         "quantity": 3,
         "unit": null
-      },
-      {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 1,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "all purpose flour",
@@ -40233,7 +39456,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.5,
+        "quantity": 0.75,
         "unit": "tsp"
       },
       {
@@ -40243,7 +39466,7 @@
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 0.25,
+        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -40257,19 +39480,9 @@
         "unit": "cup"
       },
       {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "quick cooking grits",
         "quantity": 1,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.25,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "butter",
@@ -40357,7 +39570,7 @@
       },
       {
         "ingredient_name": "sugar",
-        "quantity": 1,
+        "quantity": 4,
         "unit": "tsp"
       },
       {
@@ -40381,11 +39594,6 @@
         "unit": "lb"
       },
       {
-        "ingredient_name": "sugar",
-        "quantity": 1,
-        "unit": "tbsp"
-      },
-      {
         "ingredient_name": "cornstarch",
         "quantity": 1,
         "unit": "tsp"
@@ -40399,11 +39607,6 @@
         "ingredient_name": "cream cheese, room temperature",
         "quantity": 4,
         "unit": "oz"
-      },
-      {
-        "ingredient_name": "sugar",
-        "quantity": 2,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "large egg, separated",
@@ -40850,7 +40053,7 @@
       },
       {
         "ingredient_name": "sugar",
-        "quantity": 1,
+        "quantity": 3,
         "unit": "tbsp"
       },
       {
@@ -40860,23 +40063,13 @@
       },
       {
         "ingredient_name": "heavy whipping cream",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "cup"
       },
       {
         "ingredient_name": "blueberries",
-        "quantity": 1,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "heavy whipping cream",
-        "quantity": 1,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "sugar",
         "quantity": 2,
-        "unit": "tbsp"
+        "unit": "cup"
       },
       {
         "ingredient_name": "vanilla extract",
@@ -40886,11 +40079,6 @@
       {
         "ingredient_name": "lemon curd",
         "quantity": 0.75,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "blueberries",
-        "quantity": 1,
         "unit": "cup"
       }
     ],
@@ -41073,7 +40261,7 @@
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 0.25,
+        "quantity": 0.75,
         "unit": "tsp"
       },
       {
@@ -41090,11 +40278,6 @@
         "ingredient_name": "granulated sugar",
         "quantity": 1,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 0.5,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "vanilla cream sandwich cookies, crumbled",
@@ -41311,7 +40494,7 @@
       },
       {
         "ingredient_name": "cooking oil",
-        "quantity": 2,
+        "quantity": 4,
         "unit": "tbsp"
       },
       {
@@ -41328,16 +40511,6 @@
         "ingredient_name": "frozen corn kernels, thawed",
         "quantity": 1,
         "unit": "lb"
-      },
-      {
-        "ingredient_name": "cooking oil",
-        "quantity": 2,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "Salt to taste",
-        "quantity": null,
-        "unit": null
       },
       {
         "ingredient_name": "15oz. can black beans",
@@ -41535,7 +40708,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 1.25,
         "unit": "tsp"
       },
       {
@@ -41567,11 +40740,6 @@
         "ingredient_name": "water",
         "quantity": 5,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 1,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "yellow cornmeal",
@@ -41742,7 +40910,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.5,
+        "quantity": 0.75,
         "unit": "tsp"
       },
       {
@@ -41777,11 +40945,6 @@
       },
       {
         "ingredient_name": "onion powder",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
         "quantity": 0.25,
         "unit": "tsp"
       },
@@ -42119,7 +41282,7 @@
       },
       {
         "ingredient_name": "cooking oil",
-        "quantity": 1.5,
+        "quantity": 3.0,
         "unit": "tbsp"
       },
       {
@@ -42151,11 +41314,6 @@
         "ingredient_name": "rice vermicelli or rice sticks",
         "quantity": 8,
         "unit": "oz"
-      },
-      {
-        "ingredient_name": "cooking oil",
-        "quantity": 1.5,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "garlic",
@@ -44338,20 +43496,6 @@
     "scrapedAt": "2026-04-05T21:36:34.445Z"
   },
   {
-    "name": "Easy Chickpea Recipes",
-    "description": "The ultimate go-to list for Easy Chickpea Recipes featuring easy chickpea salads, hearty soups and creamy chickpea curry recipes!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/06/Easy-Chickpea-Recipes-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/easy-chickpea-recipes/",
-    "scrapedAt": "2026-04-05T21:36:35.821Z"
-  },
-  {
     "name": "Cornbread Cake with Honey Buttercream",
     "description": "This Cornbread Cake with Honey Buttercream Frosting is a sweet twist on a Southern classic! It&#039;s soft, tender, completely eggless, and perfect for summer!",
     "servings": 12,
@@ -44380,7 +43524,7 @@
       },
       {
         "ingredient_name": "unsalted butter, room temperature",
-        "quantity": 0.5,
+        "quantity": 1.0,
         "unit": "cup"
       },
       {
@@ -44400,23 +43544,13 @@
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 0.5,
+        "quantity": 1.5,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "unsalted butter, room temperature",
-        "quantity": 0.5,
-        "unit": "cup"
       },
       {
         "ingredient_name": "powdered sugar",
         "quantity": 2,
         "unit": "cup"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 1,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "honey",
@@ -44567,22 +43701,22 @@
       },
       {
         "ingredient_name": "olive oil",
-        "quantity": 1,
+        "quantity": 3,
         "unit": "tbsp"
       },
       {
         "ingredient_name": "garlic, minced",
-        "quantity": 1,
+        "quantity": 3,
         "unit": "clove"
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.125,
+        "quantity": 0.25,
         "unit": "tsp"
       },
       {
         "ingredient_name": "freshly cracked black pepper",
-        "quantity": 0.125,
+        "quantity": 0.25,
         "unit": "tsp"
       },
       {
@@ -44596,23 +43730,8 @@
         "unit": "tbsp"
       },
       {
-        "ingredient_name": "olive oil",
-        "quantity": 2,
-        "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "garlic, minced",
-        "quantity": 2,
-        "unit": "clove"
-      },
-      {
         "ingredient_name": "garlic powder",
         "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.125,
         "unit": "tsp"
       },
       {
@@ -44627,11 +43746,6 @@
       },
       {
         "ingredient_name": "crushed red pepper",
-        "quantity": 0.125,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "freshly cracked black pepper",
         "quantity": 0.125,
         "unit": "tsp"
       }
@@ -45235,20 +44349,6 @@
     "scrapedAt": "2026-04-05T21:36:51.814Z"
   },
   {
-    "name": "How to Make a Simple Side Salad",
-    "description": "Learn how to use this easy formula to make a simple side salad that will add color, texture, and flavor to your dinner plate.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2021/05/Simple-Side-Salad-artichoke.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/how-to-make-a-simple-side-salad/",
-    "scrapedAt": "2026-04-05T21:36:53.217Z"
-  },
-  {
     "name": "Slow Cooker Vegetarian Lentil Chili",
     "description": "This Slow Cooker Vegetarian Lentil Chili makes a huge batch, is packed with flavor and nutrients, and can be made for only about 5 dollars!&nbsp;",
     "servings": 6,
@@ -45524,12 +44624,12 @@
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 2,
+        "quantity": 2.5,
         "unit": "tsp"
       },
       {
         "ingredient_name": "onion powder",
-        "quantity": 2,
+        "quantity": 2.5,
         "unit": "tsp"
       },
       {
@@ -45544,7 +44644,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tbsp"
       },
       {
@@ -45570,21 +44670,6 @@
       {
         "ingredient_name": "baking powder",
         "quantity": 2,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "onion powder",
-        "quantity": 0.5,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.5,
         "unit": "tsp"
       },
       {
@@ -45737,20 +44822,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/ensalada-de-aguacate-avocado-salad/",
     "scrapedAt": "2026-04-05T21:37:00.294Z"
-  },
-  {
-    "name": "How to: Freeze Rice",
-    "description": "Freezing leftover cooked rice is a real life saver on busy nights when you're tired and hungry. Use these steps to keep cooked rice handy at all times!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2013/08/Freeze-Rice1.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/how-to-freeze-rice/",
-    "scrapedAt": "2026-04-05T21:37:02.846Z"
   },
   {
     "name": "Coconut Rice",
@@ -46049,7 +45120,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 0.25,
+        "quantity": 1.25,
         "unit": "tsp"
       },
       {
@@ -46071,11 +45142,6 @@
         "ingredient_name": "brown sugar",
         "quantity": 2,
         "unit": "tbsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 1,
-        "unit": "pinch"
       },
       {
         "ingredient_name": "torn kale leaves",
@@ -47091,7 +46157,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 1,
+        "quantity": 1.5,
         "unit": "tsp"
       },
       {
@@ -47127,11 +46193,6 @@
       {
         "ingredient_name": "Worcestershire",
         "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.5,
         "unit": "tsp"
       }
     ],
@@ -47277,7 +46338,7 @@
     "ingredients": [
       {
         "ingredient_name": "olive oil",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tbsp"
       },
       {
@@ -47294,11 +46355,6 @@
         "ingredient_name": "large pizza dough",
         "quantity": 1,
         "unit": null
-      },
-      {
-        "ingredient_name": "olive oil",
-        "quantity": 1,
-        "unit": "tbsp"
       },
       {
         "ingredient_name": "garlic powder",
@@ -47568,7 +46624,7 @@
       },
       {
         "ingredient_name": "salted butter, softened",
-        "quantity": 6,
+        "quantity": 12,
         "unit": "tbsp"
       },
       {
@@ -47583,12 +46639,12 @@
       },
       {
         "ingredient_name": "vanilla extract",
-        "quantity": 1,
+        "quantity": 2,
         "unit": "tsp"
       },
       {
         "ingredient_name": "coconut extract",
-        "quantity": 0.75,
+        "quantity": 1.75,
         "unit": "tsp"
       },
       {
@@ -47598,7 +46654,7 @@
       },
       {
         "ingredient_name": "sweetened shredded coconut",
-        "quantity": 0.5,
+        "quantity": 2.0,
         "unit": "cup"
       },
       {
@@ -47607,28 +46663,8 @@
         "unit": "oz"
       },
       {
-        "ingredient_name": "salted butter, softened",
-        "quantity": 6,
-        "unit": "tbsp"
-      },
-      {
         "ingredient_name": "powdered sugar",
         "quantity": 3,
-        "unit": "cup"
-      },
-      {
-        "ingredient_name": "vanilla extract",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "coconut extract",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "sweetened shredded coconut",
-        "quantity": 1.5,
         "unit": "cup"
       }
     ],
@@ -47692,47 +46728,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/coconut-cake/",
     "scrapedAt": "2026-04-05T21:37:31.100Z"
-  },
-  {
-    "name": "How to Freeze Kale",
-    "description": "Learn how to freeze kale (or spinach) to reduce food waste and always have prepped kale on hand to add to your favorite recipes.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": null,
-    "ingredients": [
-      {
-        "ingredient_name": "bag kale",
-        "quantity": 1,
-        "unit": "lb"
-      }
-    ],
-    "steps": [
-      {
-        "step_number": 1,
-        "instruction": "Fully wash and chop your kale, so it’s ready to go straight into your recipe from the freezer. I buy bags of pre-chopped kale, but I always give it another wash and pick out any larger pieces of stem. If you’re buying a bunch of kale, remove the stems, chop it to your desired size, then give it a good rinse."
-      },
-      {
-        "step_number": 2,
-        "instruction": "After rinsing, let the kale drain well."
-      },
-      {
-        "step_number": 3,
-        "instruction": "Place it in any air-tight freezer safe container. I prefer freezer bags because they lay flat and don’t take up a lot of space in the freezer. Avoid packing or squishing the kale too tightly in the container so you can easily grab a handful or two at a time later."
-      },
-      {
-        "step_number": 4,
-        "instruction": "Label and date your container."
-      },
-      {
-        "step_number": 5,
-        "instruction": "When you’re ready to use, it can go straight from the freezer into your recipe. Because the kale is so thin, it thaws almost instantly when added to a hot pan or soup."
-      }
-    ],
-    "tags": [],
-    "nutrition": null,
-    "source": "schema.org/json-ld",
-    "url": "https://www.budgetbytes.com/how-to-freeze-kale/",
-    "scrapedAt": "2026-04-05T21:37:32.512Z"
   },
   {
     "name": "White Beans with Tomato and Sausage",
@@ -48060,20 +47055,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/bbq-beef-stuffed-potatoes/",
     "scrapedAt": "2026-04-05T21:37:37.927Z"
-  },
-  {
-    "name": "Best Recipes to Celebrate Juneteenth",
-    "description": "We’re sharing 20 of our Best Recipes to Celebrate Juneteenth Freedom Day from classic BBQ dishes to Southern Soul Food recipes!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/06/Best-Juneteenth-Recipes-H-.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/best-recipes-to-celebrate-juneteenth/",
-    "scrapedAt": "2026-04-05T21:37:40.876Z"
   },
   {
     "name": "Strawberry Chicken Salad",
@@ -48607,20 +47588,6 @@
     "scrapedAt": "2026-04-05T21:37:49.249Z"
   },
   {
-    "name": "Apple Dijon Kale Salad Meal Prep",
-    "description": "This Apple Dijon Kale Salad Meal Prep is full of texture and bright flavors, and is sure to keep you full for hours.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2017/12/Apple-Dijon-Kale-Salad-Meal-Prep-H1.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/apple-dijon-kale-salad-meal-prep/",
-    "scrapedAt": "2026-04-05T21:37:50.561Z"
-  },
-  {
     "name": "Arroz Con Salchichas",
     "description": "This Puerto Rican Arroz Con Salchichas recipe is a budget-friendly quick weeknight meal of rice and sausage that&#39;s both filling and flavorful. Make it once and you&#39;ll put it in heavy rotation!",
     "servings": 6,
@@ -49112,20 +48079,6 @@
     "scrapedAt": "2026-04-05T21:37:57.372Z"
   },
   {
-    "name": "30+ Game Changing Cooking Tips - Budget Bytes",
-    "description": "30 of the best cooking tips that will \"change the game\" in your kitchen, according to the Budget Bytes community.",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2021/10/30-Cooking-Tips-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/game-changing-cooking-tips-and-tricks-from-the-budget-bytes-community/",
-    "scrapedAt": "2026-04-05T21:37:58.771Z"
-  },
-  {
     "name": "Easy Garlic Parmesan Broccoli",
     "description": "This super fast Garlic Parmesan Broccoli is an easy side dish with versatile flavors that will go with just about any weeknight meal.",
     "servings": 4,
@@ -49238,7 +48191,7 @@
       },
       {
         "ingredient_name": "garlic powder",
-        "quantity": 0.5,
+        "quantity": 0.75,
         "unit": "tsp"
       },
       {
@@ -49253,7 +48206,7 @@
       },
       {
         "ingredient_name": "salt",
-        "quantity": 1,
+        "quantity": 1.5,
         "unit": "tsp"
       },
       {
@@ -49285,16 +48238,6 @@
         "ingredient_name": "fresh cilantro",
         "quantity": 1,
         "unit": "handful"
-      },
-      {
-        "ingredient_name": "garlic powder",
-        "quantity": 0.25,
-        "unit": "tsp"
-      },
-      {
-        "ingredient_name": "salt",
-        "quantity": 0.5,
-        "unit": "tsp"
       },
       {
         "ingredient_name": "8-inch tortillas",
@@ -49693,12 +48636,12 @@
       },
       {
         "ingredient_name": "butter",
-        "quantity": 2,
+        "quantity": 3,
         "unit": "tbsp"
       },
       {
         "ingredient_name": "cinnamon",
-        "quantity": 0.5,
+        "quantity": 1.5,
         "unit": "tsp"
       },
       {
@@ -49732,11 +48675,6 @@
         "unit": "tsp"
       },
       {
-        "ingredient_name": "cinnamon",
-        "quantity": 1,
-        "unit": "tsp"
-      },
-      {
         "ingredient_name": "granulated sugar",
         "quantity": 3,
         "unit": "tbsp"
@@ -49760,11 +48698,6 @@
         "ingredient_name": "vanilla extract",
         "quantity": 1,
         "unit": "tsp"
-      },
-      {
-        "ingredient_name": "butter",
-        "quantity": 1,
-        "unit": "tbsp"
       }
     ],
     "steps": [
@@ -50787,20 +49720,6 @@
     "scrapedAt": "2026-04-05T21:38:21.897Z"
   },
   {
-    "name": "Best Recipes of 2022",
-    "description": "Here are the best recipes of 2022! The top 20 recipes made by Budget Bytes in 2022 that you don't want to miss!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2022/12/Best-Recipes-of-2022-H.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/best-recipes-of-2022/",
-    "scrapedAt": "2026-04-05T21:38:23.321Z"
-  },
-  {
     "name": "Creamy Chicken and Spinach Quesadillas",
     "description": "These Creamy Chicken and Spinach Quesadillas are seriously simple, but still deliciously dinner-worthy. Perfect for busy weeknights or picky eaters!&nbsp;",
     "servings": 4,
@@ -50976,20 +49895,6 @@
     "source": "schema.org/json-ld",
     "url": "https://www.budgetbytes.com/garlic-marinated-chicken/",
     "scrapedAt": "2026-04-05T21:38:26.105Z"
-  },
-  {
-    "name": "Sweet Potato Recipes",
-    "description": "20 Sweet Potato Recipes highlighting both sweet and savory dishes including mashed and roasted sweet potatoes, sweet potato casserole, sweet potato fries, and more!",
-    "servings": null,
-    "time_to_cook": null,
-    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/09/Sweet-Potato-Recipes-H-1.jpg",
-    "ingredients": [],
-    "steps": [],
-    "tags": [],
-    "nutrition": null,
-    "source": "open-graph/meta",
-    "url": "https://www.budgetbytes.com/sweet-potato-recipes/",
-    "scrapedAt": "2026-04-05T21:38:27.461Z"
   },
   {
     "name": "Slow Cooker Mashed Potatoes",

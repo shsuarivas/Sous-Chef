@@ -74,10 +74,14 @@ async function LoopThroughRecipes()
   }
 }
 
+LoopThroughRecipes();
+
+// Single Recipe Test
+/*
 const client = await pool.connect();
 await client.query('BEGIN');
 await insertRecipe(client, recipes[0]);
 await client.query('COMMIT');
 client.release();
 pool.end();
-//LoopThroughRecipes();
+*/
