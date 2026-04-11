@@ -1,14 +1,13 @@
 
+import { Link } from 'react-router-dom';
+import styles from './LoginButton.module.scss';
+
 export default function LoginButton(){
     return (
         <>
-            <button className="loginbutton">Login</button>
+            <Link to="/signin">
+                <button className={styles.loginbutton}>Login</button>
+            </Link>
         </>
     );
 };
-
-//use react <link> or useNavigate instead of href 
-    //(https://reactrouter.com/api/components/Link)
-    //(https://reactrouter.com/api/hooks/useNavigate)
-
-//changed class to "className" - this is React, not base JavaScript (https://react.dev/learn/writing-markup-with-jsx#3-camelcase-salls-most-of-the-things)

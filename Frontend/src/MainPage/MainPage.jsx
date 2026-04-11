@@ -8,6 +8,7 @@ import HomePage from './pages/HomePage/HomePage.jsx';
 import ExplorePage from './pages/ExplorePage/ExplorePage.jsx';
 import NotificationsPage from './pages/NotificationsPage/NotificationsPage.jsx';
 import SettingsPage from './pages/SettingsPage/SettingsPage.jsx';
+import pizza from './pizza_test.jpg';
 
 /*
     This container shows the title bar, the side bar, and the page content
@@ -54,7 +55,7 @@ export default function MainPage() {
             currentPageContent = (<SettingsPage />);
             break;
     }
-
+//Implement a sql query to create a search and also label the button
     return (
         <>
             <div className={styles.main_div}>
@@ -66,26 +67,12 @@ export default function MainPage() {
                     <div className={styles.titlebar_div}>
                         <TitleBar />
                     </div>
-                    <div className={styles.page_div}> 
+                        <div className={styles.page_div}> 
                         {currentPageContent} 
-
-                       {/* Displays current Gemini Live Text Step (customized) */}
-                    <div style = {{ textAlign: 'center', marginTop: '20px',
-                                    border: '2px solid #870000', borderRadius: '10px',
-                                    padding: '15px', backgroundColor: '#fff9f0',
-                                    maxWidth: '600px', marginLeft: 'auto', marginRight: 'auto',
-                                    boxShadow: '0px 4px 10px rgba(0,0,0,0.1)'
-                                 }}> 
-
-                        <h2 style = {{fontFamily: 'Helvetica, monospace', color: '#000000', marginBottom: '10px'}}> 
-                        Gemini Live Text </h2>
-
-                        <p style = {{ fontFamily: 'Helvetica, monospace', fontSize: '18px', color: '#870000', marginTop: '10px' }}> 
-                          {recipeStep} </p>
-                    </div> 
                     </div>
                 </div>
             </div>
         </>
     );
+
 };

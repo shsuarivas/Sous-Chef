@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 import styles from './DefaultHomePage.module.scss';
-import PageBar from './DefaultHomePageBar/DefaultHomePageBar/'
+import PageBar from './DefaultHomePageBar/DefaultHomePageBar.jsx'
 import WelcomingHeader from './TextComponents/Welcome.jsx'
 import HomeImage from './Images/Image.jsx'
 
@@ -23,10 +23,12 @@ export default function HomePage(){
                     <div className={styles.titlebar_div}>
                         <PageBar />
                     </div>
-                    <nav>
-                        <WelcomingHeader />
-                    </nav>
-                    <HomeImage />
+                    <div className={styles.image_container}>
+                        <HomeImage />
+                        <div className={styles.welcome_overlay}>
+                            <WelcomingHeader />
+                        </div>
+                    </div>
                 </div>
                 </div>
             </>

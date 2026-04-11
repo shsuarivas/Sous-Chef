@@ -1,15 +1,12 @@
-
+import { Link } from 'react-router-dom';
+import styles from './SigninButton.module.scss';
 
 export default function SignupButton(){
     return (
         <>
-            <button className="signup">Sign Up</button>
+            <Link to="/signup">
+                <button className={styles.signupbutton}>Sign Up</button>
+            </Link>
         </>
     );
 };
-
-//use react <link> or useNavigate instead of href 
-    //(https://reactrouter.com/api/components/Link)
-    //(https://reactrouter.com/api/hooks/useNavigate)
-
-//changed class to "className" - this is React, not base JavaScript (https://react.dev/learn/writing-markup-with-jsx#3-camelcase-salls-most-of-the-things)

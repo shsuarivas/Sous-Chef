@@ -1,17 +1,12 @@
-
+import { Link } from 'react-router-dom';
+import styles from './AboutButton.module.scss';
 
 export default function AboutButton(){
     return (
         <>
-        <a href = "/about" target="_blank">
-             <button className="aboutbutton">About</button>
-        </a>
+        <Link to="/about">
+             <button className={styles.aboutbutton}>About</button>
+        </Link>
         </>
     );
 };
-
-//use react <link> or useNavigate instead of href 
-    //(https://reactrouter.com/api/components/Link)
-    //(https://reactrouter.com/api/hooks/useNavigate)
-
-//changed class to "className" - this is React, not base JavaScript (https://react.dev/learn/writing-markup-with-jsx#3-camelcase-salls-most-of-the-things)
