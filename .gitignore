@@ -1,1 +1,2 @@
-*.DS_StoreBackend/.env
+*.DS_Store
+Backend/.env
