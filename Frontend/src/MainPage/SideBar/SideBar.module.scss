@@ -1,38 +1,44 @@
 @use '../../constants.module.scss' as constants;
+@use '../../_shared' as shared;
 
 .main_div {
     display: flex;
+    background: linear-gradient(to bottom, #93c5fd 0%, #60a5fa 50%, #93c5fd 100%);
     flex-direction: column;
     height: 100%;
-
     padding: 0rem 0.5rem;
+    gap: 0.5rem; 
 }
 
 .gap {
     flex-grow: 1;
-    // height: 100%;
+    height: 100%;
 }
 
 .entry_div {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 6rem;
+    width: 9rem;
 
     height: constants.$titlebar-thickness;
 }
 
-
+.entry_div:last-child {
+      margin-bottom: 1.5rem;                                                                                  
+}
 
 .entry_inner {
-    cursor: pointer;
+    @include shared.blue-button;
+    text-align: center;
+    width: 100%;
 }
-
+            
 .entry_inner_selected {
-    border: 1px solid black;
+   border: 1px solid #93c5fd;
 }
 
-logo_div {                                                                                                             
+.logo_div {                                                                                                             
       display: flex;                                                                                                      
       justify-content: center;                                                                                            
       align-items: center;                                                                                                
