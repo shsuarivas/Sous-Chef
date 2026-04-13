@@ -8,7 +8,6 @@ import HomePage from './pages/HomePage/HomePage.jsx';
 import ExplorePage from './pages/ExplorePage/ExplorePage.jsx';
 import NotificationsPage from './pages/NotificationsPage/NotificationsPage.jsx';
 import SettingsPage from './pages/SettingsPage/SettingsPage.jsx';
-import pizza from './pizza_test.jpg';
 
 /*
     This container shows the title bar, the side bar, and the page content
