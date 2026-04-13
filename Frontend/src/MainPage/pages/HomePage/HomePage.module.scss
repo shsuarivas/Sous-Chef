@@ -1,5 +1,6 @@
 .main_div {
     padding: 2rem;
+    background: white;
 
     display: flex;
     flex-direction: column;
@@ -8,22 +9,21 @@
 
 .recipe_div {
     aspect-ratio: 4 / 3;
-
-    background-color: yellow;
+    background-color: #dbeafe;                                                                              
+    border-radius: 0.5rem;
 }
 
-.category_div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 0.5rem;
-}
+.recipe_div:hover {                                                                                         
+      background-color: #bfdbfe;                                                                              
+      cursor: pointer;                                                                                        
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(96, 165, 250, 0.25);                                                        
+      transition: all 0.2s ease;
+  }                           
 
-.category_title {
-    font-size: 24pt;
-}
-
-.category_grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
-    gap: 1rem;
-}
+  .feed_grid {                                                                                                
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+  }                                                                                                           
+   

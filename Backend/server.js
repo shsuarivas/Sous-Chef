@@ -1,19 +1,24 @@
-import express from 'express'
-import cors from 'cors'
-import { GoogleGenAI } from '@google/genai';
-import 'dotenv/config';
-const PORT = 8080;
+import express from 'express';              
+  import cors from 'cors';                    
+  import { GoogleGenAI } from '@google/genai';
+  import 'dotenv/config';                         
+  import authRouter from './src/routes/auth.js';  
+  import userRouter from './src/routes/user.js';  
 
-let app = express();
-app.use(cors());
-app.use(express.json()); 
+  const PORT = process.env.PORT || 8080;          
 
+  let app = express();                            
+  app.use(cors());
+  app.use(express.json());                        
 
 app.get('/', (req, res) => {
     res.send('Test!');
 });
 
-app.listen(8080, () => {
+app.use('/auth', authRouter);
+app.use('/user', userRouter);
+
+app.listen(PORT, () => {
     console.log(`Backend listening on port ${PORT}`);
 });
 
