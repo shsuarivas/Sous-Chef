@@ -1,14 +1,13 @@
 .main_div {
     padding: 2rem;
     background: white;
+
     display: flex;
     flex-direction: column;
     row-gap: 1rem;
 }
 
 .recipe_div {
-    // width: 7rem;
-    // height: 7rem;
     aspect-ratio: 4 / 3;
     background-color: #dbeafe;                                                                              
     border-radius: 0.5rem;

@@ -8,6 +8,7 @@ import HomePage from './MainPage/pages/HomePage/HomePage.jsx';
 import ExplorePage from './MainPage/pages/ExplorePage/ExplorePage.jsx';
 import NotificationsPage from './MainPage/pages/NotificationsPage/NotificationsPage.jsx';
 import SettingsPage from './MainPage/pages/SettingsPage/SettingsPage.jsx';
+import GeminiTest from './GeminiTest/GeminiTest.jsx';
 
 /*
 	This container will choose between the website view and the recipe cooking view
@@ -27,6 +28,7 @@ function App() {
                     <Route path="notifications" element={<NotificationsPage />} />
                     <Route path="settings" element={<SettingsPage />} />
                 </Route>
+                <Route path="/geminitest" element={<GeminiTest />} />
             </Routes>
         </Router>
     )
