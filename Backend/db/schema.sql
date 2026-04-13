@@ -159,3 +159,35 @@ CREATE TABLE nutrition (
 
     FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
 );
+
+-------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+-- Nicks full test search
+-- 1. Recipe name and description (on recipes table)
+ALTER TABLE recipes
+ADD COLUMN search_vector tsvector
+    GENERATED ALWAYS AS (
+        setweight(to_tsvector('english', coalesce(recipe_name, '')), 'A') ||
+        setweight(to_tsvector('english', coalesce(recipe_description, '')), 'B')
+    ) STORED;
+
+CREATE INDEX idx_recipes_fts ON recipes USING GIN(search_vector);
+
+-- 2. Food tags (on tags table)
+ALTER TABLE tags
+ADD COLUMN tag_vector tsvector
+    GENERATED ALWAYS AS (
+        to_tsvector('english', coalesce(tag_name, ''))
+    ) STORED;
+
+CREATE INDEX idx_tags_fts ON tags USING GIN(tag_vector);
+
+-- 3. Ingredient fields (on ingredients table)
+ALTER TABLE ingredients
+ADD COLUMN ingredient_vector tsvector
+    GENERATED ALWAYS AS (
+        to_tsvector('english', coalesce(ingredient_name, ''))
+    ) STORED;
+
+CREATE INDEX idx_ingredients_fts ON ingredients USING GIN(ingredient_vector);
