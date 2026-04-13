@@ -12,11 +12,9 @@ function SearchBar() {
 
 function AccountButton() {
     return (
-        <>
-            <div>
-                Account
-            </div>
-        </>
+        <div className={styles.account_button}>
+            Account
+        </div>
     );
 }
 

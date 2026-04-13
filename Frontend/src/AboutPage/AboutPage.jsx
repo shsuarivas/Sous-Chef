@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import styles from './AboutPage.module.scss';
 import HomeImage from '../DefaultHomePage/Images/Image.jsx';
 import PageBar from '../DefaultHomePage/DefaultHomePageBar/DefaultHomePageBar.jsx';
