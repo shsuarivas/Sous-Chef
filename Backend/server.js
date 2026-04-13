@@ -1,15 +1,19 @@
-import express from 'express'
-import cors from 'cors'
+import express from 'express';
+import cors from 'cors';
+import authRouter from './src/routes/auth.js';
 
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 let app = express();
 app.use(cors());
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Test!');
 });
 
-app.listen(8080, () => {
+app.use('/auth', authRouter);
+
+app.listen(PORT, () => {
     console.log(`Backend listening on port ${PORT}`);
 });
