@@ -200,7 +200,7 @@ ws.onmessage = async (event) => {
 
   const segmentation = new Intl.Segmenter('en', {granularity: 'word'});
 
-  const segments = segmentation.segment(msg);
+const segments = segmentation.segment(transcript.user);;
 
   const parsed_input = [...segments]
     .filter(s =>s.isWordLike)
@@ -498,6 +498,8 @@ ws.onmessage = async (event) => {
            } else {
             done = false; fsa_integer = -1; break;
            }
+          }
+          
     }     
     if(done == true){
       break;
