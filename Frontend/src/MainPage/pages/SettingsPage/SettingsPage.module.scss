@@ -38,10 +38,83 @@
       border-bottom: 1px solid #dbeafe;
   }  
 
-  .pfp_box {                                                                                                  
+  .pfp_box {
       width: 6rem;
-      height: 6rem;                                                                                           
+      height: 6rem;
       border-radius: 50%;
       border: 2px solid #60a5fa;
       background-color: #dbeafe;
-  }          
+  }
+
+  .inner_div {
+      max-width: 600px;
+      margin: 0 auto;
+  }
+
+  .pfp_line_div {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+  }
+
+  .field_right {
+      display: flex;
+      align-items: center;
+  }
+
+  .fields_div {
+      margin-top: 1rem;
+  }
+
+  .edit_input {
+      margin-top: 0.4rem;
+      padding: 6px 12px;
+      border: 2px solid #60a5fa;
+      border-radius: 24px;
+      font-size: 14pt;
+      color: #60a5fa;
+      outline: none;
+      width: 100%;
+
+      &:focus {
+          border-color: #3b82f6;
+      }
+  }
+
+  .password_fields {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.4rem;
+  }
+
+  .action_buttons {
+      display: flex;
+      gap: 0.5rem;
+  }
+
+  .cancel_button {
+      @include shared.blue-button;
+      background: none;
+      border-color: #bfdbfe;
+      color: #93c5fd;
+
+      &:hover {
+          background: #eff6ff;
+          color: #60a5fa;
+          transform: none;
+          box-shadow: none;
+      }
+  }
+
+  .field_error {
+      font-size: 11pt;
+      color: #ef4444;
+      margin-top: 0.3rem;
+  }
+
+  .field_success {
+      font-size: 11pt;
+      color: #22c55e;
+  }
