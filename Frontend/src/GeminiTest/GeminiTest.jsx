@@ -6,7 +6,7 @@ export default function GeminiTest() {
 
   return (
     <div className={styles.page_container}>
-      <h2 className="text-xl font-bold mb-4">Gemini Live Voice Chat</h2>
+      <h2>Gemini Live Voice Chat</h2>
     
       <div className="mb-4">
         <span
