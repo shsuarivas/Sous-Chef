@@ -1,64 +1,34 @@
+import { NavLink } from 'react-router-dom';
 import logo from '../../assets/souschef_logo.png'
 import styles from './SideBar.module.scss';
 
-function Entry({
-    children,
-    onClick,
-    isActive,
-}) {
-    let className = `${styles.entry_inner} ${isActive ? styles.entry_inner_selected : ''}`; // If selected, add entry_inner_selected class
-
+function Entry({ to, children }) {
     return (
-        <>
-            <div className={styles.entry_div} onClick={onClick}>
-                <div className={className}>
+        <NavLink
+            to={to}
+            end={to === '/main'}
+            className={styles.entry_div}
+        >
+            {({ isActive }) => (
+                <div className={`${styles.entry_inner} ${isActive ? styles.entry_inner_selected : ''}`}>
                     {children}
                 </div>
-            </div>
-        </>
+            )}
+        </NavLink>
     );
 }
 
-export default function SideBar({
-    currentPage,
-    setCurrentPage,
-}) {
+export default function SideBar() {
     return (
         <>
             <div className={styles.main_div}>
-                 <div className={styles.logo_div}>                                                                                       
+                <div className={styles.logo_div}>
                     <img src={logo} alt="Sous-Chef Logo" className={styles.logo} />
-                </div>  
+                </div>
 
-                <Entry
-                    onClick={() => setCurrentPage('home')}
-                    isActive={currentPage == 'home'}
-                >
-                    Home
-                </Entry>
-
-                <Entry
-                    onClick={() => setCurrentPage('explore')}
-                    isActive={currentPage == 'explore'}
-                >
-                    Explore
-                </Entry>
-
-                <Entry
-                    onClick={() => setCurrentPage('notifications')}
-                    isActive={currentPage == 'notifications'}
-                >
-                    Notifications
-                </Entry>
-
-                <div className={styles.gap}></div>
-
-                <Entry
-                    onClick={() => setCurrentPage('settings')}
-                    isActive={currentPage == 'settings'}
-                >
-                    Settings
-                </Entry>
+                <Entry to="/main">Home</Entry>
+                <Entry to="/main/explore">Explore</Entry>
+                <Entry to="/main/notifications">Notifications</Entry>
             </div>
         </>
     );

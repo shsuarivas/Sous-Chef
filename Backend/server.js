@@ -1,19 +1,24 @@
-import express from 'express'
-import cors from 'cors'
-import { GoogleGenAI } from '@google/genai';
-import 'dotenv/config';
-const PORT = 8080;
+import express from 'express';              
+  import cors from 'cors';                    
+  import { GoogleGenAI } from '@google/genai';
+  import 'dotenv/config';                         
+  import authRouter from './src/routes/auth.js';  
+  import userRouter from './src/routes/user.js';  
 
-let app = express();
-app.use(cors());
-app.use(express.json()); 
+  const PORT = process.env.PORT || 8080;          
 
+  let app = express();                            
+  app.use(cors());
+  app.use(express.json());                        
 
 app.get('/', (req, res) => {
     res.send('Test!');
 });
 
-app.listen(8080, () => {
+app.use('/auth', authRouter);
+app.use('/user', userRouter);
+
+app.listen(PORT, () => {
     console.log(`Backend listening on port ${PORT}`);
 });
 
@@ -43,3 +48,23 @@ app.get("/api/token", async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+app.get("/main/:id", async(req, res) => {
+  try{
+    const recipeid = req.params.id;
+
+    const [rows] = await connection.execute(
+      'SELECT * FROM recipe WHERE id = ?',
+      [recipeid]
+    );
+    if(rows.length === 0){
+      return res.status(404).json({ message: "User not found" });
+    }
+    res.json(rows[0]);
+
+    } catch (error) {
+    res.status(500).json({ error: 'Database error' });
+  }
+});
+
+

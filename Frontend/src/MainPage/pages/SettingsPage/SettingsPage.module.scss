@@ -1,59 +1,120 @@
-.outer_div {
-    width: 100%;
-    height: 100%;
+@use '../../../_shared' as shared;
 
-    padding: 2rem 8rem;
-}
+  .outer_div {
+      width: 100%;
+      height: 100%;
+      padding: 2rem 8rem;
+      background: white;
+  }
 
-.inner_div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
-}
+  .title {
+      font-size: 36pt;
+      color: #60a5fa;
+      font-weight: 600;
+  }
 
-.title {
-    font-size: 36pt;
-}
+  .field_title {
+      font-size: 24pt;
+      color: #60a5fa;
+  }
 
-.pfp_line_div {
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
+  .field_value {
+      font-size: 14pt;
+      color: #93c5fd;
+  }
 
-    img {
-        width: 3rem;
-        height: 3rem;
-    }
-}
+  .edit_button {
+      @include shared.blue-button;
+  }
+ 
+  .field_left {
+      text-align: left;
+  }
 
-.fields_div {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1rem;
+  .fields_entry {
+      display: flex;
+      justify-content: space-between;
+      padding: 1rem 0;
+      border-bottom: 1px solid #dbeafe;
+  }  
 
-    width: 30rem;
-}
+  .pfp_box {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 50%;
+      border: 2px solid #60a5fa;
+      background-color: #dbeafe;
+  }
 
-.fields_entry {
-    display: flex;
-    justify-content: space-between;
-}
+  .inner_div {
+      max-width: 600px;
+      margin: 0 auto;
+  }
 
-.field_left {
+  .pfp_line_div {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1.5rem 0;
+  }
 
-}
+  .field_right {
+      display: flex;
+      align-items: center;
+  }
 
-.field_right {
-    display: flex;
-    align-items: center;
+  .fields_div {
+      margin-top: 1rem;
+  }
 
-    font-size: 16pt;
-}
+  .edit_input {
+      margin-top: 0.4rem;
+      padding: 6px 12px;
+      border: 2px solid #60a5fa;
+      border-radius: 24px;
+      font-size: 14pt;
+      color: #60a5fa;
+      outline: none;
+      width: 100%;
 
-.field_title {
-    font-size: 24pt;
-}
+      &:focus {
+          border-color: #3b82f6;
+      }
+  }
 
-.field_value {
-    font-size: 14pt;
-}
+  .password_fields {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0.4rem;
+  }
+
+  .action_buttons {
+      display: flex;
+      gap: 0.5rem;
+  }
+
+  .cancel_button {
+      @include shared.blue-button;
+      background: none;
+      border-color: #bfdbfe;
+      color: #93c5fd;
+
+      &:hover {
+          background: #eff6ff;
+          color: #60a5fa;
+          transform: none;
+          box-shadow: none;
+      }
+  }
+
+  .field_error {
+      font-size: 11pt;
+      color: #ef4444;
+      margin-top: 0.3rem;
+  }
+
+  .field_success {
+      font-size: 11pt;
+      color: #22c55e;
+  }
