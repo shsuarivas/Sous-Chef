@@ -20,26 +20,69 @@ function Recipe({ name, servings, imageUrl }) {
 
 const LIMIT = 20; // how many recipes to show per page
 
+// the 8 broad category tags we know exist in the DB
+const CATEGORY_TAGS = ['vegan', 'vegetarian', 'gluten-free', 'breakfast', 'lunch', 'dinner', 'dessert', 'snack'];
+
+// cuisine tags that exist in the DB
+const CUISINE_TAGS = ['american', 'french', 'italian', 'mexican', 'latin', 'mediterranean', 'greek', 'spanish', 'indian', 'asian', 'chinese', 'japanese', 'korean'];
+
 export default function HomePage() {
     const [recipes, setRecipes] = useState([]);
     const [page, setPage] = useState(1);
     const [total, setTotal] = useState(0);
+    const [activeTag, setActiveTag] = useState(null); // null = no filter (show all)
 
-    // re-fetch whenever the page changes
+    // re-fetch whenever page or active tag changes
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}/recipes?page=${page}&limit=${LIMIT}`)
+        const tagParam = activeTag ? `&tag=${activeTag}` : '';
+        fetch(`${import.meta.env.VITE_API_URL}/recipes?page=${page}&limit=${LIMIT}${tagParam}`)
             .then(res => res.json())
             .then(data => {
                 setRecipes(data.recipes);
                 setTotal(data.total); // need total to calculate how many pages exist
             })
             .catch(err => console.error('Failed to fetch recipes:', err));
-    }, [page]);
+    }, [page, activeTag]);
+
+    // when switching tags, reset back to page 1 so we don't land on an empty page
+    function handleTagClick(tag) {
+        setActiveTag(prev => prev === tag ? null : tag); // clicking the same tag deselects it
+        setPage(1);
+    }
 
     const totalPages = Math.ceil(total / LIMIT);
 
     return (
         <div className={styles.main_div}>
+
+            {/* tag filter buttons — split into category and cuisine rows */}
+            <div className={styles.tag_section}>
+                <div className={styles.tag_filters}>
+                    <span className={styles.tag_label}>Category</span>
+                    {CATEGORY_TAGS.map(tag => (
+                        <button
+                            key={tag}
+                            className={`${styles.tag_btn} ${activeTag === tag ? styles.tag_btn_active : ''}`}
+                            onClick={() => handleTagClick(tag)}
+                        >
+                            {tag}
+                        </button>
+                    ))}
+                </div>
+                <div className={styles.tag_filters}>
+                    <span className={styles.tag_label}>Cuisine</span>
+                    {CUISINE_TAGS.map(tag => (
+                        <button
+                            key={tag}
+                            className={`${styles.tag_btn} ${activeTag === tag ? styles.tag_btn_active : ''}`}
+                            onClick={() => handleTagClick(tag)}
+                        >
+                            {tag}
+                        </button>
+                    ))}
+                </div>
+            </div>
+
             <div className={styles.feed_grid}>
                 {recipes.map(recipe => (
                     <Recipe

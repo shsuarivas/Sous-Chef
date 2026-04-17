@@ -16,23 +16,33 @@ app.get('/', (req, res) => {
     res.send('Test!');
 });
 
-// paginated recipe browsing — page + limit come in as query params
-// e.g. /recipes?page=2&limit=20
+// paginated recipe browsing — page, limit, and optional tag filter come in as query params
+// e.g. /recipes?page=2&limit=20&tag=vegan
 app.get('/recipes', async (req, res) => {
     const page = Math.max(1, parseInt(req.query.page) || 1);
     const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 20)); // cap at 50 so nobody requests 10000 recipes
     const offset = (page - 1) * limit;
+    const tag = req.query.tag || null; // null means no filter, show everything
 
     try {
-        // grab the page of recipes and total count in parallel
+        // if a tag is provided we gotta join recipe_tags and tags to filter by it
+        // otherwise just grab everything as usual
         const [result, countResult] = await Promise.all([
             pool.query(`
-                SELECT r.id, r.recipe_name, r.recipe_description, r.servings, i.image_url
+                SELECT DISTINCT r.id, r.recipe_name, r.recipe_description, r.servings, i.image_url
                 FROM recipes r
                 LEFT JOIN images i ON i.recipe_id = r.id
+                ${tag ? 'JOIN recipe_tags rt ON rt.recipe_id = r.id JOIN tags t ON t.id = rt.tag_id' : ''}
+                ${tag ? 'WHERE t.tag_name = $3' : ''}
                 LIMIT $1 OFFSET $2
-            `, [limit, offset]),
-            pool.query('SELECT COUNT(*) FROM recipes')
+            `, tag ? [limit, offset, tag] : [limit, offset]),
+            // count needs to respect the tag filter too so pagination stays accurate
+            pool.query(
+                tag
+                    ? `SELECT COUNT(DISTINCT r.id) FROM recipes r JOIN recipe_tags rt ON rt.recipe_id = r.id JOIN tags t ON t.id = rt.tag_id WHERE t.tag_name = $1`
+                    : `SELECT COUNT(*) FROM recipes`,
+                tag ? [tag] : []
+            )
         ]);
 
         // send back recipes + pagination metadata so the frontend knows how many pages exist
