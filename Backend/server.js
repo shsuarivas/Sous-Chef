@@ -81,3 +81,26 @@ app.get("/api/token", async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+app.get("/search", async (req,res)  => {
+    const q = req.query.q;
+    if (!q) return res.json([]);
+    
+    //database callback
+    
+  try {
+      const result = await pool.query(`
+                SELECT r.id, r.recipe_name, r.recipe_description
+                FROM recipes r
+                WHERE r.search_vector @@ plainto_tsquery('english',$1)
+                LIMIT 10
+        `,[q]);
+    
+        res.json(result.rows);
+  } 
+    catch (err){
+        console.error(err);
+        res.status(500).json({ error: 'search failed'});
+    }
+
+});
