@@ -16,12 +16,15 @@ app.get('/', (req, res) => {
     res.send('Test!');
 });
 
+// paginated recipe browsing — page + limit come in as query params
+// e.g. /recipes?page=2&limit=20
 app.get('/recipes', async (req, res) => {
     const page = Math.max(1, parseInt(req.query.page) || 1);
-    const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 20));
+    const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 20)); // cap at 50 so nobody requests 10000 recipes
     const offset = (page - 1) * limit;
 
     try {
+        // grab the page of recipes and total count in parallel
         const [result, countResult] = await Promise.all([
             pool.query(`
                 SELECT r.id, r.recipe_name, r.recipe_description, r.servings, i.image_url
@@ -32,6 +35,7 @@ app.get('/recipes', async (req, res) => {
             pool.query('SELECT COUNT(*) FROM recipes')
         ]);
 
+        // send back recipes + pagination metadata so the frontend knows how many pages exist
         res.json({
             recipes: result.rows,
             total: parseInt(countResult.rows[0].count),

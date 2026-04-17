@@ -18,19 +18,20 @@ function Recipe({ name, servings, imageUrl }) {
     );
 }
 
-const LIMIT = 20;
+const LIMIT = 20; // how many recipes to show per page
 
 export default function HomePage() {
     const [recipes, setRecipes] = useState([]);
     const [page, setPage] = useState(1);
     const [total, setTotal] = useState(0);
 
+    // re-fetch whenever the page changes
     useEffect(() => {
         fetch(`${import.meta.env.VITE_API_URL}/recipes?page=${page}&limit=${LIMIT}`)
             .then(res => res.json())
             .then(data => {
                 setRecipes(data.recipes);
-                setTotal(data.total);
+                setTotal(data.total); // need total to calculate how many pages exist
             })
             .catch(err => console.error('Failed to fetch recipes:', err));
     }, [page]);
@@ -50,6 +51,7 @@ export default function HomePage() {
                 ))}
             </div>
 
+            {/* only show pagination if there's more than one page */}
             {totalPages > 1 && (
                 <div className={styles.pagination}>
                     <button
