@@ -1,18 +1,34 @@
-import express from 'express';              
-  import cors from 'cors';                    
-  import { GoogleGenAI } from '@google/genai';
-  import 'dotenv/config';                         
-  import authRouter from './src/routes/auth.js';  
-  import userRouter from './src/routes/user.js';  
+import express from 'express';
+import cors from 'cors';
+import { GoogleGenAI } from '@google/genai';
+import 'dotenv/config';
+import pool from './db.js';
+import authRouter from './src/routes/auth.js';
+import userRouter from './src/routes/user.js';
 
-  const PORT = process.env.PORT || 8080;          
+const PORT = process.env.PORT || 8080;
 
-  let app = express();                            
-  app.use(cors());
-  app.use(express.json());                        
+let app = express();
+app.use(cors());
+app.use(express.json());
 
 app.get('/', (req, res) => {
     res.send('Test!');
+});
+
+app.get('/recipes', async (req, res) => {
+    try {
+        const result = await pool.query(`
+            SELECT r.id, r.recipe_name, r.recipe_description, r.servings, i.image_url
+            FROM recipes r
+            LEFT JOIN images i ON i.recipe_id = r.id
+            LIMIT 20
+        `);
+        res.json(result.rows);
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Failed to fetch recipes' });
+    }
 });
 
 app.use('/auth', authRouter);
@@ -42,29 +58,9 @@ app.get("/api/token", async (req, res) => {
       }
     });
 
-    console.log("Full token object:", JSON.stringify(token)); // ← add this
+    console.log("Full token object:", JSON.stringify(token));
     res.json({ token: token.name });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
-
-app.get("/main/:id", async(req, res) => {
-  try{
-    const recipeid = req.params.id;
-
-    const [rows] = await connection.execute(
-      'SELECT * FROM recipe WHERE id = ?',
-      [recipeid]
-    );
-    if(rows.length === 0){
-      return res.status(404).json({ message: "User not found" });
-    }
-    res.json(rows[0]);
-
-    } catch (error) {
-    res.status(500).json({ error: 'Database error' });
-  }
-});
-
-

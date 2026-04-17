@@ -50,7 +50,6 @@ export default function SignInPage() {
             setLoading(false);
         }
     };
-
     return (
         <div className={styles.page_container}>
             <div className={styles.titlebar}>
@@ -102,6 +101,11 @@ export default function SignInPage() {
                                 {loading ? 'Signing in...' : 'Sign In'}
                             </button>
                         </form>
+
+                        <div className={styles.divider}>
+                            <span>or</span>
+                        </div>
+
 
                         <p className={styles.signup_link}>
                             Don't have an account? <Link to="/signup">Sign up</Link>
