@@ -7,6 +7,54 @@
     row-gap: 1rem;
 }
 
+.tag_section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.tag_filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.tag_label {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #93c5fd;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-right: 0.25rem;
+}
+
+.tag_btn {
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid #93c5fd;
+    background: white;
+    color: #1e40af;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    transition: all 0.15s ease;
+
+    &:hover {
+        background: #dbeafe;
+    }
+}
+
+.tag_btn_active {
+    background: #3b82f6;
+    border-color: #3b82f6;
+    color: white;
+
+    &:hover {
+        background: #2563eb;
+    }
+}
+
 .feed_grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
