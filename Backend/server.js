@@ -17,14 +17,27 @@ app.get('/', (req, res) => {
 });
 
 app.get('/recipes', async (req, res) => {
+    const page = Math.max(1, parseInt(req.query.page) || 1);
+    const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 20));
+    const offset = (page - 1) * limit;
+
     try {
-        const result = await pool.query(`
-            SELECT r.id, r.recipe_name, r.recipe_description, r.servings, i.image_url
-            FROM recipes r
-            LEFT JOIN images i ON i.recipe_id = r.id
-            LIMIT 20
-        `);
-        res.json(result.rows);
+        const [result, countResult] = await Promise.all([
+            pool.query(`
+                SELECT r.id, r.recipe_name, r.recipe_description, r.servings, i.image_url
+                FROM recipes r
+                LEFT JOIN images i ON i.recipe_id = r.id
+                LIMIT $1 OFFSET $2
+            `, [limit, offset]),
+            pool.query('SELECT COUNT(*) FROM recipes')
+        ]);
+
+        res.json({
+            recipes: result.rows,
+            total: parseInt(countResult.rows[0].count),
+            page,
+            limit
+        });
     } catch (err) {
         console.error(err);
         res.status(500).json({ error: 'Failed to fetch recipes' });
