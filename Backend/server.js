@@ -1,18 +1,63 @@
-import express from 'express';              
-  import cors from 'cors';                    
-  import { GoogleGenAI } from '@google/genai';
-  import 'dotenv/config';                         
-  import authRouter from './src/routes/auth.js';  
-  import userRouter from './src/routes/user.js';  
+import express from 'express';
+import cors from 'cors';
+import { GoogleGenAI } from '@google/genai';
+import 'dotenv/config';
+import pool from './db.js';
+import authRouter from './src/routes/auth.js';
+import userRouter from './src/routes/user.js';
+import apiRouter from './api.js';
 
-  const PORT = process.env.PORT || 8080;          
+const PORT = process.env.PORT || 8080;
 
-  let app = express();                            
-  app.use(cors());
-  app.use(express.json());                        
+let app = express();
+app.use(cors());
+app.use(express.json());
+app.use('/api', apiRouter)
 
 app.get('/', (req, res) => {
     res.send('Test!');
+});
+
+// paginated recipe browsing — page, limit, and optional tag filter come in as query params
+// e.g. /recipes?page=2&limit=20&tag=vegan
+app.get('/recipes', async (req, res) => {
+    const page = Math.max(1, parseInt(req.query.page) || 1);
+    const limit = Math.min(50, Math.max(1, parseInt(req.query.limit) || 20)); // cap at 50 so nobody requests 10000 recipes
+    const offset = (page - 1) * limit;
+    const tag = req.query.tag || null; // null means no filter, show everything
+
+    try {
+        // if a tag is provided we gotta join recipe_tags and tags to filter by it
+        // otherwise just grab everything as usual
+        const [result, countResult] = await Promise.all([
+            pool.query(`
+                SELECT DISTINCT r.id, r.recipe_name, r.recipe_description, r.servings, i.image_url
+                FROM recipes r
+                LEFT JOIN images i ON i.recipe_id = r.id
+                ${tag ? 'JOIN recipe_tags rt ON rt.recipe_id = r.id JOIN tags t ON t.id = rt.tag_id' : ''}
+                ${tag ? 'WHERE t.tag_name = $3' : ''}
+                LIMIT $1 OFFSET $2
+            `, tag ? [limit, offset, tag] : [limit, offset]),
+            // count needs to respect the tag filter too so pagination stays accurate
+            pool.query(
+                tag
+                    ? `SELECT COUNT(DISTINCT r.id) FROM recipes r JOIN recipe_tags rt ON rt.recipe_id = r.id JOIN tags t ON t.id = rt.tag_id WHERE t.tag_name = $1`
+                    : `SELECT COUNT(*) FROM recipes`,
+                tag ? [tag] : []
+            )
+        ]);
+
+        // send back recipes + pagination metadata so the frontend knows how many pages exist
+        res.json({
+            recipes: result.rows,
+            total: parseInt(countResult.rows[0].count),
+            page,
+            limit
+        });
+    } catch (err) {
+        console.error(err);
+        res.status(500).json({ error: 'Failed to fetch recipes' });
+    }
 });
 
 app.use('/auth', authRouter);
@@ -42,29 +87,73 @@ app.get("/api/token", async (req, res) => {
       }
     });
 
-    console.log("Full token object:", JSON.stringify(token)); // ← add this
+    console.log("Full token object:", JSON.stringify(token));
     res.json({ token: token.name });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-app.get("/main/:id", async(req, res) => {
-  try{
-    const recipeid = req.params.id;
-
-    const [rows] = await connection.execute(
-      'SELECT * FROM recipe WHERE id = ?',
-      [recipeid]
-    );
-    if(rows.length === 0){
-      return res.status(404).json({ message: "User not found" });
+app.get("/search", async (req,res)  => {
+    const q = req.query.q;
+    if (!q) return res.json([]);
+    
+    //database callback
+    
+  try {
+      const result = await pool.query(`
+                SELECT r.id, r.recipe_name, r.recipe_description
+                FROM recipes r
+                WHERE r.search_vector @@ plainto_tsquery('english',$1)
+                LIMIT 10
+        `,[q]);
+    
+        res.json(result.rows);
+  } 
+    catch (err){
+        console.error(err);
+        res.status(500).json({ error: 'search failed'});
     }
-    res.json(rows[0]);
 
-    } catch (error) {
-    res.status(500).json({ error: 'Database error' });
-  }
 });
+    //used for recipe detail pages. Modular implementation using recipe id
+app.get('/recipes/:id', async (req,res) => {
+    const id = req.params.id
+
+    try{
+        const details = await pool.query(`
+            SELECT r.id, r.recipe_description, r.recipe_name, r.servings, r.time_to_cook, i.image_url
+            FROM recipes r
+            LEFT JOIN images i ON i.recipe_id = r.id
+            WHERE r.id = $1`
+            ,[id]);
 
 
+        const steps = await pool.query(`
+            SELECT step_number, instruction
+            FROM steps
+            WHERE recipe_id = $1
+            ORDER BY step_number`
+            ,[id]);
+        
+        const ingredients = await pool.query(`
+            SELECT i.ingredient_name, ri.quantity, u.unit_name
+            FROM recipe_ingredients  ri
+            JOIN ingredients i ON i.id = ri.ingredient_id
+            LEFT JOIN units u ON u.id = ri.unit_id
+            WHERE ri.recipe_id = $1`
+            ,[id]);
+
+        res.json({
+            ...details.rows[0],
+            ingredients: ingredients.rows,
+            steps: steps.rows
+        });
+    }       
+
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Failed to fetch recipe' });
+
+    }
+});
