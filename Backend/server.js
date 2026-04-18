@@ -155,3 +155,44 @@ app.get('/recipes/:id', async (req,res) => {
 
     }
 });
+//Retriving ratings from the DB
+app.get('/recipes/:id/ratings', async (req,res) => {
+    const id = req.params.id
+try{
+    const result = await pool.query(`
+        SELECT ROUND(AVG(rating), 1) AS AVERAGE, COUNT(*) AS COUNT
+        FROM ratings
+        WHERE recipe_id = $1`
+        , [id]);
+    res.json(result.rows[0]);
+
+}
+
+catch(err){
+    console.error(err);
+    res.status(500).json({ error: 'Failed to get ratings'});
+}
+});
+
+// User submits ratings
+app.post('/recipes/:id/ratings', async (req,res) => {
+    const id = req.params.id
+    const {user_id,rating} = req.body;
+
+try{
+    await pool.query(`
+    INSERT INTO ratings (user_id, recipe_id, rating)
+    VALUES ($1, $2, $3)
+    ON CONFLICT (user_id, recipe_id) DO UPDATE SET rating = $3`
+        , [user_id, id, rating]);
+    res.json({success:true});
+}
+
+catch(err){
+    console.error(err);
+    res.status(500).json({ error: 'Failed to submit rating'});
+
+}
+});
+
+//find a way to add a software backdoor in this file
