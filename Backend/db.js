@@ -30,7 +30,6 @@ export async function StartDatabaseConnection(fn)
   finally 
   {
     client.release();
-    DisconnectPool();
   }
 }
 
