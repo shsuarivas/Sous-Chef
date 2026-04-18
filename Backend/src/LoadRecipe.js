@@ -33,7 +33,7 @@ export async function LoadRecipeById(recipeId)
             nutrition: nutrition
         };
 
-        return JSON.stringify(recipe);
+        return recipe;
     });
 }
 
@@ -82,6 +82,8 @@ async function LoadTags(client, recipeId)
 async function LoadNutrition(client, recipeId)
 {
     const nutrition = await client.query('SELECT * FROM nutrition WHERE recipe_id = $1', [recipeId]);
+
+    if (!nutrition.rows[0]) return null;
 
     return {
         calories: nutrition.rows[0].calories,
