@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react';
 import styles from './HomePage.module.scss';
+import {useNavigate}  from 'react-router-dom';
 
-function Recipe({ name, servings, imageUrl }) {
+
+function Recipe({ name, servings, imageUrl, onClick }) {
     return (
-        <div className={styles.recipe_div}>
+        <div className={styles.recipe_div} onClick={onClick}>
             <div className={styles.recipe_image_wrapper}>
                 {imageUrl
                     ? <img src={imageUrl} alt={name} className={styles.recipe_img} />
@@ -31,6 +33,7 @@ export default function HomePage() {
     const [page, setPage] = useState(1);
     const [total, setTotal] = useState(0);
     const [activeTag, setActiveTag] = useState(null); // null = no filter (show all)
+    const navigate = useNavigate();
 
     // re-fetch whenever page or active tag changes
     useEffect(() => {
@@ -55,7 +58,7 @@ export default function HomePage() {
     return (
         <div className={styles.main_div}>
 
-            {/* tag filter buttons — split into category and cuisine rows */}
+        {/* tag filter buttons — split into category and cuisine rows*/}
             <div className={styles.tag_section}>
                 <div className={styles.tag_filters}>
                     <span className={styles.tag_label}>Category</span>
@@ -90,6 +93,7 @@ export default function HomePage() {
                         name={recipe.recipe_name}
                         servings={recipe.servings}
                         imageUrl={recipe.image_url}
+                        onClick={() => navigate(`/main/recipe/${recipe.id}`)}
                     />
                 ))}
             </div>
