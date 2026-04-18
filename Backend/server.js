@@ -116,3 +116,44 @@ app.get("/search", async (req,res)  => {
     }
 
 });
+    //used for recipe detail pages. Modular implementation using recipe id
+app.get('/recipes/:id', async (req,res) => {
+    const id = req.params.id
+
+    try{
+        const details = await pool.query(`
+            SELECT r.id, r.recipe_description, r.recipe_name, r.servings, r.time_to_cook, i.image_url
+            FROM recipes r
+            LEFT JOIN images i ON i.recipe_id = r.id
+            WHERE r.id = $1`
+            ,[id]);
+
+
+        const steps = await pool.query(`
+            SELECT step_number, instruction
+            FROM steps
+            WHERE recipe_id = $1
+            ORDER BY step_number`
+            ,[id]);
+        
+        const ingredients = await pool.query(`
+            SELECT i.ingredient_name, ri.quantity, u.unit_name
+            FROM recipe_ingredients  ri
+            JOIN ingredients i ON i.id = ri.ingredient_id
+            LEFT JOIN units u ON u.id = ri.unit_id
+            WHERE ri.recipe_id = $1`
+            ,[id]);
+
+        res.json({
+            ...details.rows[0],
+            ingredients: ingredients.rows,
+            steps: steps.rows
+        });
+    }       
+
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Failed to fetch recipe' });
+
+    }
+});
