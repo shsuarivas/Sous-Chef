@@ -147,9 +147,6 @@ export default function SignUpPage() {
                             </button>
                         </form>
 
-                        <div className={styles.divider}>
-                            <span>or</span>
-                        </div>
 
 
                         <p className={styles.signup_link}>
