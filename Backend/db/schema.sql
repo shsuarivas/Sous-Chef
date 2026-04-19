@@ -1,5 +1,5 @@
-
-
+CREATE ROLE "SousChef" WITH LOGIN PASSWORD 'password';
+GRANT ALL PRIVILEGES ON DATABASE appdb TO "SousChef";
 
 CREATE TABLE users (
     id SERIAL PRIMARY KEY,
@@ -147,44 +147,30 @@ CREATE TABLE steps (
     FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
 );
 -------------------------------------------------------------------------------------------------------------
--------------------------------------------------------------------------------------------------------------
--- added nutrition table
-CREATE TABLE nutrition (
-    id SERIAL PRIMARY KEY,
-    recipe_id INT UNIQUE NOT NULL,
-    calories VARCHAR(50),
-    fat_content VARCHAR(50),
-    protein_content VARCHAR(50),
-    carbohydrate_content VARCHAR(50),
 
-    FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
+-------------------------------------------------------------------------------------------------------------
+CREATE TABLE password_reset_tokens (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    token TEXT UNIQUE NOT NULL,
+    expires_at TIMESTAMP NOT NULL,
+    used BOOLEAN DEFAULT FALSE,
+
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );
 -------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------
--- Full text search vectors
-ALTER TABLE recipes
-ADD COLUMN search_vector tsvector
-    GENERATED ALWAYS AS (
-        setweight(to_tsvector('english', coalesce(recipe_name, '')), 'A') ||
-        setweight(to_tsvector('english', coalesce(recipe_description, '')), 'B')
-    ) STORED;
+CREATE TABLE mfa_codes (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    code TEXT NOT NULL,
+    expires_at TIMESTAMP NOT NULL,
+    used BOOLEAN DEFAULT FALSE,
 
-CREATE INDEX idx_recipes_fts ON recipes USING GIN(search_vector);
-
-ALTER TABLE tags
-ADD COLUMN tag_vector tsvector
-    GENERATED ALWAYS AS (
-        to_tsvector('english', coalesce(tag_name, ''))
-    ) STORED;
-
-CREATE INDEX idx_tags_fts ON tags USING GIN(tag_vector);
-
-ALTER TABLE ingredients
-ADD COLUMN ingredient_vector tsvector
-    GENERATED ALWAYS AS (
-        to_tsvector('english', coalesce(ingredient_name, ''))
-    ) STORED;
-
-CREATE INDEX idx_ingredients_fts ON ingredients USING GIN(ingredient_vector);
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
 -------------------------------------------------------------------------------------------------------------
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO "SousChef";
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO "SousChef";
