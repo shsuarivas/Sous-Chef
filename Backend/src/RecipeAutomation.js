@@ -1,5 +1,5 @@
 import { StartDatabaseConnection } from '../db.js';
-import recipes from '../recipes.json' with {type: 'json'};
+import recipes from '../recipes_final20.json' with {type: 'json'};
 
 async function insertRecipe(client, recipe)
 {
