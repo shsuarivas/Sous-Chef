@@ -159,10 +159,12 @@ CREATE TABLE nutrition (
 
     FOREIGN KEY (recipe_id) REFERENCES recipes(id) ON DELETE CASCADE
 );
+
 -------------------------------------------------------------------------------------------------------------
 
 -------------------------------------------------------------------------------------------------------------
--- Full text search vectors
+-- Nicks full test search
+-- 1. Recipe name and description (on recipes table)
 ALTER TABLE recipes
 ADD COLUMN search_vector tsvector
     GENERATED ALWAYS AS (
@@ -172,6 +174,7 @@ ADD COLUMN search_vector tsvector
 
 CREATE INDEX idx_recipes_fts ON recipes USING GIN(search_vector);
 
+-- 2. Food tags (on tags table)
 ALTER TABLE tags
 ADD COLUMN tag_vector tsvector
     GENERATED ALWAYS AS (
@@ -180,6 +183,7 @@ ADD COLUMN tag_vector tsvector
 
 CREATE INDEX idx_tags_fts ON tags USING GIN(tag_vector);
 
+-- 3. Ingredient fields (on ingredients table)
 ALTER TABLE ingredients
 ADD COLUMN ingredient_vector tsvector
     GENERATED ALWAYS AS (
@@ -188,3 +192,26 @@ ADD COLUMN ingredient_vector tsvector
 
 CREATE INDEX idx_ingredients_fts ON ingredients USING GIN(ingredient_vector);
 -------------------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------------------
+--MFA stuff that bruce added 
+CREATE TABLE password_reset_tokens (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    token TEXT UNIQUE NOT NULL,
+    expires_at TIMESTAMP NOT NULL,
+    used BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE mfa_codes (
+    id SERIAL PRIMARY KEY,
+    user_id INT NOT NULL,
+    code TEXT NOT NULL,
+    expires_at TIMESTAMP NOT NULL,
+    used BOOLEAN DEFAULT FALSE,
+    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO "SousChef";
+GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO "SousChef";
