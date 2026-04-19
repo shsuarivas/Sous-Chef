@@ -1,7 +1,8 @@
 import nlp from 'compromise';
 import numbers from 'compromise-numbers';
 import { useState, useRef, useCallback } from "react";
-// import modularRecipe from 'recipe.json'; // file missing, commented out until added
+//import modularRecipe from 'recipe.json'; 
+//React says file is missing, possibly due to path error? idk. commented out until added. Aiden mightve tried to use the recipe.json file from the Backend/ directory.
 
 const WS_BASE = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContentConstrained";
 
