@@ -196,5 +196,16 @@ catch(err){
 
 }
 });
+/*
+app.get('/recipes/:id/favorites', async (req,res) => {
 
+}
+});
+app.post('/recipes/:id/favorites', async (req,res) => {
+    const id = req.params.id
+    const {user_id, favorite} = req.body;
+
+}
+});
+*/
 //find a way to add a software backdoor in this file
