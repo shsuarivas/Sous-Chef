@@ -8,6 +8,8 @@ export default function RecipePage(){
 	const [ratingData, setRatingData] = useState({average: null, count: 0});
 	const user = JSON.parse(localStorage.getItem('user'));
 	const [userRating, setUserRating] = useState(0); //different from ratingData, userRating is the rating the user selects for a recipe
+	const [userFavorite, setUserFavorite] = useState(false); // same React hook used in ratingData and setRatingData for user Forks!!!
+
 	// fetch full recipe details whenever the id changes
 	useEffect(() => {
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}`)
@@ -45,6 +47,26 @@ export default function RecipePage(){
 		.catch(err => console.error('Failed to submit rating', err));
 	}
 
+	
+	function submitUserFavorite(){
+		if(!user) return;
+		setUserFavorite(!userFavorite)
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/forks`, {
+			method: 'POST',
+			headers: {'Content-Type': 'application/json'},
+			body: JSON.stringify({ user_id: user.id, recipe_id: recipe.id})
+		})
+		.then(res => res.json())
+		.then(() => {
+			//refresh the favorites after favoriting the recipe
+				fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/forks`)
+					.then(res => res.json())
+					.then(data => setUserFavorite(data))
+					.catch(err => console.error(' bruv this failed to fetch user forks', err));
+		})
+		.catch(err => console.error(' Failed to submit fork', err));
+
+	}
 
 	return(
 		<div>
@@ -54,6 +76,13 @@ export default function RecipePage(){
 			<img src={recipe.image_url} alt={recipe.recipe_name}/>
 			<h1>{recipe.recipe_name}</h1>
 			<p> Serves {recipe.servings} | Prep Time: {recipe.time_to_cook} min(s)</p>
+
+		{/*Fork logic */}
+		<button onClick={submitUserFavorite}> 
+		{userFavorite ? 'Forked!' : 'Fork This Recipe!'} </button>
+
+			
+
 		{/* Star logic */}	
 			<div>
 					{[1,2,3,4,5].map(star =>  (
