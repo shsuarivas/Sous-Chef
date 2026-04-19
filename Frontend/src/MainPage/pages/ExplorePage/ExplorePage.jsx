@@ -20,6 +20,11 @@ import { useNavigate } from 'react-router-dom';
 
 export default function ExplorePage() {
     const [recipes, setRecipes] = useState([]);
+    const [loading, setLoading] = useState([true]);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [totalPages, setTotalPages] = useState(0);
+    const [selectedTag, setSelectedTag] = useState(null);
+    
 
       let recipes = [];
       for (let i = 0; i < 20; i++) recipes.push(<Recipe />);
