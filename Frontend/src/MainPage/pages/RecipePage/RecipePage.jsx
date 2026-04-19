@@ -1,5 +1,6 @@
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useState, useEffect } from  'react';
+import styles from './RecipePage.module.scss';
 
 export default function RecipePage(){
 	// grab the recipe id from the URL
@@ -54,6 +55,16 @@ export default function RecipePage(){
 			<img src={recipe.image_url} alt={recipe.recipe_name}/>
 			<h1>{recipe.recipe_name}</h1>
 			<p> Serves {recipe.servings} | Prep Time: {recipe.time_to_cook} min(s)</p>
+			<div className={styles.startCookingContainer}>
+				<Link to={`/cook/${id}`} className={styles.startCookingLink}>
+					<button
+						type="button"
+						className={styles.startCookingButton}
+					>
+						Start Cooking
+					</button>
+				</Link>
+			</div>
 		{/* Star logic */}	
 			<div>
 					{[1,2,3,4,5].map(star =>  (
