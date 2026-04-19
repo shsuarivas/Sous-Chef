@@ -5,4 +5,6 @@ docker exec -i sous-chef-postgres-1 psql -U SousChef -d appdb < Backend\db\schem
 
 docker exec -i sous-chef-backend-1 node src/RecipeAutomation.js
 
+docker exec -i sous-chef-backend-1 node src/ScrapeImages.js
+
 pause
