@@ -5,7 +5,8 @@ import styles from './TitleBar.module.scss';
 function SearchBar() {
     const [query, setQuery] = useState('');
     const [results, setResults] = useState([]);
-    
+    const navigate = useNavigate();
+
     async function handleSearch(e){
         const value = e.target.value;
         setQuery(value);
@@ -21,7 +22,7 @@ function SearchBar() {
             {results.length > 0 && (
                 <div className={styles.search_dropdown}>
                     {results.map(r => (
-                        <div key={r.id} className={styles.search_item}>
+                        <div key={r.id} className={styles.search_item} onClick={() => {navigate(`/main/recipe/${r.id}`); setResults([]); setQuery('');}}>
                             <p>{r.recipe_name}</p>
                             <p>{r.recipe_description}</p>
                         </div>

@@ -8,6 +8,8 @@ export default function RecipePage(){
 	const [ratingData, setRatingData] = useState({average: null, count: 0});
 	const user = JSON.parse(localStorage.getItem('user'));
 	const [userRating, setUserRating] = useState(0); //different from ratingData, userRating is the rating the user selects for a recipe
+	const [userFavorite, setUserFavorite] = useState(false); // same React hook used in ratingData and setRatingData for user Forks!!!
+
 	// fetch full recipe details whenever the id changes
 	useEffect(() => {
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}`)
@@ -22,6 +24,17 @@ export default function RecipePage(){
 			.then (data => setRatingData(data))
 				.catch(err => console.error(' bruh this failed to fetch ratings dawg', err));
 	},[id]);
+
+
+	// useEffect for the fork status. this will allow the recipe page to fetch fork status
+	useEffect(() => {
+		if (!user) return;
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/favorites?user_id=${user.id}`)
+			.then (res => res.json())
+			.then (data => setUserFavorite(data.forked))
+			.catch(err => console.error('Failed to fetch fork status :(((', err));
+	}, [id]);
+
 
 	// UI and front end logic for users to actually rate recipes.
 	
@@ -45,6 +58,18 @@ export default function RecipePage(){
 		.catch(err => console.error('Failed to submit rating', err));
 	}
 
+	// function for Users to submit forks, send the request to the DB
+	function submitUserFavorite(){
+		if(!user) return;
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/favorites`, {
+			method: 'POST',
+			headers: {'Content-Type': 'application/json'},
+			body: JSON.stringify({ user_id: user.id })
+		})
+		.then(res => res.json())
+		.then(data => setUserFavorite(data.forked))
+		.catch(err => console.error('Failed to submit fork', err));
+	}
 
 	return(
 		<div>
@@ -54,6 +79,13 @@ export default function RecipePage(){
 			<img src={recipe.image_url} alt={recipe.recipe_name}/>
 			<h1>{recipe.recipe_name}</h1>
 			<p> Serves {recipe.servings} | Prep Time: {recipe.time_to_cook} min(s)</p>
+
+		{/*Fork logic */}
+		<button onClick={submitUserFavorite}> 
+		{userFavorite ? 'Forked!' : 'Fork This Recipe!'} </button>
+
+			
+
 		{/* Star logic */}	
 			<div>
 					{[1,2,3,4,5].map(star =>  (
