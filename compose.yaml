@@ -15,7 +15,7 @@ services:
       - backend
     networks:
       - app-network
-    develop: # This is for development purposes it allows for hot-reloading and syncing changes without rebuilding the image.
+    develop:
       watch:
       - action: sync
         path: ./Frontend
@@ -44,16 +44,15 @@ services:
         condition: service_healthy
     networks:
       - app-network
-    develop: # Same for this one it allows for hot-reloading and syncing changes without rebuilding the image.
+    develop:
       watch:
         - action: sync
           path: ./Backend
           target: /app
         - action: rebuild
           path: ./Backend/package.json
-    env_file: # for the Gemini Live API Key
-      - .env 
-
+    env_file:
+      - .env
 
 
   postgres:
@@ -61,14 +60,14 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_USER=postgres
+      - POSTGRES_USER=SousChef
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=appdb
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./Backend/db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      test: ["CMD-SHELL", "pg_isready -U SousChef -d appdb"]
       interval: 5s
       timeout: 5s
       retries: 5
