@@ -196,16 +196,47 @@ catch(err){
 
 }
 });
-/*
-app.get('/recipes/:id/favorites', async (req,res) => {
-
-}
-});
+//User Forks a recipe send the user_id and recipe_id to the Database
 app.post('/recipes/:id/favorites', async (req,res) => {
     const id = req.params.id
-    const {user_id, favorite} = req.body;
+    const {user_id} = req.body;
+    console.log('Fork request - user_id: ', user_id, 'recipe_ip:', id);
+    try{
+
+        const existing =  await pool.query(`
+            SELECT 1 FROM favorite WHERE user_id = $1 AND recipe_id = $2
+            `, [user_id, id]);
+        
+                if (existing.rows.length > 0){
+                    await pool.query(`DELETE FROM favorite WHERE user_id = $1 AND recipe_id = $2`, [user_id, id]);
+                    res.json({ forked: false });
+                }
+                else {
+                    await pool.query(`INSERT INTO favorite (user_id, recipe_id) VALUES ($1, $2)`, [user_id, id]);
+                    res.json({ forked: true });
+                }
+        }
+
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Failed to toggle fork for this recipe'});
 
 }
 });
-*/
+//retrieving the status of the recipe, whether its forked or not, for the current user.
+app.get('/recipes/:id/favorites', async (req,res) => {
+    const id = req.params.id
+    const {user_id} = req.query;
+    try{
+        const result = await pool.query(`
+        SELECT * FROM favorite
+        WHERE recipe_id = $1 AND user_id = $2`, [id, user_id]);
+        res.json({forked: result.rows.length > 0});
+}
+    catch(err){
+        console.error(err)
+        res.status(500).json({ error : 'Failed to get this recipe\'s fork status for current user.'});
+}
+});
+
 //find a way to add a software backdoor in this file

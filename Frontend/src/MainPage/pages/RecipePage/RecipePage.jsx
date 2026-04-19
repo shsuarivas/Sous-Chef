@@ -25,6 +25,17 @@ export default function RecipePage(){
 				.catch(err => console.error(' bruh this failed to fetch ratings dawg', err));
 	},[id]);
 
+
+	// useEffect for the fork status. this will allow the recipe page to fetch fork status
+	useEffect(() => {
+		if (!user) return;
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/favorites?user_id=${user.id}`)
+			.then (res => res.json())
+			.then (data => setUserFavorite(data.forked))
+			.catch(err => console.error('Failed to fetch fork status :(((', err));
+	}, [id]);
+
+
 	// UI and front end logic for users to actually rate recipes.
 	
 	
@@ -47,25 +58,17 @@ export default function RecipePage(){
 		.catch(err => console.error('Failed to submit rating', err));
 	}
 
-	
+	// function for Users to submit forks, send the request to the DB
 	function submitUserFavorite(){
 		if(!user) return;
-		setUserFavorite(!userFavorite)
-		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/forks`, {
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/favorites`, {
 			method: 'POST',
 			headers: {'Content-Type': 'application/json'},
-			body: JSON.stringify({ user_id: user.id, recipe_id: recipe.id})
+			body: JSON.stringify({ user_id: user.id })
 		})
 		.then(res => res.json())
-		.then(() => {
-			//refresh the favorites after favoriting the recipe
-				fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/forks`)
-					.then(res => res.json())
-					.then(data => setUserFavorite(data))
-					.catch(err => console.error(' bruv this failed to fetch user forks', err));
-		})
-		.catch(err => console.error(' Failed to submit fork', err));
-
+		.then(data => setUserFavorite(data.forked))
+		.catch(err => console.error('Failed to submit fork', err));
 	}
 
 	return(
