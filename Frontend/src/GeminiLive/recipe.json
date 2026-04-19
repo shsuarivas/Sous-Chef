@@ -1,0 +1,89 @@
+{
+  "name": "Oven Baked Chicken Drumsticks",
+  "description": "This oven-baked chicken drumstick recipe is the perfect dinner idea that can be flavored with any of your favorite seasonings.",
+  "servings": 6,
+  "time_to_cook": 45,
+  "image_url": null,
+  "ingredients": [
+    {
+      "ingredient_name": "smoked paprika",
+      "quantity": 1,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_name": "garlic powder",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_name": "onion powder",
+      "quantity": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_name": "cayenne pepper",
+      "quantity": 0.125,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_name": "dried oregano",
+      "quantity": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_name": "salt",
+      "quantity": 0.5,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_name": "black pepper",
+      "quantity": 0.25,
+      "unit": "tsp"
+    },
+    {
+      "ingredient_name": "chicken drumsticks",
+      "quantity": 1.75,
+      "unit": "lb"
+    },
+    {
+      "ingredient_name": "cooking oil",
+      "quantity": 2,
+      "unit": "tbsp"
+    }
+  ],
+  "steps": [
+    {
+      "step_number": 1,
+      "instruction": "Preheat the oven to 425ºF. Combine the smoked paprika, garlic powder, onion powder, cayenne pepper, oregano, salt, and pepper in a bowl."
+    },
+    {
+      "step_number": 2,
+      "instruction": "Place the chicken drumsticks in a bowl and drizzle the cooking oil over top. Sprinkle the prepared seasoning over the drumsticks, then toss until they're evenly coated in oil and spices."
+    },
+    {
+      "step_number": 3,
+      "instruction": "Place the seasoned drumsticks on a baking sheet with enough space around each so they're not touching. You can line the baking sheet with foil or parchment for easier cleanup, if desired."
+    },
+    {
+      "step_number": 4,
+      "instruction": "Transfer the chicken to the oven and bake for 40 minutes, or until they reach an internal temperature of 175ºF, flipping the drumsticks once half-way through. Serve hot."
+    }
+  ],
+  "tags": [
+    "general",
+    "dinner",
+    "main course",
+    "baked chicken",
+    "baked chicken drumsticks",
+    "chicken drumsticks"
+  ],
+  "nutrition": {
+    "calories": "254 kcal",
+    "fatContent": "17 g",
+    "proteinContent": "23 g",
+    "carbohydrateContent": "1 g"
+  },
+  "source": "schema.org/json-ld",
+  "url": "https://www.budgetbytes.com/baked-chicken-drumsticks/",
+  "scrapedAt": "2026-04-05T21:25:19.378Z"
+}

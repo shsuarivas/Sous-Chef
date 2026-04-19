@@ -1,10 +1,10 @@
 import nlp from 'compromise';
 import numbers from 'compromise-numbers';
 import { useState, useRef, useCallback } from "react";
-import modularRecipe from 'recipe.json';
-
+import modularRecipe from "./recipe.json";
+ 
 const WS_BASE = "wss://generativelanguage.googleapis.com/ws/google.ai.generativelanguage.v1alpha.GenerativeService.BidiGenerateContentConstrained";
-
+ 
 function runFSA(parsed_input){
   let fsa_integer = 0; let done = false; let num_step = 0; let num; let timer_total = 0; let key = 0;
   for(let i = 0; i <= parsed_input.length; i++){
@@ -19,6 +19,10 @@ function runFSA(parsed_input){
           else if(parsed_input[i] == "start"){ fsa_integer = 18; break; }
           else if(parsed_input[i] == "begin"){ fsa_integer = 25; break; }
           else if(parsed_input[i] == "pause"){ fsa_integer = 35; break; }
+          // NEW: "where am I" / "what step"
+          else if(parsed_input[i] == "where"){ fsa_integer = 37; break; }
+          else if(parsed_input[i] == "what"){ fsa_integer = 39; break; }
+          else if(parsed_input[i] == "which"){ fsa_integer = 39; break; }
           else{ fsa_integer = -1; break; }
         case 1:
           if(parsed_input[i] == "the"){ fsa_integer = 2; break; }
@@ -92,7 +96,7 @@ function runFSA(parsed_input){
           else if(num_step != undefined){ fsa_integer = 33; break; }
           else{ fsa_integer = -1; break; }
         case 18:
-          num = nlp(parsed_input[i]).numbers.get()[0]; // ✅ fixed - was calling .numbers on a string
+          num = nlp(parsed_input[i]).numbers.get()[0];
           if(parsed_input[i] == "the" || parsed_input[i] == "a"){ fsa_integer = 19; break; }
           else if(parsed_input[i] == "timer"){ fsa_integer = 20; break; }
           else if(num != undefined){ timer_total = num; fsa_integer = 22; break; }
@@ -116,7 +120,7 @@ function runFSA(parsed_input){
           } else if(parsed_input[i] == "minute" || parsed_input[i] == "minutes"){
             done = true; timer_total = timer_total * 60; fsa_integer = 23; key = 101; break;
           } else if(parsed_input[i] == "hour" || parsed_input[i] == "hours"){
-            done = true; timer_total = timer_total * 3600; fsa_integer = 23; key = 101; break; // ✅ fixed 3600, not 21600
+            done = true; timer_total = timer_total * 3600; fsa_integer = 23; key = 101; break;
           } else{ done = false; fsa_integer = -1; break; }
         case 23:
           if(parsed_input[i] == "and"){ fsa_integer = 24; break; }
@@ -165,6 +169,28 @@ function runFSA(parsed_input){
         case 36:
           if(parsed_input[i] == "timer"){ done = true; fsa_integer = -1; key = 103; break; }
           else{ done = false; fsa_integer = -1; break; }
+ 
+        // NEW: "where am I" → key 200
+        case 37:
+          if(parsed_input[i] == "am"){ fsa_integer = 38; break; }
+          else{ fsa_integer = -1; break; }
+        case 38:
+          if(parsed_input[i] == "i"){ done = true; fsa_integer = -1; key = 200; break; }
+          else{ fsa_integer = -1; break; }
+ 
+        // NEW: "what/which step am I on" → key 200
+        case 39:
+          if(parsed_input[i] == "step"){ fsa_integer = 40; break; }
+          else{ fsa_integer = -1; break; }
+        case 40:
+          if(parsed_input[i] == "am"){ fsa_integer = 41; break; }
+          else{ done = true; fsa_integer = -1; key = 200; break; } // "what step" alone is enough
+        case 41:
+          if(parsed_input[i] == "i"){ fsa_integer = 42; break; }
+          else{ fsa_integer = -1; break; }
+        case 42:
+          if(parsed_input[i] == "on"){ done = true; fsa_integer = -1; key = 200; break; }
+          else{ done = true; fsa_integer = -1; key = 200; break; } // "what step am I" also fine
       }
       if(done) break;
     }
@@ -172,34 +198,43 @@ function runFSA(parsed_input){
   }
   return { done, timer_total, num_step, key };
 }
-
+ 
 function handleCommand(fsaResult, recipe, currentStep) {
   if (!fsaResult.done) return null;
   const { key, num_step, timer_total } = fsaResult;
-
+ 
   if (key == 2)   return { action: "NEXT_STEP",      stepIndex: currentStep + 1 };
   if (key == 5)   return { action: "PREV_STEP",      stepIndex: currentStep - 1 };
   if (key == 4)   return { action: "GO_TO_STEP",     stepIndex: num_step };
-  if (key == 3)   return { action: "RESTART",         stepIndex: 0 };
+  if (key == 3)   return { action: "RESTART",        stepIndex: 0 };
   if (key == 101) return { action: "START_TIMER",    seconds: timer_total };
   if (key == 102) return { action: "CONTINUE_TIMER", seconds: timer_total };
   if (key == 103) return { action: "STOP_TIMER",     seconds: timer_total };
   if (key == 104) return { action: "RESTART_TIMER",  seconds: timer_total };
-
+  if (key == 200) return { action: "READ_STEP",      stepIndex: currentStep };
+ 
   return null;
 }
-
+ 
 export function useGeminiLive(recipe) { 
   const [status, setStatus] = useState("idle");
   const [transcript, setTranscript] = useState({ user: "", model: "" });
   const [currentStep, setCurrentStep] = useState(0);
   const [timer, setTimer] = useState(0);
-
+ 
+  // Ref to always have the live currentStep value inside WS callbacks
+  const currentStepRef = useRef(0);
+ 
+  const setCurrentStepSynced = useCallback((idx) => {
+    currentStepRef.current = idx;
+    setCurrentStep(idx);
+  }, []);
+ 
   const wsRef = useRef(null);
   const audioContextRef = useRef(null);
   const processorRef = useRef(null);
   const streamRef = useRef(null);
-
+ 
   const speakStep = useCallback((instruction) => {
     window.speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(instruction);
@@ -207,7 +242,7 @@ export function useGeminiLive(recipe) {
     utterance.pitch = 1;
     window.speechSynthesis.speak(utterance);
   }, []);
-
+ 
   const startMic = useCallback(async () => {
     try {
       const ctx = audioContextRef.current;
@@ -232,15 +267,15 @@ export function useGeminiLive(recipe) {
       console.error("startMic failed:", e.message, e);
     }
   }, []);
-
+ 
   const connect = useCallback(async () => {
     setStatus("connecting");
-
+ 
     const { token } = await fetch('http://localhost:8080/api/token').then(r => r.json());
     const ws = new WebSocket(`${WS_BASE}?access_token=${token}`);
     wsRef.current = ws;
     audioContextRef.current = new AudioContext({ sampleRate: 16000 });
-
+ 
     ws.onopen = () => {
       ws.send(JSON.stringify({
         setup: {
@@ -249,7 +284,7 @@ export function useGeminiLive(recipe) {
         }
       }));
     };
-
+ 
     ws.onmessage = async (event) => {
       let msg;
       if (event.data instanceof Blob) {
@@ -258,43 +293,44 @@ export function useGeminiLive(recipe) {
       } else {
         try { msg = JSON.parse(event.data); } catch { return; }
       }
-
+ 
       if (msg?.setupComplete) {
         setStatus("active");
         await startMic();
         return;
       }
-
+ 
       const transcription = msg?.serverContent?.inputTranscription;
       if (transcription?.finished) {
         const userText = transcription.text;
         setTranscript((t) => ({ ...t, user: userText }));
-
+ 
         const segmentation = new Intl.Segmenter('en', { granularity: 'word' });
         const parsed_input = [...segmentation.segment(userText)]
           .filter(s => s.isWordLike)
           .map(s => s.segment.toLowerCase());
-
+ 
+        // Use ref here to avoid stale closure on currentStep
         const fsaResult = runFSA(parsed_input);
-        const command = handleCommand(fsaResult, recipe, currentStep);
-
+        const command = handleCommand(fsaResult, recipe, currentStepRef.current);
+ 
         if (command) {
           console.log("Recipe command:", command);
           switch (command.action) {
             case "NEXT_STEP":
-              setCurrentStep(command.stepIndex);
+              setCurrentStepSynced(command.stepIndex);
               speakStep(modularRecipe.steps[command.stepIndex].instruction);
               break;
             case "PREV_STEP":
-              setCurrentStep(command.stepIndex);
+              setCurrentStepSynced(command.stepIndex);
               speakStep(modularRecipe.steps[command.stepIndex].instruction);
               break;
             case "GO_TO_STEP":
-              setCurrentStep(command.stepIndex);
+              setCurrentStepSynced(command.stepIndex);
               speakStep(modularRecipe.steps[command.stepIndex].instruction);
               break;
             case "RESTART":
-              setCurrentStep(0);
+              setCurrentStepSynced(0);
               speakStep(modularRecipe.steps[0].instruction);
               break;
             case "START_TIMER":
@@ -312,18 +348,21 @@ export function useGeminiLive(recipe) {
               setTimer(0);
               speakStep("Timer stopped");
               break;
+            case "READ_STEP":
+              speakStep(`You are on step ${command.stepIndex + 1}: ${modularRecipe.steps[command.stepIndex].instruction}`);
+              break;
           }
         }
       }
     };
-
+ 
     ws.onerror = () => setStatus("error");
     ws.onclose = (e) => {
       console.log("WS Closed:", e.code, e.reason);
       setStatus("idle");
     };
-  }, [startMic, speakStep, recipe, currentStep]);
-
+  }, [startMic, speakStep, recipe, setCurrentStepSynced]);
+ 
   const disconnect = useCallback(() => {
     streamRef.current?.getTracks().forEach((t) => t.stop());
     processorRef.current?.disconnect();
@@ -331,6 +370,6 @@ export function useGeminiLive(recipe) {
     audioContextRef.current?.close();
     setStatus("idle");
   }, []);
-
+ 
   return { status, transcript, currentStep, timer, connect, disconnect };
 }
