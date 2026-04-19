@@ -53,7 +53,7 @@ export default function RecipePage(){
 			<>
 			<img src={recipe.image_url} alt={recipe.recipe_name}/>
 			<h1>{recipe.recipe_name}</h1>
-			<p> Serves {recipe.servings} * {recipe.time_to_cook} min(s)</p>
+			<p> Serves {recipe.servings} | Prep Time: {recipe.time_to_cook} min(s)</p>
 		{/* Star logic */}	
 			<div>
 					{[1,2,3,4,5].map(star =>  (

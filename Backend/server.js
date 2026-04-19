@@ -5,15 +5,11 @@ import 'dotenv/config';
 import pool from './db.js';
 import authRouter from './src/routes/auth.js';
 import userRouter from './src/routes/user.js';
-import apiRouter from './api.js';
-
 const PORT = process.env.PORT || 8080;
 
 let app = express();
 app.use(cors());
 app.use(express.json());
-app.use('/api', apiRouter)
-
 app.get('/', (req, res) => {
     res.send('Test!');
 });
@@ -197,4 +193,3 @@ catch(err){
 }
 });
 
-//find a way to add a software backdoor in this file
