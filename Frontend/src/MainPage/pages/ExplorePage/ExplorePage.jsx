@@ -11,8 +11,8 @@ import { useNavigate } from 'react-router-dom';
             className={styles.recipe_div}
             onClick= {() => handleRecipeClick(id)}
           >       
-           <img src= " "/>
-
+           <img src= {image_url} alt={recipe_name} />
+            <span>{recipe_name}</span>
           </div>
       );                                                                                                      
   }               
