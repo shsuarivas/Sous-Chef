@@ -9,7 +9,7 @@ import { useNavigate } from 'react-router-dom';
       return (
           <div 
             className={styles.recipe_div}
-            onClick= {() => handleClickRecipe(id)}
+            onClick= {() => handleRecipeClick(id)}
           >       
            <img src= " "/>
 
