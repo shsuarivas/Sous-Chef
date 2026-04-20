@@ -41,11 +41,17 @@ export default function CookingPage() {
                         </p>
                     </div>
 
-                    <Link to={`/main/recipe/${id}`} className={styles.exitLink}>
+                    <div className={styles.headerActions}>
                         <button type="button" className={styles.exitButton}>
-                            Exit Cooking Mode
+                            Gemini Agent
                         </button>
-                    </Link>
+
+                        <Link to={`/main/recipe/${id}`} className={styles.exitLink}>
+                            <button type="button" className={styles.exitButton}>
+                                Exit Cooking Mode
+                            </button>
+                        </Link>
+                    </div>
                 </div>
 
                 <div className={styles.progressTrack}>
