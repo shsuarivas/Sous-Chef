@@ -22,7 +22,7 @@ export default function ExplorePage() {
     }
 
       let recipes = [];
-      for (let i = 0; i < 20; i++) recipes.push(<Recipe />);
+      for (let i = 0; i < 20; i++) recipes.push(<Recipe key={i} handleRecipeClick={handleRecipeClick} />);
                                                                                                               
       return (
           <div className={styles.main_div}>                                                                   
