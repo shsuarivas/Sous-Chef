@@ -1,5 +1,5 @@
-import pool from '../db.js';
-import recipes from '../recipes.json' with {type: 'json'};
+import { StartDatabaseConnection } from '../db.js';
+import recipes from '../recipes_final20.json' with {type: 'json'};
 
 async function insertRecipe(client, recipe)
 {
@@ -23,6 +23,9 @@ async function insertRecipe(client, recipe)
 
   // insert image
   await insertImage(client, recipe, recipeId);
+
+  // insert nutrition
+  await insertNutrition(client, recipe, recipeId);
 }
 
 // --------------------- Insert Steps Function --------------------- //
@@ -90,33 +93,34 @@ async function insertImage(client, recipe, recipeId)
   }
 }
 
+async function insertNutrition(client, recipe, recipeId)
+{
+  const nutrition = recipe.nutrition;
+  if (!nutrition) return;
+
+  await client.query('INSERT INTO nutrition (recipe_id, calories, fat_content, protein_content, carbohydrate_content) VALUES ($1, $2, $3, $4, $5)', 
+    [recipeId, 
+      nutrition.calories ?? "None", 
+      nutrition.fatContent ?? "None", 
+      nutrition.proteinContent ?? "None", 
+      nutrition.carbohydrateContent ?? "None"]
+  );
+}
+
 // --------------------- Loop Through Recipes Function --------------------- //
 async function LoopThroughRecipes()
 {
-  const client = await pool.connect();
-
-  try
+  StartDatabaseConnection(async (client) => 
   {
-    await client.query('BEGIN');
+
     for (const recipe of recipes)
     {
       console.log(`Processing recipe: ${recipe.name}`);
       await insertRecipe(client, recipe);
     }
-    await client.query('COMMIT');
-  }
 
-  catch (err)
-  {
-    await client.query('ROLLBACK');
-    console.error('Error:', err.message);
-  }
+  });
 
-  finally
-  {
-    client.release();
-    pool.end();
-  }
 }
 
 LoopThroughRecipes();

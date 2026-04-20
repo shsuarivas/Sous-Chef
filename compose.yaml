@@ -38,6 +38,7 @@ services:
       - PORT=${PORT}
       - DATABASE_URL=postgresql://SousChef:${POSTGRES_PASSWORD}@postgres:5432/${POSTGRES_DB}
       - JWT_SECRET=${JWT_SECRET}
+      - RESEND_API_KEY=${RESEND_API_KEY}
     depends_on:
       postgres:
         condition: service_healthy
@@ -51,7 +52,7 @@ services:
         - action: rebuild
           path: ./Backend/package.json
     env_file: # for the Gemini Live API Key
-      - ./Backend/.env 
+      - .env 
 
 
 
@@ -60,12 +61,12 @@ services:
     ports:
       - "5432:5432"
     environment:
-      - POSTGRES_USER=postgres
+      - POSTGRES_USER=SousChef
       - POSTGRES_PASSWORD=password
       - POSTGRES_DB=appdb
     volumes:
       - postgres_data:/var/lib/postgresql/data
-      - ./Backend/db/init.sql:/docker-entrypoint-initdb.d/schema.sql
+      - ./Backend/db/schema.sql:/docker-entrypoint-initdb.d/schema.sql
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 5s

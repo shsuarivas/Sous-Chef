@@ -1,0 +1,3002 @@
+[
+  {
+    "name": "Santa Fe Salad",
+    "description": "This Santa Fe salad is the ultimate Southwestern salad. It&#039;s loaded with tender, juicy chicken, fresh veggies, and creamy black beans.",
+    "servings": 6,
+    "time_to_cook": 40,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2024/04/Santa-Fe-Salad-Overhead.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "avocado",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "sour cream",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "quantity": 1,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 1.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "lime juice",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fresh cilantro",
+        "quantity": 0.25,
+        "unit": "bunch"
+      },
+      {
+        "ingredient_name": "water",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "romaine lettuce, chopped into bite-size pieces",
+        "quantity": 2,
+        "unit": "head"
+      },
+      {
+        "ingredient_name": "green bell pepper, diced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "radishes, sliced thin",
+        "quantity": 5,
+        "unit": null
+      },
+      {
+        "ingredient_name": "frozen corn, thawed and rinsed",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "black beans",
+        "quantity": 15.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "shredded cheddar cheese",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "pico de gallo",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "crushed tortilla chips",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "boneless, skinless chicken breasts",
+        "quantity": 2,
+        "unit": null
+      },
+      {
+        "ingredient_name": "olive oil, divided",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chili powder",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "paprika",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "onion powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly ground black pepper",
+        "quantity": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Add the avocado, sour cream, minced garlic, salt, lime juice, and cilantro to a food processor or blender. Puré until smooth. Cover and set aside in the refrigerator."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Chop romaine lettuce into bite-sized pieces and transfer to a large salad bowl."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Dice bell peppers, slice radishes, thaw frozen corn, and rinse and strain canned black beans. Add this and 1/2 cup of pico de gallo to the large salad bowl on top of chopped romaine lettuce. Cover and keep in the refrigerator while you prepare the chicken."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Place the chicken breasts inside a heavy duty food storage bag and flatten with a rolling pin or a tenderizing mallet until the breasts are consistently about 3/4 inch thick. Start in the middle at the thickest part of each breast for more even cooking. This step helps the chicken cook more evenly."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Prepare the Santa Fe Chicken seasoning blend by combining chili, paprika,  cayenne, cumin, garlic powder, onion powder, salt, and black pepper."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Rub chicken breasts with 1 Tbsp olive oil and divide the seasoning blend between the them, making sure to thoroughly coat the entire surface of each chicken breast with seasoning."
+      },
+      {
+        "step_number": 7,
+        "instruction": "In a large skillet, add 1 Tbsp olive oil over medium-high heat. When the oil is glistening and hot, add the chicken breasts. Cook your chicken for a total of 10-12 minutes, flipping halfway. While the chicken cooks, do not wiggle or disturb it except for flipping. Remove the chicken from the heat when it reaches an internal temperature of 160°F. Allow chicken to rest on a cutting board for 5-10 minutes before slicing into strips. After resting, the chicken should reach an internal temperature of 165°F."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Fan out the sliced chicken on top of the salad and drizzle creamy avocado dressing over the top. Toss and serve!"
+      }
+    ],
+    "tags": [
+      "american",
+      "texmex",
+      "salad",
+      "santa fe salad"
+    ],
+    "nutrition": {
+      "calories": "516 kcal",
+      "fatContent": "21 g",
+      "proteinContent": "29 g",
+      "carbohydrateContent": "61 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/santa-fe-salad/",
+    "scrapedAt": "2026-04-05T21:30:56.824Z"
+  },
+  {
+    "name": "Roasted Cauliflower Taco Bowls with Cilantro Lime Ranch",
+    "description": "These light and flavorful Roasted Cauliflower Taco Bowls have tons of color, flavor, and texture to keep you coming back for more! Great for meal prep!",
+    "servings": 4,
+    "time_to_cook": 60,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2020/02/Roasted-Cauliflower-Taco-Bowls-close-above.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "mayonnaise",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "sour cream",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "lime",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "onion powder",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "finely chopped cilantro",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "green onion, chopped",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cauliflower",
+        "quantity": 1,
+        "unit": "head"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chili powder",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly cracked pepper",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "ingredient_name": "long grain white rice",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "water",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "15 oz. can black beans",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "frozen corn",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "cooking oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "pint grape tomatoes",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "Fresh cilantro and sliced green onion for garnish",
+        "quantity": null,
+        "unit": null
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Prepare the cilantro lime ranch first, so the flavors have time to blend. Zest the lime, then squeeze the juice from half, and cut the other half into wedges for serving. You&#x27;ll need about 1 Tbsp lime juice. Finely chop about 1 Tbsp cilantro and one green onion."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Combine the ingredients for the cilantro lime ranch in a bowl (mayonnaise, sour cream, 1 Tbsp lime juice, 1/2 tsp lime zest, garlic powder, onion powder, chopped cilantro, chopped green onion, salt). Refrigerate the cilantro lime ranch until you&#x27;re ready to eat."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Next, preheat the oven to 400ºF. Line a baking sheet with parchment paper. Cut the head of cauliflower into florets, then place them in a bowl. In a separate small bowl, combine the ingredients for the taco seasoning (chili powder, smoked paprika, cumin, cayenne, oregano, salt, and some freshly cracked pepper). Drizzle the olive oil over the cauliflower, followed by the taco seasoning, then toss until the cauliflower is evenly coated in oil and spices."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Spread the seasoned cauliflower out over the prepared baking sheet. Roast the cauliflower in the preheated oven for 20-30 minutes, or until it&#x27;s brown and crispy on the edges."
+      },
+      {
+        "step_number": 5,
+        "instruction": "While the cauliflower is roasting, begin cooking the rice. Add the rice and 1.5 cups water to a sauce pot. Place a lid on top, turn the heat up to high, and bring the water up to a boil. Once it reaches a full boil, turn the heat down to low and let the rice simmer for 15 minutes without lifting the lid. After 15 minutes, turn the heat off and let the rice rest for 5 minutes without lifting the lid. Finally, fluff the rice with a fork and divide it between four bowls or containers."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Add the undrained can of black beans to a small sauce pot and heat over medium-low, stirring occasionally, until heated through (if making the bowls for meal prep, skip heating the beans)."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Add 1 Tbsp cooking oil to a large skillet and heat over medium. Once the oil is hot and shimmering, add the frozen corn. Cook the corn, stirring only occasionally, until it is browned and blistered (about 7-8 minutes). Season with a pinch of salt and pepper."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Slice the grape tomatoes, roughly chop the cilantro, and slice a green onions for garnish."
+      },
+      {
+        "step_number": 9,
+        "instruction": "To build the bowls, divide the roasted cauliflower, cooked rice, beans, corn, and tomatoes between four bowls or containers. Top with a pinch of cilantro, sliced green onion, and a wedge of lime. Drizzle the cilantro lime ranch over top just before eating."
+      }
+    ],
+    "tags": [
+      "american",
+      "southwest",
+      "dinner",
+      "lunch",
+      "main course",
+      "bowl meals",
+      "lunch recipes",
+      "meal prep recipes"
+    ],
+    "nutrition": {
+      "calories": "515.33 kcal",
+      "fatContent": "22.1 g",
+      "proteinContent": "13.68 g",
+      "carbohydrateContent": "68.85 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/roasted-cauliflower-taco-bowls/",
+    "scrapedAt": "2026-04-05T21:33:04.152Z"
+  },
+  {
+    "name": "Soy Marinated Tofu Bowls with Spicy Peanut Sauce",
+    "description": "These vegan Soy Marinated Tofu Bowls are full of rich flavors and plenty of texture to keep your taste buds happy and your belly full.&nbsp;",
+    "servings": 4,
+    "time_to_cook": 80,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2017/12/Soy-Marinated-Tofu-Bowls-with-Peanut-Sauce-eat.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "firm tofu",
+        "quantity": 14,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "light oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "quantity": 1,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "brown rice",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "water",
+        "quantity": 3.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "toasted sesame oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "natural style creamy peanut butter",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "Sriracha",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "grated fresh ginger",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "hot water",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "oil for pan frying",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "snap peas",
+        "quantity": 0.5,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "green onions, sliced",
+        "quantity": 2,
+        "unit": null
+      },
+      {
+        "ingredient_name": "sesame seeds",
+        "quantity": 1,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Begin by pressing the tofu for about 30 minutes to remove the excess moisture. Place the block of tofu between two flat plates, rimmed baking sheets, or cutting boards and place something heavy on top, like a cast iron skillet or a pot full of water. If using cutting boards or something without a rim to hold in the water that seeps out, place paper towels or a clean dishcloth under the tofu to catch the liquid as it is expelled."
+      },
+      {
+        "step_number": 2,
+        "instruction": "While the tofu is pressing, begin the rice. Cook your rice according to the package directions, making sure to include salt. Once the rice has cooked, fluff it with a fork and then drizzle 1/2 Tbsp toasted sesame oil over top. Fold the oil into the rice, making sure not to stir too vigorously, then repeat with the second 1/2 Tbsp of sesame oil. The rice should now have a wonderful toasty nutty flavor and aroma. Set the rice aside."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Once the tofu has pressed, pour off the excess liquid. Slice the block of tofu into 16 triangles (I cut the thickness of the block in half, then cut the stacked halves into quarters, and each piece into two triangles). Place the tofu pieces in a shallow bowl or dish."
+      },
+      {
+        "step_number": 4,
+        "instruction": "In a small bowl, stir together the ingredients for the tofu marinade: oil, soy sauce, minced garlic, and brown sugar. Pour the marinade over the tofu pieces and turn them all to make sure all sides are coated. Allow the tofu to marinate for about 20 minutes, turning the pieces once or twice during that time. After 20 minutes, most of the marinade should be absorbed."
+      },
+      {
+        "step_number": 5,
+        "instruction": "While the tofu is marinating and the rice is cooking prepare the spicy peanut sauce. In a bowl stir together the peanut butter, sriracha, soy sauce, grated ginger, brown sugar, and enough hot water to create a smooth sauce (3-4 Tbsp). Set the sauce aside."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Once the tofu has marinated, heat a large non-stick skillet over medium flame. Add just a splash of oil to the skillet (about 1 tsp) and swirl to coat the skillet. Add the tofu pieces and any remaining marinade, and cook on each side until deeply browned.&nbsp;"
+      },
+      {
+        "step_number": 7,
+        "instruction": "Once the tofu pieces are browned, remove them from the skillet and add the snap peas. Quickly sauté the snap peas in the skillet until they turn bright green and are still crisp. You just want to remove the raw edge. Remove them from the skillet to prevent over cooking."
+      },
+      {
+        "step_number": 8,
+        "instruction": "To build the bowls, add about 1.5 cups sesame rice to each bowl and then top with 1/4 of the tofu pieces and snap peas. Drizzle spicy peanut sauce over each bowl and then sprinkle sliced green onions and sesame seeds over each."
+      }
+    ],
+    "tags": [
+      "asian",
+      "dinner",
+      "lunch",
+      "main course",
+      "bowl meals",
+      "meal prep",
+      "tofu recipes",
+      "vegan"
+    ],
+    "nutrition": {
+      "calories": "654.75 kcal",
+      "fatContent": "24.7 g",
+      "proteinContent": "23.18 g",
+      "carbohydrateContent": "88.35 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/soy-marinated-tofu-bowls-spicy-peanut-sauce/",
+    "scrapedAt": "2026-04-05T21:30:42.441Z"
+  },
+  {
+    "name": "BBQ Beef and Beans",
+    "description": "Serve these sweet, tangy, and savory BBQ Beef and Beans with rice and cheese for a simple and comforting weeknight dinner the whole family will love.",
+    "servings": 4,
+    "time_to_cook": 30,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2019/06/BBQ-Beef-and-Beans-eat.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "cooking oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "ground beef",
+        "quantity": 0.5,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "kidney beans",
+        "quantity": 15.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "black beans",
+        "quantity": 15.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "tomato sauce",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "apple cider vinegar",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "molasses",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Worcestershire sauce",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "onion powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly cracked pepper",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "ingredient_name": "salt to taste",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "ingredient_name": "cooked rice",
+        "quantity": 4,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "shredded cheddar",
+        "quantity": 4,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "green onions, sliced",
+        "quantity": 2,
+        "unit": null
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Add the oil and minced garlic to a large skillet. Sauté the garlic for one minute over medium heat. Add the ground beef and continue to sauté until cooked through. If using a higher fat content beef, drain the excess fat before moving on to the next step."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Rinse the two cans of beans, then drain them well. Add the beans to the skillet with the ground beef."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Add the ingredients for the Homemade BBQ Sauce to the skillet (tomato sauce, tomato paste, apple cider vinegar, brown sugar, molasses, Dijon, Worcestershire sauce, smoked paprika, garlic powder, onion powder, cayenne, and some freshly cracked pepper)."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Stir and cook the mixture until the sauce ingredients have combined and created a thick sauce. Allow the sauce to come up to a simmer and then simmer the beef and beans in the sauce for 5 minutes, stirring often. Taste the sauce and add salt to taste (I added 1/2 tsp)."
+      },
+      {
+        "step_number": 5,
+        "instruction": "To serve the BBQ Beef and Beans, place 1 cup cooked rice in each bowl, top with 1 cup of the BBQ Beef and Beans, then top with about 1/4 cup shredded cheddar and a sprinkle of sliced green onion."
+      }
+    ],
+    "tags": [
+      "american",
+      "dinner",
+      "lunch",
+      "main course",
+      "comfort food",
+      "easy dinner"
+    ],
+    "nutrition": {
+      "calories": "742.13 kcal",
+      "fatContent": "21.73 g",
+      "proteinContent": "35.45 g",
+      "carbohydrateContent": "100.15 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/bbq-beef-and-beans/",
+    "scrapedAt": "2026-04-05T21:31:17.525Z"
+  },
+  {
+    "name": "Bún chả",
+    "description": "Bún chả (Vietnamese Meatballs) are simple, light, fresh, and perfect for a hot summer day or as a make-ahead meal.",
+    "servings": 4,
+    "time_to_cook": 105,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2022/07/Bun-Cha-above.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "ground pork",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "garlic, finely chopped",
+        "quantity": 3,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "chopped shallot",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "minced lemongrass",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "honey",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "fish sauce",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cooking oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lime juice",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "water",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "Thai red chili pepper",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "quantity": 1,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "sugar",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "carrot, thinly sliced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "rice vermicelli noodles",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "butter lettuce",
+        "quantity": 1,
+        "unit": "head"
+      },
+      {
+        "ingredient_name": "fresh mint",
+        "quantity": 1,
+        "unit": "handful"
+      },
+      {
+        "ingredient_name": "carrot, sliced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "cucumber, sliced",
+        "quantity": 0.5,
+        "unit": null
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "For the Meatballs:"
+      },
+      {
+        "step_number": 2,
+        "instruction": "For the Sauce:"
+      },
+      {
+        "step_number": 3,
+        "instruction": "For the Bowls:"
+      }
+    ],
+    "tags": [
+      "vietnames",
+      "dinner",
+      "lunch",
+      "main course",
+      "bbq meatballs",
+      "bún chả",
+      "pork meatballs",
+      "vietnamese meatballs",
+      "vietnamese"
+    ],
+    "nutrition": {
+      "calories": "531 kcal",
+      "fatContent": "31 g",
+      "proteinContent": "22 g",
+      "carbohydrateContent": "40 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/bun-cha/",
+    "scrapedAt": "2026-04-05T21:34:00.051Z"
+  },
+  {
+    "name": "Hearty Meatball Soup",
+    "description": "This Hearty Meatball Soup is made with Italian-style turkey meatballs, a rich tomato-based broth, veggies, and pasta. An easy one pot dinner!",
+    "servings": 8,
+    "time_to_cook": 50,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2011/02/Hearty-Meatball-Soup-Bowl.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "plain breadcrumbs",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "grated Parmesan",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Italian seasoning",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "onion powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground turkey",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "large egg",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "large carrots",
+        "quantity": 3,
+        "unit": null
+      },
+      {
+        "ingredient_name": "ribs celery",
+        "quantity": 3,
+        "unit": null
+      },
+      {
+        "ingredient_name": "yellow onion",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "garlic",
+        "quantity": 4,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "28 oz. can diced tomatoes, with juices",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "28 oz. can tomato sauce",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "beef broth",
+        "quantity": 4,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "dry pasta",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "fresh parsley",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "grated Parmesan cheese",
+        "quantity": 0.5,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Start by making your meatballs by mixing together the breadcrumbs, Parmesan, Italian seasoning, garlic powder, onion powder, salt, and pepper in a mixing bowl. Also, preheat your oven or air fryer to 400ºF."
+      },
+      {
+        "step_number": 2,
+        "instruction": "In a separate mixing bowl, use your clean hands to combine the ground turkey, egg, and breadcrumb mixture until combined (don&#39;t overmix to avoid tough turkey meatballs!)"
+      },
+      {
+        "step_number": 3,
+        "instruction": "Divide the meat mixture and shape it into 16 meatballs, using two tablespoons of the mix per meatball. I usually split the meat mixture in half, then divide it into quarters, and then split each quarter into four pieces to make it easier."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Now bake the shaped meatballs on a parchment-lined baking sheet in your preheated oven for 20 minutes or until cooked through. You can also air fry them at 400ºF for about 8 minutes until cooked through (cook in batches). Or, cook them in a skillet over medium heat (also in batches) with 1 Tbsp of olive oil for about 2-3 minutes on each side until cooked and browned all over. Once done, set them aside for now."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Cook the diced carrots, celery, onion, and minced garlic in a large pot with olive oil over medium heat until softened (5-10 minutes)."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Add the diced tomatoes, tomato sauce, water and beef bouillon to the pot. Bring it up to a simmer then add the pasta and meatballs. Allow the pot to simmer for about 10-15 minutes or until the pasta is cooked through."
+      },
+      {
+        "step_number": 7,
+        "instruction": "While the pot is simmering, rinse and chop half a bunch of parsley. Add the parsley to the pot after the pasta has fully cooked."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Serve each bowl of soup with freshly grated parmesan on top."
+      }
+    ],
+    "tags": [
+      "american",
+      "dinner",
+      "lunch",
+      "main course",
+      "homemade soup",
+      "meatball soup",
+      "italian"
+    ],
+    "nutrition": {
+      "calories": "339 kcal",
+      "fatContent": "9 g",
+      "proteinContent": "25 g",
+      "carbohydrateContent": "42 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/hearty-meatball-soup/",
+    "scrapedAt": "2026-04-05T21:26:06.055Z"
+  },
+  {
+    "name": "Tempeh Burrito Bowls",
+    "description": "Spiced and crumbled tempeh makes a fast and easy alternative to beef in these Tempeh Burrito Bowls. Customize the toppings to be vegetarian or vegan!&nbsp;",
+    "servings": 4,
+    "time_to_cook": 35,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2019/04/Tempeh-Burrito-Bowls-close.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "sweet potato",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "cooking oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "tempeh",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "water",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "tomato paste",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "chili powder",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cumin",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "oregano",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly cracked pepper",
+        "quantity": null,
+        "unit": null
+      },
+      {
+        "ingredient_name": "cooked rice",
+        "quantity": 4,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "salsa",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "frozen corn kernels, thawed",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "jalapeño",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "avocado",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "sour cream",
+        "quantity": 0.25,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Preheat the oven to 400ºF. Peel and dice the sweet potato into 1/2-inch cubes. Spread the cubes out onto a baking sheet, drizzle with oil, then toss to coat. Season with a pinch of salt."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Roast the sweet potatoes in the preheated oven for 20 minutes, stirring half way through. Once roasted, set aside."
+      },
+      {
+        "step_number": 3,
+        "instruction": "While the sweet potatoes are roasting, prepare the seasoned tempeh. Crumble the brick of tempeh into a skillet. Add the water, oil, tomato paste, chili powder, smoked paprika, cumin, cayenne, oregano, garlic powder, salt, and some freshly cracked pepper (about 10 cranks of a pepper mill). Stir briefly to combine."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Place a lid on the skillet and turn the heat on to medium. Allow the skillet to come up to a simmer. Let the tempeh simmer, stirring every few minutes, for about 10 minutes total, or until the liquid reduces to a thick sauce."
+      },
+      {
+        "step_number": 5,
+        "instruction": "While the tempeh is simmering, slice the avocado and jalapeño.&nbsp;"
+      },
+      {
+        "step_number": 6,
+        "instruction": "To build the bowls, place 1 cup cooked rice in the bottom of each bowl. Divide the seasoned tempeh, roasted sweet potatoes, corn, and avocado between all four bowls. Top each bowl with 1 to 2 tablespoons of salsa, 1 tablespoon of sour cream, and a few slices of jalapeño. Eat immediately or refrigerate for up to 4 days."
+      }
+    ],
+    "tags": [
+      "american",
+      "southwest",
+      "dinner",
+      "lunch",
+      "main course",
+      "meal prep",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutrition": {
+      "calories": "561.88 kcal",
+      "fatContent": "24.25 g",
+      "proteinContent": "19.03 g",
+      "carbohydrateContent": "71.28 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/tempeh-burrito-bowls/",
+    "scrapedAt": "2026-04-05T21:31:06.843Z"
+  },
+  {
+    "name": "Veggie Pot Pie",
+    "description": "If you want your whole family clamoring around the dinner table with a dish everyone will love, this Veggie Pot Pie is All. Of. The. Things! Creamy, savory, hearty, crispy—you can even make this recipe vegan!",
+    "servings": 8,
+    "time_to_cook": 90,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/02/VeggiePotPiewithhands.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "3-Ingredient Pie Crust",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "salted butter, divided",
+        "quantity": 7,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "yellow onion, small dice",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "garlic cloves, minced",
+        "quantity": 2,
+        "unit": null
+      },
+      {
+        "ingredient_name": "flour",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "vegetable broth",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "whole milk",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.75,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "bay leaf",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "dried rosemary",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried thyme",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "rubbed sage",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "soy sauce",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "Yukon gold potato, small dice",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "pint baby bellas, small dice",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "frozen mixed vegetables",
+        "quantity": 12,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "large egg, separated",
+        "quantity": 1,
+        "unit": null
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Grease a pie pan with 1 tablespoon of butter. If you&#39;re using store-bought dough, place the bottom crust in the pie pan. If you made 3-Ingredient Pie Crust, cut 1/3 of the dough off to be used as the top crust, wrap it in plastic, and refrigerate until you&#39;re ready to use it later."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Dust your work surface with flour and roll out the bigger 2/3 piece of dough into a circle that is 16 inches in diameter and about 1/4 inch thick. Line the pie pan with it."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Beat the egg white until frothy, then brush the bottom crust with it. Let the crust rest in the fridge."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Place a rack in the center of your oven along with a sheet pan and preheat it to 350ºF. Place a deep skillet over medium heat and add 5 tablespoons of salted butter to the pan. Once the butter foams, swish it around the pan until it turns an amber color and smells of hazelnuts."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Add the diced onions to the brown butter. Cook until the onions are translucent, about 5 minutes. Add the garlic, and cook for one minute. Sprinkle the flour over the onions and garlic in the skillet and continue to cook and stir for two minutes more."
+      },
+      {
+        "step_number": 6,
+        "instruction": "To the pan, add veggie broth, milk, and salt. Whisk to combine and dissolve any flour off the bottom of the skillet. Then add the bay leaf, rosemary, thyme, sage, pepper, and soy sauce. Whisk occasionally as the liquid simmers and thickens."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Add the pint of diced mushrooms and the diced potato to the pan. Stir to combine and cook until the gravy has thickened more and reduced some, about 5 minutes."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Remove the skillet from the heat. Finally, add the frozen mixed vegetables and allow them to cool the ingredients in the pan."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Take the pie pan out of the fridge, prick the bottom crust a few times with a fork, and add the cooled filling to the pie pan. Dice the last tablespoon of butter and sprinkle it over the filling."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Roll the smaller piece of dough into a circle, about 10 inches wide and 1/4 inch thick. Cover the pie with it."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Beat the egg yolk. Trace a bit of yolk along the top edge of the bottom and top crusts. Fold the bottom crust over the top crust and crimp the edges shut. Cut vents into your top crust. Brush egg yolk in a light layer over the top crust."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Bake for 45 to 50 minutes, or until the pie dough is golden and flaky. Allow the Veggie Pot Pie to cool for ten minutes before serving."
+      }
+    ],
+    "tags": [
+      "american",
+      "brunch",
+      "dinner",
+      "lunch",
+      "vegan dinner",
+      "vegan pot pie",
+      "vegetarian dinner",
+      "veggie pot pie",
+      "vegan",
+      "vegetarian"
+    ],
+    "nutrition": {
+      "calories": "281 kcal",
+      "fatContent": "17 g",
+      "proteinContent": "7 g",
+      "carbohydrateContent": "28 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/veggie-pot-pie/",
+    "scrapedAt": "2026-04-05T21:31:21.591Z"
+  },
+  {
+    "name": "Creamy Chicken And Orzo Skillet",
+    "description": "When you think you don&#039;t have time to cook, try this easy, buttery, and super tasty Creamy Chicken and Orzo Skillet! Bonus: It cooks in one pan!",
+    "servings": 4,
+    "time_to_cook": 45,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/04/ChickenandOrzoSkilletplated.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "paprika",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried thyme",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "onion powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "boneless chicken thighs",
+        "quantity": 1.25,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "cooking oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "yellow onion, diced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "orzo",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "vegetable broth",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "heavy cream",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "salted butter",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "parmesan",
+        "quantity": 0.25,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Add the paprika, dried oregano, dried thyme, garlic powder, onion powder, salt, and pepper to a small bowl***. Mix until combined."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Blot the chicken thighs dry with a paper towel, then season both sides liberally with the seasoning blend."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Heat a large deep skillet over medium and add the cooking oil. Add the seasoned chicken thighs and cook undisturbed until well browned, about 5 minutes. Flip and repeat on the other side.  Remove the chicken from the pan."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Turn the heat down to low, and add the onion and garlic. Saute until the onions are translucent, about 3 minutes."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Add the orzo and vegetable broth to the skillet and stir well to help dissolve the crispy browned bits from the bottom of the pan. Return the chicken to the pan and nestle it down into the orzo."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Place a lid on the skillet, turn the heat up to medium-high, and let the broth come to a full boil. Then turn the heat down to low. Let the skillet simmer for about 15 minutes or until most of the broth is absorbed."
+      },
+      {
+        "step_number": 7,
+        "instruction": "After about 15 minutes, the orzo should be tender and most of the broth absorbed, but there will still be a little sauce in the skillet. Remove the chicken from the skillet."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Add the cream and the butter to the skillet. Stir and heat over low until the butter melts and the cream is hot."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Add the Parmesan and stir to combine."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Finally, return the chicken to the skillet. If desired, garnish with parsley."
+      }
+    ],
+    "tags": [
+      "american",
+      "dinner",
+      "chicken",
+      "orzo",
+      "skillet chicken"
+    ],
+    "nutrition": {
+      "calories": "779 kcal",
+      "fatContent": "50 g",
+      "proteinContent": "34 g",
+      "carbohydrateContent": "49 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/creamy-chicken-and-orzo-skillet/",
+    "scrapedAt": "2026-04-05T21:32:33.694Z"
+  },
+  {
+    "name": "Apple Cinnamon Muffins Recipe",
+    "description": "These homemade Apple Cinnamon Muffins are moist and fluffy, with juicy, sweet apples in every bite. And the streusel crumb topping is absolutely delicious!",
+    "servings": 10,
+    "time_to_cook": 47,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2024/12/Apple-Cinnamon-Muffin.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "all-purpose flour",
+        "quantity": 2.083,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "brown sugar, packed",
+        "quantity": 0.333,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "ground cinnamon",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salted cold butter, cubed",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "small apples",
+        "quantity": 2,
+        "unit": null
+      },
+      {
+        "ingredient_name": "baking powder",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "baking soda",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cinnamon",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "nutmeg",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "white sugar",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "plain yogurt",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "sweetened applesauce",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "vegetable oil",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "large eggs, room temperature",
+        "quantity": 2,
+        "unit": null
+      },
+      {
+        "ingredient_name": "vanilla extract",
+        "quantity": 1.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Preheat the oven to 350°F. Start by making the crumb mixture. In a medium bowl whisk together the all-purpose flour, brown sugar, and cinnamon. Then add the cubed cold butter to the bowl. Combine the butter and the flour mixture together with a fork, pastry cutter, or clean hands. Once the mixture is well combined and crumbly, set it to the side."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Next wash, peel, and remove the core from the apples. Dice the apples into small cubes. I like to first slice the apples, then cut them into strips, then dice them into small cubes. Set the diced apples to the side."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Now in a large bowl add the dry ingredients for the muffins (all-purpose flour, baking powder, baking soda, salt, cinnamon, and nutmeg). Whisk together until combined."
+      },
+      {
+        "step_number": 4,
+        "instruction": "In a separate bowl combine the wet ingredients together (brown sugar, white sugar, plain yogurt, applesauce, oil, eggs, and vanilla extract. Mix together until well combined."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Add the dry ingredients to the same bowl as the wet ingredients. Stir together until just combined. Be careful not to overmix at this point."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Add the diced apples to the bowl and fold them into the batter until just combined."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Divide the batter between ten greased or lined muffin wells (I used butter to grease my muffin wells really well)."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Now divide and top each muffin with the streusel crumble mixture."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Bake the muffins in the preheated oven for 26-28 minutes or until golden brown and a toothpick inserted comes out clean. Allow the muffins to cool for about 5 minutes, then carefully loosen the edges with a knife and transfer the muffins to a wire rack to finish cooling. Enjoy!"
+      }
+    ],
+    "tags": [
+      "american",
+      "dessert",
+      "apple cinnamon muffins"
+    ],
+    "nutrition": {
+      "calories": "307 kcal",
+      "fatContent": "10 g",
+      "proteinContent": "4 g",
+      "carbohydrateContent": "50 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/apple-cinnamon-muffins/",
+    "scrapedAt": "2026-04-05T21:27:22.827Z"
+  },
+  {
+    "name": "Sausage Meatball and Kale Sheet Pan Meal",
+    "description": "This hearty Italian Sausage Meatballs and Kale Sheet Pan Meal is chock full of deep, tangy flavors and succulent textures! It&#39;s perfect for those days when you don&#39;t feel like cooking.",
+    "servings": 4,
+    "time_to_cook": 35,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2023/06/Sausage-Kale-Sheet-Pan-Plated.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "red potatoes, quartered",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "olive oil, divided",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "kosher salt, divided",
+        "quantity": 3.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "red pepper flakes",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "pint cherry or grape tomatoes",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "panko breadcrumbs",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "milk",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "Italian Ground Sausage",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "large egg, beaten",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "kale, chopped",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "red wine vinegar",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "brown sugar",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Preheat oven to 450°F. Place quartered red potatoes in a large bowl and drizzle with 1/4 cup olive oil.  Mix smoked paprika, 2 teaspoons of salt, black pepper, and chili flakes. Sprinkle over the potatoes and toss. Place the potatoes in a sheet pan."
+      },
+      {
+        "step_number": 2,
+        "instruction": "In the same bowl, add the tomatoes and sprinkle with 1/4 teaspoon salt. Scatter them over the potatoes."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Soak the breadcrumbs in milk. Break up Italian sausage in a large bowl. Mix in breadcrumbs and egg. Wet your fingers with a bit of leftover oil from the bowl the tomatoes were in. Roll 16 meatballs and place them on the sheet pan between the potatoes and tomatoes."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Bake for 10 minutes, then turn the meatballs and bake for another 10 minutes."
+      },
+      {
+        "step_number": 5,
+        "instruction": "While the meatballs bake, add 1/2 lb of the kale to the same bowl the potatoes and tomatoes were in. Mix red wine vinegar, 1/2 cup olive oil, Dijon mustard, brown sugar, garlic powder, and 1/4 teaspoon salt. Toss the kale in the dressing, massaging it into the leaves."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Remove the sheet pan from the oven, and scatter kale all over."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Roast for 3 to 4 minutes until the kale has charred in spots. To serve, split raw kale between 4 bowls. Top with charred kale and tomatoes and mix. Finally, top with meatballs and potatoes."
+      }
+    ],
+    "tags": [
+      "american",
+      "brunch",
+      "dinner",
+      "lunch",
+      "roasted kale",
+      "sausage meatballs",
+      "sheet pan meal",
+      "italian"
+    ],
+    "nutrition": {
+      "calories": "919 kcal",
+      "fatContent": "79 g",
+      "proteinContent": "23 g",
+      "carbohydrateContent": "31 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/sausage-meatballs-and-kale-sheet-pan-meal/",
+    "scrapedAt": "2026-04-05T21:35:04.470Z"
+  },
+  {
+    "name": "Greek Chicken and Orzo Recipe",
+    "description": "This easy Greek Chicken and Orzo recipe comes together in one pot, making it the perfect mid-week meal! Fresh, simple &amp; incredibly delicious.",
+    "servings": 4,
+    "time_to_cook": 45,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2025/01/Greek-Chicken-And-Orzo-Fork.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "paprika",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried thyme",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano, divided",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt, divided",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly cracked black pepper, divided",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "boneless, skinless chicken thighs",
+        "quantity": 4,
+        "unit": null
+      },
+      {
+        "ingredient_name": "olive oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "butter",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "small yellow onion, diced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "red bell pepper, diced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "of garlic, minced",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "uncooked orzo pasta",
+        "quantity": 1.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "chicken broth",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "pint grape tomatoes, halved",
+        "quantity": 0.5,
+        "unit": null
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "pitted kalamata olives",
+        "quantity": 0.333,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh chopped parsley",
+        "quantity": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "In a small bowl, combine the paprika, dried thyme, garlic powder, 1 tsp dried oregano, ¾ tsp salt, and ¼ tsp black pepper."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Blot the chicken thighs dry with a paper towel, then season both sides liberally with the seasoning blend."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Heat the olive oil and butter in a large deep skillet over medium heat. Once the skillet is hot, add the chicken and cook on each side until golden brown and cooked through (about 5 minutes per side). Remove the chicken from the skillet and transfer to a clean plate. Cover with aluminum foil to keep warm."
+      },
+      {
+        "step_number": 4,
+        "instruction": "In the same skillet, add the diced onion, diced bell pepper, and minced garlic. Sauté for 3-4 minutes until onions are translucent."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Now add in the orzo pasta, ½ tsp dried oregano, ¼ tsp salt, ¼ tsp black pepper, and the chicken broth. Stir to combine and scrape up any browned bits that may be stuck at the bottom of the pan."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Return the chicken to the pan and nestle it down into the orzo. Place a lid on the skillet, turn the heat up to medium-high, and let the broth come to a full boil. Once the broth is boiling, turn the heat down to medium-low and let the skillet simmer for about 12 minutes or until most of the broth is absorbed."
+      },
+      {
+        "step_number": 7,
+        "instruction": "After about 12 minutes, add in the sliced grape tomatoes and let the skillet continue to simmer, without the lid, for 3-4 more minutes."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Remove the skillet from the heat and finish by stirring in fresh lemon juice, sliced kalamata olives, and topping with fresh parsley. Enjoy!"
+      }
+    ],
+    "tags": [
+      "greek",
+      "mediterranean",
+      "main course",
+      "greek chicken and orzo"
+    ],
+    "nutrition": {
+      "calories": "467 kcal",
+      "fatContent": "15 g",
+      "proteinContent": "37 g",
+      "carbohydrateContent": "45 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/greek-chicken-and-orzo/",
+    "scrapedAt": "2026-04-05T21:30:23.396Z"
+  },
+  {
+    "name": "Strawberry Sheet Cake",
+    "description": "This Strawberry Sheet Cake is fluffy, moist, and made with fresh strawberries and a simply irresistible strawberry cream cheese frosting. Perfect for any occasion!",
+    "servings": 15,
+    "time_to_cook": 85,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2024/06/Strawberry-Sheet-Cake-Side-Close.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "fresh strawberries",
+        "quantity": 1,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "granulated sugar",
+        "quantity": 3.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "of salt",
+        "quantity": null,
+        "unit": "pinch"
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "quantity": 2.75,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "baking powder",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "baking soda",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "vegetable oil",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "large eggs",
+        "quantity": 4,
+        "unit": null
+      },
+      {
+        "ingredient_name": "vanilla extract",
+        "quantity": 3,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "strawberry gelatin",
+        "quantity": 3,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "strawberry puree",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "whole milk",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "cream cheese, softened",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "salted butter, softened",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "powdered sugar",
+        "quantity": 3,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Preheat the oven to 350°F and start by making the strawberry puree. Wash, remove the stems, and quarter the strawberries. Add the strawberries to a food processor and pulse for several seconds until the strawberries have broken down into a puree."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Add the pureed strawberries along with 2 Tbsp of sugar and a pinch of salt to a small pot over medium-low heat. Simmer the strawberries for 20-25 minutes, stirring occasionally, until the strawberry puree has reduced by about half. You should end up with 1 cup of reduced strawberry puree. Transfer the reduced strawberry puree to a bowl and allow it to cool."
+      },
+      {
+        "step_number": 3,
+        "instruction": "While the strawberries are simmering, in a large bowl whisk together the dry ingredients (all-purpose flour, baking powder, baking soda, and salt)."
+      },
+      {
+        "step_number": 4,
+        "instruction": "In a separate large bowl, whisk together the granulated sugar, vegetable oil, eggs (2 at a time) and vanilla extract until well combined."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Now add in the strawberry gelatin and ¾ cups of the strawberry puree. Stir together until combined (save the rest of the strawberry puree for the frosting)."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Next add the dry ingredients to the same bowl as the wet ingredients and pour in the milk. Stir together until just combined. Be careful not to overmix at this point."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Pour the batter into a greased 9x13” baking dish and bake in the preheated oven for 40-45 minutes or until a toothpick inserted into the center comes out clean."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Remove the cake from the oven and allow it to cool completely at room temperature before frosting."
+      },
+      {
+        "step_number": 9,
+        "instruction": "To make the frosting, combine the cream cheese and salted butter in a large bowl using a handheld mixer until smooth. Then add the powdered sugar (1 cup at a time), vanilla extract, and ¼ cup of the strawberry puree. Blend together until creamy and smooth."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Once the cake has cooled, spread the fresh strawberry frosting on top. Feel free to garnish with extra fresh strawberries (optional) and enjoy!"
+      }
+    ],
+    "tags": [
+      "american",
+      "dessert",
+      "strawberry cake",
+      "strawberry sheet cake"
+    ],
+    "nutrition": {
+      "calories": "526 kcal",
+      "fatContent": "24 g",
+      "proteinContent": "6 g",
+      "carbohydrateContent": "72 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/strawberry-sheet-cake/",
+    "scrapedAt": "2026-04-05T21:34:37.070Z"
+  },
+  {
+    "name": "Antipasto Salad",
+    "description": "This super hearty antipasto salad is full of cured meats, cheeses, and pickled vegetables for an extra flavorful and filling salad.",
+    "servings": 8,
+    "time_to_cook": 15,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2021/07/Antipasto-Salad-tossed.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "salad greens",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "artichoke hearts",
+        "quantity": 12.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "pint grape tomatoes",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "mozzarella",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "salami",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "kalamata olives",
+        "quantity": 6.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "banana peppers",
+        "quantity": 8.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "red onion",
+        "quantity": 0.5,
+        "unit": null
+      },
+      {
+        "ingredient_name": "provolone",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "extra virgin olive oil",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "red wine vinegar",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "quantity": 2,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "Italian seasoning",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "sugar",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "black pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "Parmesan",
+        "quantity": 2,
+        "unit": "tbsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Combine the ingredients for the dressing in a bowl or jar (olive oil, red wine vinegar, lemon juice, Dijon, garlic powder, Italian seasoning, salt, pepper, sugar, grated Parmesan). Close the jar tightly and shake or whisk in a bowl until the ingredients are incorporated."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Cut or slice any meat or cheeses into bite-sized pieces. Drain the olives and any brined vegetables. Thinly slice the red onion and slice the grape tomatoes in half."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Lay your greens in the bottom of a bowl, then top with your antipasto items. Give the dressing one last whisk or shake, then drizzle over the salad (start with half the dressing and add more as needed). Toss the salad until everything is coated in dressing, then enjoy."
+      }
+    ],
+    "tags": [
+      "italian",
+      "dinner",
+      "lunch",
+      "main course",
+      "salad",
+      "side dish",
+      "bean salad recipe",
+      "no cook recipe"
+    ],
+    "nutrition": {
+      "calories": "535 kcal",
+      "fatContent": "45 g",
+      "proteinContent": "23 g",
+      "carbohydrateContent": "11 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/antipasto-salad/",
+    "scrapedAt": "2026-04-05T21:37:57.372Z"
+  },
+  {
+    "name": "Sweet Potato Grain Bowls with Green Tahini Sauce",
+    "description": "These Sweet Potato Grain Bowls with Green Tahini Sauce are prefect for meal prep and bursting with color, texture, and flavor!",
+    "servings": 4,
+    "time_to_cook": 65,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2017/05/Sweet-Potato-Grain-Bowl-with-Green-Tahini-Sauce-drizzle.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "uncooked bulgur",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "sweet potatoes",
+        "quantity": 2,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "salt and pepper",
+        "quantity": 1,
+        "unit": "pinch"
+      },
+      {
+        "ingredient_name": "black beans",
+        "quantity": 15.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "avocado",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "jalapeño",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "pepitas",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "tahini",
+        "quantity": 0.3333333333333333,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "water",
+        "quantity": 0.3333333333333333,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "lemon juice",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic",
+        "quantity": 1,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cayenne pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "fresh cilantro",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh parsley",
+        "quantity": 1,
+        "unit": "cup"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Add the uncooked bulgur to a sauce pot and place it over medium heat. Cook and stir the dry bulgur over medium heat for 2-3 minutes, or until it smells toasty or nutty, then remove it from the heat. Add two cups of water, stir to combine, place a lid on top, then bring it to a boil over high heat. Once it reaches a boil, turn the heat down to low and let it simmer for about 12 minutes with the lid in place. Turn the heat off and let the bulgur rest for 5 minutes."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Remove the lid from the pot and fluff the bulgur with a fork. Allow the bulgur to cool (I like to place it in the refrigerator without a lid to cool quickly and dry slightly)."
+      },
+      {
+        "step_number": 3,
+        "instruction": "While the bulgur is simmering, preheat the oven to 400ºF. Peel and dice the sweet potatoes into 3/4-inch cubes. Place the cubed sweet potatoes on a large baking sheet and drizzle with olive oil. Add a pinch of salt and pepper, then toss the cubes until they are coated with oil. Roast the sweet potatoes in the preheated oven for 20 minutes, give them a stir, then roast for an additional 10 minutes or until they are soft and slightly browned on the edges."
+      },
+      {
+        "step_number": 4,
+        "instruction": "While the sweet potatoes are roasting, prepare the green tahini sauce. Place all the ingredients in a blender or food processor, and blend until the herbs are in very small pieces and the sauce becomes a light green color. Taste and adjust the salt if needed."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Slice the avocado and jalapeño. Rinse and drain the black beans."
+      },
+      {
+        "step_number": 6,
+        "instruction": "To assemble the bowls, place 3/4-1 cup cooked and cooled bulgur in each bowl. Divide the sweet potatoes, black beans, avocado, and jalapeño even among the bowls. Sprinkle about 1 Tbsp pepitas over each bowl, then drizzle the green tahini sauce over everything. Be generous with the green tahini sauce as it is responsible for much of the flavor in this dish. If meal prepping, keep the green tahini sauce separate until just before serving."
+      }
+    ],
+    "tags": [
+      "american",
+      "dinner",
+      "lunch",
+      "main course",
+      "cold lunch",
+      "meal prep",
+      "pasta salad"
+    ],
+    "nutrition": {
+      "calories": "693 kcal",
+      "fatContent": "28 g",
+      "proteinContent": "20 g",
+      "carbohydrateContent": "99 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/sweet-potato-grain-bowls-green-tahini-sauce/",
+    "scrapedAt": "2026-04-05T21:38:12.479Z"
+  },
+  {
+    "name": "Kale and White Bean Power Bowls",
+    "description": "These kale and white bean power bowls are full of flavor, texture, protein, fiber, and other nutrients. Perfect for meal prep!",
+    "servings": 4,
+    "time_to_cook": 55,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2021/03/Kale-and-White-Bean-Power-Bowl-eat.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "long grain brown rice",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "red wine vinegar",
+        "quantity": 3,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Italian seasoning",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.375,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly cracked black pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "chopped fresh kale",
+        "quantity": 0.5,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "cooking oil",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "quantity": 1,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "cannellini beans",
+        "quantity": 15.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "sun dried tomatoes",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "chopped walnuts",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "feta",
+        "quantity": 2,
+        "unit": "oz"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Begin cooking the rice first. The remaining bowl ingredients can be prepared while the rice is cooking. Add the rice and 2 cups water to a saucepot. Place a lid on top and bring the water up to a full boil. Once boiling, turn the heat down to low and let the rice simmer for 40 minutes. After 40 minutes, turn the heat off and let the rice sit with the lid in place for an additional 5 minutes. Fluff just before serving."
+      },
+      {
+        "step_number": 2,
+        "instruction": "While the rice is cooking, make the vinaigrette so the flavors have a little time to blend. In a jar or bowl, combine the olive oil, red wine vinegar, Dijon, Italian seasoning, garlic powder, salt, and pepper. Whisk to combine, or close the jar and shake until combined. Set the dressing aside."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Add the cooking oil and minced garlic to a large pot or skillet. Sauté the garlic over medium heat for about one minute. Add the chopped kale and salt. Sauté for a few more minutes, or just until the kale is wilted. Set the kale aside."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Finally, prepare the rest of the toppings. Rinse and drain the white beans. Chop the sun dried tomatoes and walnuts. Crumble the feta."
+      },
+      {
+        "step_number": 5,
+        "instruction": "When the rice has finished cooking, it&#039;s time to assemble the bowls. Add about ¾ cup rice to each bowl or container, followed by ½ cup sautéed kale, ⅓ cup beans, and a tablespoon each of sun dried tomatoes and walnuts. Sprinkle a little feta over each bowl. Divide the vinaigrette between four small containers. Refrigerate until ready to eat."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Reheat the bowls using a microwave just before serving, then drizzle with vinaigrette, stir, and enjoy!"
+      }
+    ],
+    "tags": [
+      "american",
+      "dinner",
+      "lunch",
+      "main course",
+      "easy vegetarian recipe",
+      "grain bowl",
+      "meal prep",
+      "vegetarian"
+    ],
+    "nutrition": {
+      "calories": "550.05 kcal",
+      "fatContent": "26.3 g",
+      "proteinContent": "16.58 g",
+      "carbohydrateContent": "64.18 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/kale-and-white-bean-power-bowls/",
+    "scrapedAt": "2026-04-05T21:27:41.301Z"
+  },
+  {
+    "name": "Puerto Rican Style Red Beans and Rice",
+    "description": "Puerto Rican Rice and Beans is a dish with bold flavors, it&#039;s easy to prepare, and it&#039;s budget-friendly! Make it a meal with a side of ripe yellow plantain slices, or serve it as a sidekick to any protein.",
+    "servings": 12,
+    "time_to_cook": 55,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2022/11/Puerto-Rican-Beans-and-Rice-side.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "cooking oil, divided",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "packet sazón",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "salt pork, small dice",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "onion, diced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "garlic, minced",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "tomato sauce",
+        "quantity": 8,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "sofrito",
+        "quantity": 4,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Better Than Bouillon, Roasted Chicken Base",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "distilled white vinegar",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "large sweet potato, large dice",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "green bell pepper, diced",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "15 oz. cans kidney beans, drained",
+        "quantity": 2,
+        "unit": null
+      },
+      {
+        "ingredient_name": "white medium grain rice, rinsed",
+        "quantity": 2,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "boiling water",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "salt, plus more to taste",
+        "quantity": 2,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Add 2 tablespoons of cooking oil to a medium-sized heavy-bottomed pot over medium-high heat. Once it has warmed, add the salt pork and sazón. Fry until the fat has rendered and the salt pork is golden, about 4 minutes."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Lower the heat to medium and add the onion. Cook for 2 minutes, then add the garlic. Cook for 1 minute until fragrant."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Add the tomato sauce, sofrito, chicken bouillon, and vinegar. Cook for 5 minutes over medium heat, reducing the sauce and developing the flavors."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Add the green bell pepper and the sweet potato. Cook for five minutes."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Add the beans and enough water to cover them. Stir and taste the broth. Add salt to taste."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Cook uncovered over medium heat for 20 minutes until the sweet potato has softened. If halfway through the cook, the liquid in the beans reduces too much, add 1/4 cup of water."
+      },
+      {
+        "step_number": 7,
+        "instruction": "For the rice, set a heavy-bottomed pot over medium heat and add 2 tablespoons of oil. When the oil has warmed, add the rice, mix it into the oil and let it toast for a minute. Next, add the boiling water and 2 teaspoons of salt to the rice and stir."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Cook uncovered until the water begins to evaporate and you see little steam holes form over the surface of the rice, about 5 minutes. Stir the rice once, reduce the heat to low, and cover the pot tightly with a heavy lid, so steam does not escape."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Cook the rice without stirring until the grains are tender, about 15 to 20 minutes. After you portion out the rice, scrape up the crispy bits on the bottom of the pot to serve on top of your rice."
+      },
+      {
+        "step_number": 10,
+        "instruction": "To serve, scoop a 1/2 cup of rice into a bowl and top it with a 1/2 cup of beans. If you want to take it one step further, garnish with fresh cilantro leaves and add a few slices of ripe plantain on the side"
+      }
+    ],
+    "tags": [
+      "latin",
+      "dinner",
+      "lunch",
+      "arroz",
+      "beans and rice",
+      "habichuelas",
+      "habichuelas rojas",
+      "puerto rican",
+      "puerto rican red beans and rice",
+      "red beans",
+      "rice and beans",
+      "white rice"
+    ],
+    "nutrition": {
+      "calories": "314 kcal",
+      "fatContent": "17 g",
+      "proteinContent": "4 g",
+      "carbohydrateContent": "37 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/puerto-rican-rice-and-beans/",
+    "scrapedAt": "2026-04-05T21:32:28.197Z"
+  },
+  {
+    "name": "Turkey Pot Pie Recipe",
+    "description": "Use leftover Thanksgiving turkey to make this easy Turkey Pot Pie recipe! Filled with veggies, a creamy sauce and topped with a flaky crust.",
+    "servings": 8,
+    "time_to_cook": 70,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2024/11/Turkey-Pot-Pie-Overhead.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "half &#39;n half , room temperature",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "egg",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "frozen vegetables",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "yellow onion",
+        "quantity": 0.5,
+        "unit": null
+      },
+      {
+        "ingredient_name": "russet potato",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "butter, divided",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "salt, divided",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "poultry seasoning",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "freshly cracked black pepper",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "chicken broth",
+        "quantity": 1,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh parsley, minced",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "leftover turkey, shredded with 2 forks",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "shredded parmesan cheese",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "pre-made double pie crust",
+        "quantity": 1,
+        "unit": null
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Preheat oven to 450F. Let half &amp; half come to room temp while you prep your ingredients. Beat egg and set aside."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Rinse and strain frozen mixed vegetables, dice half an onion, and peel and dice a potato."
+      },
+      {
+        "step_number": 3,
+        "instruction": "In a large saucepan, melt ½ stick of butter on medium heat and add diced onion and ¼ tsp salt. Cook until glossy but still firm, about 3 minutes"
+      },
+      {
+        "step_number": 4,
+        "instruction": "Add diced potato and cook until par cooked (softened, but still with a little bite), about 7 minutes."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Remove onion and par-cooked potatoes and set aside."
+      },
+      {
+        "step_number": 6,
+        "instruction": "In the same pan on medium low heat, add the remaining ½ stick of butter. Once melted, add flour and whisk to make a light roux."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Add garlic powder, poultry seasoning, remaining ¼ tsp salt, and pepper. Whisk to combine."
+      },
+      {
+        "step_number": 8,
+        "instruction": "To your roux, add chicken broth and half &#39;n half, keeping the heat at medium low and whisking constantly to keep it smooth."
+      },
+      {
+        "step_number": 9,
+        "instruction": "Once thickened, about 3-4 minutes, remove from heat. Fold in mixed vegetables, diced onion, potato, and parsley."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Then, fold in shredded turkey and parmesan cheese."
+      },
+      {
+        "step_number": 11,
+        "instruction": "Roll one pie crust out in a 9&quot; pie pan. Fill the pie crust with the turkey vegetable filling."
+      },
+      {
+        "step_number": 12,
+        "instruction": "Then, add second crust on top, pinching the top and bottom together."
+      },
+      {
+        "step_number": 13,
+        "instruction": "Cut slits into the top of your pie to let some of the steam escape while cooking, and brush the crust with the previously prepared egg wash."
+      },
+      {
+        "step_number": 14,
+        "instruction": "Wrap the edges with tinfoil gently. Bake for 30 minutes. Then, remove the tinfoil from the crust and finish baking for 10-15 more minutes until the crust is golden brown. Let cool for at least 15 minutes before cutting, or the filling will not set."
+      }
+    ],
+    "tags": [
+      "american",
+      "main course",
+      "turkey pot pie"
+    ],
+    "nutrition": {
+      "calories": "345 kcal",
+      "fatContent": "21 g",
+      "proteinContent": "17 g",
+      "carbohydrateContent": "23 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/turkey-pot-pie/",
+    "scrapedAt": "2026-04-05T21:34:09.667Z"
+  },
+  {
+    "name": "Chicken Cordon Bleu",
+    "description": "Chicken Cordon Bleu is one of those recipes that feels super fancy but is ready in under an hour! It&#039;s so saucy, cheesy, and delicious!",
+    "servings": 4,
+    "time_to_cook": 55,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2024/01/chicken-cordon-bleu-plated2-WR.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "large boneless skinless chicken breasts",
+        "quantity": 4,
+        "unit": null
+      },
+      {
+        "ingredient_name": "ham",
+        "quantity": 4,
+        "unit": "slice"
+      },
+      {
+        "ingredient_name": "Swiss cheese",
+        "quantity": 4,
+        "unit": "slice"
+      },
+      {
+        "ingredient_name": "Panko breadcrumbs",
+        "quantity": 1.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "Italian seasoning",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "onion powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "garlic powder",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 1.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "Freshly cracked black pepper",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "butter, melted",
+        "quantity": 0.5,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "butter",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "all-purpose flour",
+        "quantity": 2,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "milk",
+        "quantity": 0.75,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "Dijon mustard",
+        "quantity": 0.5,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "Worcestershire",
+        "quantity": 1,
+        "unit": "tsp"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Preheat the oven to 350°F."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Butterfly each chicken breast by slicing horizontally through the middle of the breast, taking care to not cut all the way through. Open the chicken breast up like a book."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Lay the breast flat between 2 pieces of plastic wrap. Use a meat mallet or rolling pin to pound the chicken breasts into a thin, even layer."
+      },
+      {
+        "step_number": 4,
+        "instruction": "Sprinkle the chicken breasts with salt and pepper. Place a slice of ham and slice of Swiss cheese on each chicken breast."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Gently roll up the chicken breast."
+      },
+      {
+        "step_number": 6,
+        "instruction": "In a shallow bowl, combine the breadcrumbs, Italian seasoning, onion powder, garlic, powder, salt, and pepper. Set up a breading station with 2 shallow bowls; one of melted butter and one for the breading."
+      },
+      {
+        "step_number": 7,
+        "instruction": "Dip the chicken rolls in the melted butter, and roll in the breadcrumbs until completely coated. Transfer to a parchment linked baking sheet."
+      },
+      {
+        "step_number": 8,
+        "instruction": "Bake the chicken for 35-40 minutes or until it reaches an internal temperature of 165°F."
+      },
+      {
+        "step_number": 9,
+        "instruction": "To make the sauce, melt the butter in a saucepan over medium heat. Stir in the flour. Then, slowly pour in the milk while whisking to incorporate."
+      },
+      {
+        "step_number": 10,
+        "instruction": "Add in the Dijon mustard and Worcestershire sauce. Season with salt. Spoon the sauce over the chicken."
+      }
+    ],
+    "tags": [
+      "french",
+      "dinner",
+      "main course",
+      "chicken cordon bleu"
+    ],
+    "nutrition": {
+      "calories": "889 kcal",
+      "fatContent": "57 g",
+      "proteinContent": "69 g",
+      "carbohydrateContent": "23 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/chicken-cordon-bleu/",
+    "scrapedAt": "2026-04-05T21:37:24.428Z"
+  },
+  {
+    "name": "Beef and Cauliflower Taco Skillet",
+    "description": "This beef and cauliflower taco skillet has layers of flavor, color, and texture, and all of your favorite taco flavors in one hearty bowl.",
+    "servings": 4,
+    "time_to_cook": 25,
+    "image_url": "https://www.budgetbytes.com/wp-content/uploads/2021/06/Beef-and-Cauliflower-Taco-Skillet.jpg",
+    "ingredients": [
+      {
+        "ingredient_name": "garlic",
+        "quantity": 2,
+        "unit": "clove"
+      },
+      {
+        "ingredient_name": "olive oil",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "ground beef",
+        "quantity": 0.5,
+        "unit": "lb"
+      },
+      {
+        "ingredient_name": "riced cauliflower",
+        "quantity": 3,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "diced tomatoes with green chiles",
+        "quantity": 10.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "black beans",
+        "quantity": 15.0,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "chili powder",
+        "quantity": 1,
+        "unit": "tbsp"
+      },
+      {
+        "ingredient_name": "smoked paprika",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "ground cumin",
+        "quantity": 1,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "dried oregano",
+        "quantity": 0.5,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "salt",
+        "quantity": 0.25,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "pepper",
+        "quantity": 0.125,
+        "unit": "tsp"
+      },
+      {
+        "ingredient_name": "cheddar cheese, shredded",
+        "quantity": 2,
+        "unit": "oz"
+      },
+      {
+        "ingredient_name": "avocado",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "tomato",
+        "quantity": 1,
+        "unit": null
+      },
+      {
+        "ingredient_name": "finely diced red onion",
+        "quantity": 0.25,
+        "unit": "cup"
+      },
+      {
+        "ingredient_name": "fresh cilantro",
+        "quantity": 1,
+        "unit": "handful"
+      }
+    ],
+    "steps": [
+      {
+        "step_number": 1,
+        "instruction": "Mince the garlic. Add the garlic, olive oil, and ground beef to a large skillet and cook over medium heat until the ground beef is browned. If you&#039;re using a high fat content beef, you may want to drain off the excess fat before the next step."
+      },
+      {
+        "step_number": 2,
+        "instruction": "Drain the can of black beans and add them to the skillet along with the diced tomatoes with green chiles (not drained), chili powder, smoked paprika, cumin, oregano, salt, and  pepper. Stir and cook until the skillet is simmering."
+      },
+      {
+        "step_number": 3,
+        "instruction": "Add the riced cauliflower to the skillet (no need to thaw, if frozen). Continue to stir and cook over medium heat until the cauliflower is tender (about five minutes)."
+      },
+      {
+        "step_number": 4,
+        "instruction": "While the beef and cauliflower are heating, dice the tomato, avocado, and red onion. Roughly chop the cilantro."
+      },
+      {
+        "step_number": 5,
+        "instruction": "Top the beef and cauliflower mixture with the shredded cheddar. Place a lid on the skillet, and let it heat over medium for a few minutes, or until the cheddar has melted."
+      },
+      {
+        "step_number": 6,
+        "instruction": "Once the cheese is melted, top the skillet with the tomato, avocado, red onion, and cilantro. Serve immediately."
+      }
+    ],
+    "tags": [
+      "american",
+      "southwest",
+      "dinner",
+      "main course",
+      "easy dinner",
+      "ground beef recipes",
+      "taco skillet"
+    ],
+    "nutrition": {
+      "calories": "464 kcal",
+      "fatContent": "28 g",
+      "proteinContent": "24 g",
+      "carbohydrateContent": "34 g"
+    },
+    "source": "schema.org/json-ld",
+    "url": "https://www.budgetbytes.com/beef-and-cauliflower-taco-skillet/",
+    "scrapedAt": "2026-04-05T21:27:53.372Z"
+  }
+]

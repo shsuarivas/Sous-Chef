@@ -1,0 +1,227 @@
+.page {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(180deg, #eff6ff 0%, #ffffff 100%);
+    color: #1e40af;
+    padding: 3rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.titleBlock {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    margin: 0;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #1e40af;
+}
+
+.subtitle {
+    margin: 0.5rem 0 0 0;
+    font-size: 1rem;
+    color: #60a5fa;
+}
+
+.exitLink {
+    text-decoration: none;
+}
+
+.exitButton {
+    background: #ffffff;
+    color: #60a5fa;
+    font-size: 1rem;
+    padding: 0.85rem 1.35rem;
+    border: 2px solid #93c5fd;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+
+    &:hover {
+        background: #60a5fa;
+        color: #ffffff;
+        transform: translateY(-1px);
+        box-shadow: 0 6px 20px rgba(96, 165, 250, 0.2);
+    }
+}
+
+.progressTrack {
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: #dbeafe;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: linear-gradient(90deg, #60a5fa 0%, #2563eb 100%);
+    border-radius: 999px;
+    transition: width 0.2s ease;
+}
+
+.controls {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.stepButton {
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 1.1rem 1.5rem;
+    border-radius: 16px;
+    transition: all 0.2s ease;
+}
+
+.previousButton {
+    background: #ffffff;
+    color: #2563eb;
+    border: 2px solid #bfdbfe;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+        background: #eff6ff;
+    }
+}
+
+.nextButton {
+    background: #60a5fa;
+    color: #ffffff;
+    font-weight: 700;
+    border: 2px solid transparent;
+    cursor: pointer;
+
+    &:hover:not(:disabled) {
+        background: #3b82f6;
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(96, 165, 250, 0.25);
+    }
+}
+
+.stepButton:disabled {
+    background: #eff6ff;
+    color: #93c5fd;
+    border-color: #bfdbfe;
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.stepCard {
+    background: #ffffff;
+    border: 1px solid #bfdbfe;
+    border-radius: 28px;
+    padding: 2.5rem 2.75rem;
+    min-height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 20px 45px rgba(96, 165, 250, 0.12);
+}
+
+.stepLabel {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    color: #60a5fa;
+    margin-bottom: 1.25rem;
+}
+
+.stepInstructionWrapper {
+    flex: 1;
+    display: flex;
+    align-items: flex-start;
+}
+
+.stepInstruction {
+    font-size: 2.2rem;
+    line-height: 1.45;
+    color: #1e3a8a;
+}
+
+.assistantCard {
+    background: #f8fbff;
+    border: 1px solid #dbeafe;
+    border-radius: 20px;
+    padding: 1.5rem;
+}
+
+.assistantLabel {
+    color: #60a5fa;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.75rem;
+}
+
+.assistantText {
+    color: #1e40af;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.ingredientsDetails {
+    color: #1e40af;
+    background: #ffffff;
+    border: 1px solid #dbeafe;
+    border-radius: 18px;
+    padding: 1rem 1.25rem;
+}
+
+.ingredientsSummary {
+    cursor: pointer;
+    font-weight: 600;
+    color: #60a5fa;
+}
+
+.ingredientsList {
+    margin: 1rem 0 0 0;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    color: #1e40af;
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 2rem 1rem;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .controls {
+        grid-template-columns: 1fr;
+    }
+
+    .stepCard {
+        padding: 1.75rem 1.5rem;
+        min-height: 280px;
+    }
+
+    .stepInstruction {
+        font-size: 1.5rem;
+    }
+}
