@@ -93,9 +93,9 @@ app.get("/api/token", async (req, res) => {
 app.get("/search", async (req,res)  => {
     const q = req.query.q;
     if (!q) return res.json([]);
-    
+
     //database callback
-    
+
   try {
       const result = await pool.query(`
                 SELECT r.id, r.recipe_name, r.recipe_description
@@ -103,16 +103,17 @@ app.get("/search", async (req,res)  => {
                 WHERE r.search_vector @@ plainto_tsquery('english',$1)
                 LIMIT 10
         `,[q]);
-    
+
         res.json(result.rows);
-  } 
+  }
     catch (err){
         console.error(err);
         res.status(500).json({ error: 'search failed'});
     }
 
 });
-    //used for recipe detail pages. Modular implementation using recipe id
+
+//used for recipe detail pages. Modular implementation using recipe id
 app.get('/recipes/:id', async (req,res) => {
     const id = req.params.id
 
@@ -124,14 +125,13 @@ app.get('/recipes/:id', async (req,res) => {
             WHERE r.id = $1`
             ,[id]);
 
-
         const steps = await pool.query(`
             SELECT step_number, instruction
             FROM steps
             WHERE recipe_id = $1
             ORDER BY step_number`
             ,[id]);
-        
+
         const ingredients = await pool.query(`
             SELECT i.ingredient_name, ri.quantity, u.unit_name
             FROM recipe_ingredients  ri
@@ -145,93 +145,111 @@ app.get('/recipes/:id', async (req,res) => {
             ingredients: ingredients.rows,
             steps: steps.rows
         });
-    }       
+    }
 
     catch(err){
         console.error(err);
         res.status(500).json({ error: 'Failed to fetch recipe' });
-
     }
 });
-//Retriving ratings from the DB
+
+//Retriving ratings from the DB ACROSS ALL USERS
 app.get('/recipes/:id/ratings', async (req,res) => {
     const id = req.params.id
-try{
-    const result = await pool.query(`
-        SELECT ROUND(AVG(rating), 1) AS AVERAGE, COUNT(*) AS COUNT
-        FROM ratings
-        WHERE recipe_id = $1`
-        , [id]);
-    res.json(result.rows[0]);
+    try{
+        const result = await pool.query(`
+            SELECT ROUND(AVG(rating), 1) AS AVERAGE, COUNT(*) AS COUNT
+            FROM ratings
+            WHERE recipe_id = $1`
+            , [id]);
+        res.json(result.rows[0]);
+    }
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Failed to get ratings'});
+    }
+});
 
-}
+//Retrieve ratings from the DB for the CURRENT USER ONLY
+app.get('/recipes/:id/ratings/user', async (req,res) => {
+    const id = req.params.id
+    const {user_id} = req.query
+    try{
+        const result = await pool.query(`
+            SELECT rating
+            FROM ratings
+            WHERE recipe_id = $1 AND user_id = $2
+            `, [id, user_id]);
 
-catch(err){
-    console.error(err);
-    res.status(500).json({ error: 'Failed to get ratings'});
-}
+       if (result.rows[0]){
+           res.json(result.rows[0]);
+       }
+       else {
+           res.json(null);
+       }
+
+    }
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Fail to get rating for the current user'});
+    }
 });
 
 // User submits ratings
 app.post('/recipes/:id/ratings', async (req,res) => {
     const id = req.params.id
     const {user_id,rating} = req.body;
-
-try{
-    await pool.query(`
-    INSERT INTO ratings (user_id, recipe_id, rating)
-    VALUES ($1, $2, $3)
-    ON CONFLICT (user_id, recipe_id) DO UPDATE SET rating = $3`
-        , [user_id, id, rating]);
-    res.json({success:true});
-}
-
-catch(err){
-    console.error(err);
-    res.status(500).json({ error: 'Failed to submit rating'});
-
-}
+    try{
+        await pool.query(`
+            INSERT INTO ratings (user_id, recipe_id, rating)
+            VALUES ($1, $2, $3)
+            ON CONFLICT (user_id, recipe_id) DO UPDATE SET rating = $3`
+            , [user_id, id, rating]);
+        res.json({success:true});
+    }
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Failed to submit rating'});
+    }
 });
-//User Forks a recipe send the user_id and recipe_id to the Database
+
+//User Forks a recipe — toggles fork on/off
 app.post('/recipes/:id/favorites', async (req,res) => {
     const id = req.params.id
     const {user_id} = req.body;
-    console.log('Fork request - user_id: ', user_id, 'recipe_ip:', id);
+    console.log('Fork request - user_id: ', user_id, 'recipe_id:', id);
     try{
-
-        const existing =  await pool.query(`
+        const existing = await pool.query(`
             SELECT 1 FROM favorite WHERE user_id = $1 AND recipe_id = $2
             `, [user_id, id]);
-        
-                if (existing.rows.length > 0){
-                    await pool.query(`DELETE FROM favorite WHERE user_id = $1 AND recipe_id = $2`, [user_id, id]);
-                    res.json({ forked: false });
-                }
-                else {
-                    await pool.query(`INSERT INTO favorite (user_id, recipe_id) VALUES ($1, $2)`, [user_id, id]);
-                    res.json({ forked: true });
-                }
-        }
 
+        if (existing.rows.length > 0){
+            await pool.query(`DELETE FROM favorite WHERE user_id = $1 AND recipe_id = $2`, [user_id, id]);
+            res.json({ forked: false });
+        }
+        else {
+            await pool.query(`INSERT INTO favorite (user_id, recipe_id) VALUES ($1, $2)`, [user_id, id]);
+            res.json({ forked: true });
+        }
+    }
     catch(err){
         console.error(err);
         res.status(500).json({ error: 'Failed to toggle fork for this recipe'});
-
-}
+    }
 });
-//retrieving the status of the recipe, whether its forked or not, for the current user.
+
+//retrieving fork status for the current user on a recipe
 app.get('/recipes/:id/favorites', async (req,res) => {
     const id = req.params.id
     const {user_id} = req.query;
     try{
         const result = await pool.query(`
-        SELECT * FROM favorite
-        WHERE recipe_id = $1 AND user_id = $2`, [id, user_id]);
+            SELECT * FROM favorite
+            WHERE recipe_id = $1 AND user_id = $2`, [id, user_id]);
         res.json({forked: result.rows.length > 0});
-}
+    }
     catch(err){
         console.error(err)
         res.status(500).json({ error : 'Failed to get this recipe\'s fork status for current user.'});
-}
+    }
 });
-

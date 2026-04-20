@@ -9,7 +9,7 @@ export default function RecipePage(){
 	const [ratingData, setRatingData] = useState({average: null, count: 0});
 	const user = JSON.parse(localStorage.getItem('user'));
 	const [userRating, setUserRating] = useState(0); //different from ratingData, userRating is the rating the user selects for a recipe
-	const [userFavorite, setUserFavorite] = useState(false); // same React hook used in ratingData and setRatingData for user Forks!!!
+	const [userFavorite, setUserFavorite] = useState(false);
 
 	// fetch full recipe details whenever the id changes
 	useEffect(() => {
@@ -19,6 +19,7 @@ export default function RecipePage(){
 			.catch(err => console.error('Failed to fetch recipe :(((', err));
 	},[id]);
 
+	//fetch recipe total ratings
 	useEffect(() => {
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/ratings`)
 			.then (res => res.json())
@@ -26,9 +27,19 @@ export default function RecipePage(){
 				.catch(err => console.error(' bruh this failed to fetch ratings dawg', err));
 	},[id]);
 
-
-	// useEffect for the fork status. this will allow the recipe page to fetch fork status
+	//fetch recipe ratings for the CURRENT user
 	useEffect(() => {
+		setUserRating(0);
+		if (!user) return; //guard incase the current user is not logged in
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/ratings/user?user_id=${user.id}`)
+			.then (res => res.json())
+			.then (data => setUserRating(data?.rating || 0))
+			.catch(err => console.error('Failed to fetch recipe ratings for the current user :(((', err));
+	},[id]);
+
+	// useEffect for the fork status for CURRENT user. this will allow the recipe page to fetch fork status
+	useEffect(() => {
+		setUserFavorite(false);
 		if (!user) return;
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/favorites?user_id=${user.id}`)
 			.then (res => res.json())
@@ -36,10 +47,7 @@ export default function RecipePage(){
 			.catch(err => console.error('Failed to fetch fork status :(((', err));
 	}, [id]);
 
-
-	// UI and front end logic for users to actually rate recipes.
-	
-	
+	// Front end logic for users to actually rate recipes.
 	function submitRating(star){
 		if (!user) return; //cant do nun if user not logged in
 		setUserRating(star)
@@ -50,7 +58,7 @@ export default function RecipePage(){
 		})
 		.then(res => res.json())
 		.then(() => {
-			//refresh the average after submitting new ratiing
+			//refresh the average after submitting new rating
 				fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/ratings`)
 					.then(res => res.json())
 					.then(data => setRatingData(data))
@@ -80,6 +88,8 @@ export default function RecipePage(){
 			<img src={recipe.image_url} alt={recipe.recipe_name}/>
 			<h1>{recipe.recipe_name}</h1>
 			<p> Serves {recipe.servings} | Prep Time: {recipe.time_to_cook} min(s)</p>
+
+			{/*Start cooking button!! :))) */}
 			<div className={styles.startCookingContainer}>
 				<Link to={`/cook/${id}`} className={styles.startCookingLink}>
 					<button
@@ -91,14 +101,13 @@ export default function RecipePage(){
 				</Link>
 			</div>
 
-		{/*Fork logic */}
-		<button onClick={submitUserFavorite}> 
+		{/*Fork logic and button!*/}
+		<button onClick={submitUserFavorite} style={{marginBottom: '1.5em'}}>
 		{userFavorite ? 'Forked!' : 'Fork This Recipe!'} </button>
-
-			
-
-		{/* Star logic */}	
+		{/* Star logic */}
 			<div>
+			<span style={{fontWeight: 'bold'}}> Rate This Recipe! </span>
+			<div></div>
 					{[1,2,3,4,5].map(star =>  (
 						<span
 						key={star}
@@ -108,7 +117,8 @@ export default function RecipePage(){
 						★
 						</span>
 					))}
-				<span> {ratingData.average ? `${ratingData.average}/5 (${ratingData.count} ratings)` : 'No ratings yet'}</span>
+					<br></br>
+				<span> {ratingData.average ? `Overall Recipe Rating: ${ratingData.average}/5 (${ratingData.count} total ratings)` : 'No ratings yet'}</span>
 			</div>
 
 			<h2>Ingredients</h2>
@@ -129,5 +139,3 @@ export default function RecipePage(){
 		</div>
 	);
 }
-
-
