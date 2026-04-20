@@ -155,7 +155,7 @@ app.get('/recipes/:id', async (req,res) => {
 
     }
 });
-//Retriving ratings from the DB
+//Retriving ratings from the DB ACROSS ALL USERS
 app.get('/recipes/:id/ratings', async (req,res) => {
     const id = req.params.id
 try{
@@ -171,6 +171,26 @@ try{
 catch(err){
     console.error(err);
     res.status(500).json({ error: 'Failed to get ratings'});
+}
+});
+
+
+//Retrieve ratings from the Db for the CURRENT USER ONLY
+app.get('/recipes/:id/ratings/user', async (req,res) => {
+    const id = req.params.id
+    const {user_id} = req.query
+    try{
+        const result = await pool.query(`
+        SELECT rating 
+        FROM ratings
+        WHERE recipe_id = $1 AND user_id = $2
+        `, [id, user_id]);
+
+        res.json(result.rows[0]);
+    }
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Fail to get rating for the current user'});
 }
 });
 

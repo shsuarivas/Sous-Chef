@@ -15,7 +15,7 @@ export default function RecipePage(){
 			.then (data => setRecipe(data))
 			.catch(err => console.error('Failed to fetch recipe :(((', err));
 	},[id]);
-
+	//fetch recipe total ratings
 	useEffect(() => {
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/ratings`)
 			.then (res => res.json())
@@ -23,9 +23,16 @@ export default function RecipePage(){
 				.catch(err => console.error(' bruh this failed to fetch ratings dawg', err));
 	},[id]);
 
-	// UI and front end logic for users to actually rate recipes.
-	
-	
+	//fetch recipe ratings for the CURRENT user
+	useEffect(() => {
+		if (!user) return; //guard incase the current user is not logged in
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/ratings/user?user_id=${user.id}`)
+			.then (res => res.json())
+			.then (data => setUserRating(data?.rating || 0))
+			.catch(err => console.error('Failed to fetch recipe ratings for the current user :(((', err));
+	},[id]);
+
+	// Front end logic for users to actually rate recipes.
 	function submitRating(star){
 		if (!user) return; //cant do nun if user not logged in
 		setUserRating(star)
@@ -56,6 +63,8 @@ export default function RecipePage(){
 			<p> Serves {recipe.servings} * {recipe.time_to_cook} min(s)</p>
 		{/* Star logic */}	
 			<div>
+			<span style={{fontWeight: 'bold'}}> Rate This Recipe! </span>
+			<div></div>
 					{[1,2,3,4,5].map(star =>  (
 						<span
 						key={star}
@@ -65,7 +74,8 @@ export default function RecipePage(){
 						★
 						</span>
 					))}
-				<span> {ratingData.average ? `${ratingData.average}/5 (${ratingData.count} ratings)` : 'No ratings yet'}</span>
+					<br></br>
+				<span> {ratingData.average ? `Overall Recipe Rating: ${ratingData.average}/5 (${ratingData.count} total ratings)` : 'No ratings yet'}</span>
 			</div>
 
 			<h2>Ingredients</h2>
