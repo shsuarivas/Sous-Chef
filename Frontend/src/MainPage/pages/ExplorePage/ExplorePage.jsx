@@ -1,5 +1,5 @@
 import styles from './ExplorePage.module.scss'
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 //passing prop to a function
