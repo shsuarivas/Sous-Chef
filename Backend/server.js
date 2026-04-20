@@ -253,3 +253,35 @@ app.get('/recipes/:id/favorites', async (req,res) => {
         res.status(500).json({ error : 'Failed to get this recipe\'s fork status for current user.'});
     }
 });
+
+//retrieve comments for the recipe
+app.get('/recipes/:id/comments', async (req,res) => {
+    const id = req.params.id
+    try{
+        const result = await pool.query(`
+            SELECT username, comment_text, comment_date FROM comments
+            LEFT JOIN users ON comments.user_id = users.id
+            WHERE recipe_id = $1`, [id]);
+            res.json(result.rows);
+    }
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: 'Failed to retrieve comments from the server'});
+    }
+});
+//backend route for Users making post requests to add comments
+app.post('/recipes/:id/comments', async (req,res) => {
+    const id = req.params.id
+    const {user_id, comment} = req.body
+    try{
+        const result = await pool.query(`
+            INSERT INTO comments (recipe_id, user_id, comment_text)
+            VALUES ($1,$2,$3)
+            `, [id, user_id, comment]);
+        res.json({success:true});
+        }
+    catch(err){
+        console.error(err);
+        res.status(500).json({ error: `Failed to post comment. </3` });
+    }
+});

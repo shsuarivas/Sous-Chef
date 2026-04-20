@@ -10,7 +10,8 @@ export default function RecipePage(){
 	const user = JSON.parse(localStorage.getItem('user'));
 	const [userRating, setUserRating] = useState(0); //different from ratingData, userRating is the rating the user selects for a recipe
 	const [userFavorite, setUserFavorite] = useState(false);
-
+	const [recipeComment, setRecipeComments] = useState([]);
+	const [userComment, setUserComment] = useState('');
 	// fetch full recipe details whenever the id changes
 	useEffect(() => {
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}`)
@@ -46,6 +47,37 @@ export default function RecipePage(){
 			.then (data => setUserFavorite(data.forked))
 			.catch(err => console.error('Failed to fetch fork status :(((', err));
 	}, [id]);
+
+	//fetch recipe COMMENTS for the CURRENT RECIPE
+	useEffect(() => {
+		setRecipeComments([]);
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/comments`)
+			.then (res => res.json())
+			.then (data => setRecipeComments(data))
+			.catch(err => console.error('Failed to fetch comments for the recipe </3', err));
+	}, [id]);
+
+
+	//front end logic for users to submite comments on recipes
+	function submitComment(string){
+		if (!user) return; //cant comment on recipe unless logged in
+		setUserComment(string);
+		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/comments`,{
+			method: 'POST',
+			headers: {'Content-Type' : 'application/json'},
+			body: JSON.stringify({ user_id: user.id, comment: string })
+			})
+		.then(res => res.json())
+		.then(() => {
+			// refresh the comments after submitting new comment		
+			fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/comments`)
+				.then (res => res.json())
+				.then (data => setRecipeComments(data))
+				.then(() => setUserComment(''))
+				.catch(err => console.error('Failed to fetch comments for the recipe </3', err));
+		})
+		.catch(err => console.error(' Failed to submit comment'));
+	}
 
 	// Front end logic for users to actually rate recipes.
 	function submitRating(star){
@@ -134,6 +166,18 @@ export default function RecipePage(){
 					<li key={step.step_number}>{step.instruction}</li>
 				))}
 			</ol>
+			{/* Start of the Comment Section*/}
+			<h2> Comments </h2>
+			{/*Text input + button */}
+			<input value={userComment}                                                                                                                                                     onChange={(e) => setUserComment(e.target.value)}
+			/>
+
+			<button onClick={() => submitComment(userComment)}> Post Comment </button>
+
+			{/* List Comments */}
+			{recipeComment.map((comment, i) => (
+				<li key={i}>{comment.username} {comment.comment_text} {comment.comment_date} </li>
+			))}
 			</>
 		)}
 		</div>
