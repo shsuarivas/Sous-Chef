@@ -180,7 +180,14 @@ app.get('/recipes/:id/ratings/user', async (req,res) => {
             FROM ratings
             WHERE recipe_id = $1 AND user_id = $2
             `, [id, user_id]);
-        res.json(result.rows[0]);
+
+       if (result.rows[0]){
+           res.json(result.rows[0]);
+       }
+       else {
+           res.json(null);
+       }
+
     }
     catch(err){
         console.error(err);

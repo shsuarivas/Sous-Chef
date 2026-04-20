@@ -29,6 +29,7 @@ export default function RecipePage(){
 
 	//fetch recipe ratings for the CURRENT user
 	useEffect(() => {
+		setUserRating(0);
 		if (!user) return; //guard incase the current user is not logged in
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/ratings/user?user_id=${user.id}`)
 			.then (res => res.json())
@@ -36,8 +37,9 @@ export default function RecipePage(){
 			.catch(err => console.error('Failed to fetch recipe ratings for the current user :(((', err));
 	},[id]);
 
-	// useEffect for the fork status. this will allow the recipe page to fetch fork status
+	// useEffect for the fork status for CURRENT user. this will allow the recipe page to fetch fork status
 	useEffect(() => {
+		setUserFavorite(false);
 		if (!user) return;
 		fetch(`${import.meta.env.VITE_API_URL}/recipes/${id}/favorites?user_id=${user.id}`)
 			.then (res => res.json())
